@@ -1,7 +1,44 @@
 body {
     box-sizing: border-box;
-    background-image: url("../img/sky.jpg");
+    /*background-image: url("../img/sky.jpg");*/
+    background-color: #373536;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center 25%;
+    background-position: auto;
+}
+
+#mySpace {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: auto;   
+}
+
+#myLocation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    max-width: auto;
+}
+
+#viewSpace {
+    border-style: solid;
+    border-color: cornsilk;
+    margin-top: 100px;
+    height: 400px;
+    padding: 20px;
+}
+
+#myMassage {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: auto;
+}
+
+h2 {
+    font-family: 'Lobster', cursive;
+    color: cornsilk;
+    padding: 20px; 
 }
