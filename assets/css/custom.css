@@ -15,6 +15,15 @@ body {
     margin-top: 40px;
 }
 
+#myCarousel {
+    margin-top: 40px;
+}
+
+.myImage {
+    width: auto;
+    max-height: 500px;
+}
+
 #viewSpace {
     border-style: solid;
     border-color: cornsilk;
