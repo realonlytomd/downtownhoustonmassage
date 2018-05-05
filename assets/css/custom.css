@@ -24,6 +24,14 @@ body {
     max-height: 500px;
 }
 
+#googleMap {
+    border-style: solid;
+    border-color: cornsilk;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 400px;
+}
+
 #viewSpace {
     border-style: solid;
     border-color: cornsilk;

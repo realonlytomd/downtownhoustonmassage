@@ -41,7 +41,7 @@
 
 		<div class="col-md-8 col-md-offset-2">
 			<div id="logo">
-				<img class="img-responsive center-block" src="assets/img/waterfall.gif" alt="logo">
+				<img class="img-responsive center-block" src="assets/img/Logo-massage.jpg" alt="downtown houston massage">
 			</div>
 
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -77,6 +77,8 @@
 				</a>
 			</div>
 			
+			<div id="googleMap"></div>
+
 			<div id="viewSpace">
 
 			</div>
@@ -85,7 +87,18 @@
 	</div>
 
 </div>
+<script>
+	function myMap() {
+	var mapProp = {
+		center:new google.maps.LatLng(29.763544,-95.360475),
+		zoom:17,
+	};
+	var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+	}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjivwQqkdkXy5ur2kLIG26CMspGzF7xFo&callback=myMap"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
