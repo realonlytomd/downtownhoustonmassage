@@ -13,6 +13,7 @@ body {
 
 #logo {
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 #myCarousel {
@@ -42,7 +43,7 @@ body {
 }
 
 h2 {
-    font-family: 'Neucha', cursive;
+    font-family: 'Federo', sans-serif;
     color: #89c7f0;
     text-align: center;
 }
@@ -52,7 +53,7 @@ h2:hover {
 }
 
 h1 {
-    font-family: 'Neucha', cursive;
+    font-family: 'Federo', sans-serif;
     color: #89c7f0;
     text-align: center;
 }

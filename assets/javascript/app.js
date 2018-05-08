@@ -5,7 +5,7 @@ $(document).ready(function() {
     $("#googleMap").hide();
     $("#viewSpace").hide();
 
-    $(document).on("click", "#mySpace", function() {
+    $(document).on("click", "#myStudio", function() {
 
         $("#logo").hide();
         $("#myCarousel").show();
