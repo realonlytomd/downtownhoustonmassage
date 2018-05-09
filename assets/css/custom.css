@@ -23,7 +23,7 @@ body {
 
 .myImage {
     width: auto;
-    max-height: 450px;
+    max-height: 400px;
 }
 
 #googleMap {
@@ -31,7 +31,7 @@ body {
     border-color: #89c7f0;
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 450px;
+    height: 400px;
 }
 
 #viewSpace {
@@ -39,17 +39,13 @@ body {
     border-color: #89c7f0;
     margin-top: 30px;
     margin-bottom: 30px;
-    height: 450px;
+    height: 400px;
 }
 
 h2 {
     font-family: 'Federo', sans-serif;
     color: #89c7f0;
     text-align: center;
-}
-
-h2:hover {
-    font-weight: bold;
 }
 
 h1 {
