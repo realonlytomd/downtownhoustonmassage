@@ -1,8 +1,6 @@
 body {
     box-sizing: border-box;
-    background-image: url("../img/charcoalflannel.jpg");
-    /*background-color: #373536;*/
-    background-repeat: no-repeat;
+    background-image: url("../img/fabric.jpg");
     background-size: cover;
     background-position: auto;
 }
@@ -25,10 +23,11 @@ body {
     font-size: 30px;*/
 }
 
-#stressed {
+.buttonLabels {
     margin-top: 20px;
     font-family: 'Federo', sans-serif;
     background-color: #89c7f0;
+    font-size: 30px;
 }
 
 #waterfall {
