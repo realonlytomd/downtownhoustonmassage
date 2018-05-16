@@ -5,29 +5,19 @@ body {
     background-position: auto;
 }
 
-.posImage {
-    position: relative;
-    display: inline;
-    max-width: 182px;
-}
-
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    /*font-family: 'Federo', sans-serif;
-    color: #89c7f0;
-    font-size: 30px;*/
-}
-
 .buttonLabels {
     margin-top: 20px;
     font-family: 'Federo', sans-serif;
     background-color: #89c7f0;
     font-size: 30px;
+}
+
+.textOutline {
+	text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
 }
 
 #waterfall {
@@ -74,6 +64,7 @@ h2 {
 
 h1 {
     font-family: 'Federo', sans-serif;
-    color: #89c7f0;
+    color: red;
     text-align: center;
+    margin-bottom: 0px;
 }
