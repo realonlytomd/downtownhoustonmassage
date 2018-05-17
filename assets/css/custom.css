@@ -62,9 +62,14 @@ h2 {
     text-align: center;
 }
 
-h1 {
+#contactMe {
     font-family: 'Federo', sans-serif;
-    color: red;
     text-align: center;
-    margin-bottom: 0px;
+    color: white;
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p span {
+    background-color: #89c7f0;
 }
