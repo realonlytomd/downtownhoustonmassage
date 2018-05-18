@@ -31,6 +31,8 @@ $(document).ready(function() {
         $("#myCarousel").hide();
         $("#viewSpace").show();
         $("#googleMap").hide();
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<div class='row'><div class='col-xs-4'><h4>The Flow</h4></div><div class='col-xs-4'><h4>Benefits</h4></div><div class='col-xs-4'><h4>Stretching</h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -42,4 +44,8 @@ $(document).ready(function() {
         $("#googleMap").show();
     });
 
+    $(document).on("click", "h4", function() {
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<p>Ipsum stuff</p>");
+    });
 });

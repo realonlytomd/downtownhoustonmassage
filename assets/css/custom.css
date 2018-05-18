@@ -1,8 +1,9 @@
 body {
     box-sizing: border-box;
     background-image: url("../img/fabric.jpg");
-    background-size: cover;
+    background-repeat: repeat;
     background-position: auto;
+    background-size: cover;
 }
 
 .buttonLabels {
@@ -54,6 +55,7 @@ body {
     margin-top: 30px;
     margin-bottom: 30px;
     height: 400px;
+    background-color: #373536;
 }
 
 h2 {
@@ -62,16 +64,30 @@ h2 {
     text-align: center;
 }
 
+h4 {
+    font-family: 'Federo', sans-serif;
+    color: bisque;
+    text-align: center;
+}
+
 #contactMe {
     font-family: 'Federo', sans-serif;
     text-align: center;
-    color: white;
+    color: bisque;
     font-size: 24px;
     margin-top: 20px;
 }
 
-p span {
+h5 span {
     background-color: #89c7f0;
     padding-left: 7px;
     padding-right: 7px;
+}
+
+p {
+    font-family: 'Federo', sans-serif;
+    text-align: center;
+    color: beige;
+    font-size: 24px;
+    margin-top: 20px;    
 }
