@@ -6,19 +6,18 @@ body {
     background-size: cover;
 }
 
+h1 {
+    background-color: #89c7f0;
+    font-family: 'Federo', sans-serif;
+    padding: 8px;
+    margin-top: 8px;
+}
+
 .buttonLabels {
     margin-top: 20px;
     font-family: 'Federo', sans-serif;
     background-color: #89c7f0;
     font-size: 30px;
-}
-
-.textOutline {
-	text-shadow:
-		-1px -1px 0 #000,
-		1px -1px 0 #000,
-		-1px 1px 0 #000,
-		1px 1px 0 #000;
 }
 
 #waterfall {
@@ -98,6 +97,7 @@ footer {
     color: bisque;
     text-align: center;
     background-color: #89c7f0;
-	border-top: 4px solid #146da8;
-	padding: 12px;
+    border-top: 4px solid #146da8;
+    margin-bottom: 8px;
+	padding: 8px;
 }
