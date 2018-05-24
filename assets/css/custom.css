@@ -49,6 +49,7 @@ h1 {
 }
 
 #viewSpace {
+    overflow: auto;
     border-style: solid;
     border-color: #89c7f0;
     margin-top: 30px;
