@@ -14,6 +14,11 @@ h1 {
     font-size: 24px;
 }
 
+#email {
+    margin-left: 20px;
+    font-size: 18px;
+}
+
 .buttonLabels {
     margin-top: 6px;
     font-family: 'Federo', sans-serif;
