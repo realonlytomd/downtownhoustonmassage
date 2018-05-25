@@ -11,28 +11,29 @@ h1 {
     font-family: 'Federo', sans-serif;
     padding: 8px;
     margin-top: 8px;
+    font-size: 24px;
 }
 
 .buttonLabels {
-    margin-top: 20px;
+    margin-top: 6px;
     font-family: 'Federo', sans-serif;
     background-color: #89c7f0;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 #stressview {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 #logo {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 #myCarousel {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .myImage {
@@ -43,8 +44,8 @@ h1 {
 #googleMap {
     border-style: solid;
     border-color: #89c7f0;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     height: 400px;
 }
 
@@ -52,8 +53,8 @@ h1 {
     overflow: auto;
     border-style: solid;
     border-color: #89c7f0;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 16px;
+    margin-bottom: 16px;
     height: 400px;
     background-color: #373536;
 }
@@ -66,17 +67,8 @@ h2 {
 
 h4 {
     font-family: 'Federo', sans-serif;
-    color: bisque;
+    color: beige;
     text-align: center;
-}
-
-#contactMe {
-    font-family: 'Federo', sans-serif;
-    text-align: center;
-    color: black;
-    font-size: 28px;
-    font-weight: 900;
-    margin-top: 20px;
 }
 
 h5 span {
