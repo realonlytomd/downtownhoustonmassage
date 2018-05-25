@@ -1,23 +1,39 @@
 $(document).ready(function() {
     console.log("hello");
     
-    $("#waterfall").hide();
+    $("#stressview").hide();
     $("#myCarousel").hide();
     $("#googleMap").hide();
     $("#viewSpace").hide();
 
+    var stresspicture = ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
+        "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
+        "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg", "stressbackground(12).gif"];
+
     $(document).on("click", "#stressed", function() {
 
-        $("#waterfall").show();
+        var i = Math.floor(Math.random() * 13);
+        console.log("i = " + i);
+
+        $("#stressview").empty();
+        var image = $("<img>");
+        image.addClass("img-responsive");
+        image.addClass("center-block");
+        image.attr("src", "assets/img/" + stresspicture[i]);
+        image.attr("alt", "downtown houston massage stress");
+        $("#stressview").append(image);
+
+        $("#stressview").show();
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").hide();
         $("#googleMap").hide();
+        
     });
 
     $(document).on("click", "#myStudio", function() {
 
-        $("#waterfall").hide();
+        $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").show();
         $("#viewSpace").hide();
@@ -26,7 +42,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#myMassage", function() {
 
-        $("#waterfall").hide();
+        $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").show();
@@ -43,7 +59,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#myLocation", function() {
 
-        $("#waterfall").hide();
+        $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").hide();
