@@ -14,7 +14,12 @@ h1 {
     font-size: 24px;
 }
 
+span.phnumber {
+    white-space: nowrap;
+}
+
 #email {
+    display: inline-block;
     margin-left: 20px;
     font-size: 18px;
 }
