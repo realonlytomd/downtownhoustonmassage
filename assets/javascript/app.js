@@ -54,7 +54,11 @@ $(document).ready(function() {
         "<div class='col-xs-4' id='stretching'><h4>Stretching</h4></div></div>" +
         "<br><br><br><div class='row'>" +
         "<div class='col-xs-6' id= 'regs'><h4>TX regulations</h4></div>" +
-        "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div>");
+        "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div></div>" + 
+        "<br><br><br><div class='row'>" +
+        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
+        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
+        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -101,5 +105,24 @@ $(document).ready(function() {
     $(document).on("click", "#hours", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<p>Ipsum hours stuff</p><br><p id='myMassage'>Return</p>");
+    });
+
+    $(document).on("click", "#comments", function() {
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<div class='row'>" +
+            "<div class='col-lg-1'></div>" +
+            "<div class='col-lg-10'>" +
+            "<div class='panel panel-primary'>" +
+            "<div class='panel-heading id='panel-color'>" +
+                "<h3 class='panel-title'>Add Train</h3></div>" +
+            "<div class='panel-body'>" +
+                "<div class='form-group'>" +
+                    "<label for='usr'>Train Name:</label>" +
+                        "<input type='text' class='form-control' id='trainName-input'>" +
+                        "<label for='usr'>Destination:</label>" +
+                        "<input type='text' class='form-control' id='destination-input'>" +
+                        "<button type='submit' id='add-train' class='btn btn-primary'>Submit</button>" +
+                        "</div></div></div></div></div>" +
+            "<br><p id='myMassage'>Return</p>");
     });
 });
