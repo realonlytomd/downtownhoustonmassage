@@ -56,9 +56,9 @@ $(document).ready(function() {
         "<div class='col-xs-6' id= 'regs'><h4>TX regulations</h4></div>" +
         "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div></div>" + 
         "<br><br><br><div class='row'>" +
+        "<div class='col-xs-4' id='topic1'><h4>Topic1</h4></div>" +
         "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
-        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
-        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div></div>");
+        "<div class='col-xs-4' id='topic2'><h4>Topic2</h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -72,57 +72,67 @@ $(document).ready(function() {
 
     $(document).on("click", "#flow", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Ipsum About My Flow</p>" +
+        $("#viewSpace").append("<p>The Flow of My Massage</p>" +
             "<br>" +
-            "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sollicitudin ligula " +
-            "id volutpat malesuada. Morbi lacinia posuere convallis. Vestibulum sed tincidunt nunc. " +
-            "Donec ut eros ut ante venenatis vulputate. In hac habitasse platea dictumst. Pellentesque " +
-            "vel libero aliquet, rhoncus tortor ac, aliquam erat. Nulla facilisi. Praesent at vestibulum " +
-            "erat, in posuere leo. Aenean eget magna id risus ultricies vestibulum. Pellentesque pharetra " +
-            "porttitor libero nec rhoncus. Mauris eu elementum arcu. Duis in dui dui. In ultricies enim ut " +
-            "nulla imperdiet, at blandit lorem porttitor. Praesent scelerisque purus quis nunc feugiat " +
-            "fermentum.</p>" +
-            "<br>" +
-            "<p id='myMassage'>Return</p>");
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#benefits", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Ipsum benefits stuff</p><br><p id='myMassage'>Return</p>");
+        $("#viewSpace").append("<p>Benefits of Massage Therapy</p>" +
+            "<br>" +
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#stretching", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Ipsum stretching stuff</p><br><p id='myMassage'>Return</p>");
+        $("#viewSpace").append("<p>The Importance of Frequent Stretcing</p>" +
+            "<br>" + 
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#regs", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<p><a href='https://www.tdlr.texas.gov/mas/masrules.htm#117.91' target='_blank'>" +
-            "Texas Department of Licensing and Registration</a></p><br><p id='myMassage'>Return</p>");
+            "Texas Department of Licensing and Registration</a></p>" +
+            "<br>" +
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#hours", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Ipsum hours stuff</p><br><p id='myMassage'>Return</p>");
+        $("#viewSpace").append("<p>My General Hours</p>" +
+            "<br>" + 
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+    });
+
+    $(document).on("click", "#topic1", function() {
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<p>Topic 1</p>" +
+            "<br>" + 
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#comments", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
-            "<div class='col-lg-1'></div>" +
-            "<div class='col-lg-10'>" +
-            "<div class='panel panel-primary'>" +
-            "<div class='panel-heading id='panel-color'>" +
-                "<h3 class='panel-title'>Add Train</h3></div>" +
-            "<div class='panel-body'>" +
+            "<div class='col-xs-1'></div>" +
+            "<div class='col-xs-10'>" +
+                "<h3>Please leave reviews, comments or questions below. Include your email if you'd like an answer.</h3>" +
                 "<div class='form-group'>" +
-                    "<label for='usr'>Train Name:</label>" +
-                        "<input type='text' class='form-control' id='trainName-input'>" +
-                        "<label for='usr'>Destination:</label>" +
-                        "<input type='text' class='form-control' id='destination-input'>" +
-                        "<button type='submit' id='add-train' class='btn btn-primary'>Submit</button>" +
-                        "</div></div></div></div></div>" +
+                    "<label for='email' id='lableText'>Email:</label>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email address' name='email'>" +
+                    "<label for='comment' id='lableText'>Comments:</label>" +
+                    "<textarea class='form-control' rows='5' id='clientComments'></textarea>" +
+                    "<button type='submit' id='addComment' class='btn btn-primary'>Submit</button>" +
+            "</div></div></div>" +
             "<br><p id='myMassage'>Return</p>");
+    });
+
+    $(document).on("click", "#topic2", function() {
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<p>Topic 2</p>" +
+            "<br>" + 
+            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 });

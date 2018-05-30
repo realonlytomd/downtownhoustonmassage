@@ -14,7 +14,7 @@ h1 {
     font-size: 24px;
 }
 
-span.phnumber {
+.phnumber {
     white-space: nowrap;
 }
 
@@ -75,16 +75,23 @@ h2 {
     text-align: center;
 }
 
-h4 {
+h3, h4 {
     font-family: 'Federo', sans-serif;
     color: beige;
     text-align: center;
 }
 
-h5 span {
-    background-color: #89c7f0;
-    padding-left: 7px;
-    padding-right: 7px;
+#lableText {
+    font-family: 'Federo', sans-serif;
+    color: beige;
+    margin-top: 10px;
+}
+
+#addComment {
+    font-family: 'Federo', sans-serif;
+    color: beige;
+    margin-top: 10px;
+    background-color: #373536;
 }
 
 p {
@@ -92,7 +99,7 @@ p {
     text-align: center;
     color: beige;
     font-size: 24px;
-    margin-top: 20px;    
+    margin-top: 10px;    
 }
 
 footer {
