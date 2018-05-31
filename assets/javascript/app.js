@@ -1,6 +1,47 @@
 $(document).ready(function() {
     console.log("hello");
+
+    // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAyKdK5VRE1gkf3aV9Snx7dBVUXgGPdBUk",
+    authDomain: "downtownmassagecomments.firebaseapp.com",
+    databaseURL: "https://downtownmassagecomments.firebaseio.com",
+    projectId: "downtownmassagecomments",
+    storageBucket: "downtownmassagecomments.appspot.com",
+    messagingSenderId: "560623673001"
+  };
+  firebase.initializeApp(config);
+
+  //create variables
+    var database = firebase.database();
+    var clientemail = "";
+    var clientcomment = "";
+
+    // capture the submit button click
+
+    $(document).on("click", "#addComment", function() {
+        event.preventDefault();
+  
+        // Store and retrieve the most recent client inputs.
+  
+        clientemail = $("#emailInput").val().trim();
+        clientcomment = $("#clientCommentInput").val().trim();
+  
+        console.log(clientemail);
+        console.log(clientcomment);
+
+          //  the "initial load"
+		database.ref().push({
+            clientemail: clientemail,
+            clientcomment: clientcomment     
+        });
     
+            //empty out the input fields after submission
+    
+        $("#emailInput").val("");
+        $("#clientCommentInput").val("");
+    });
+
     $("#stressview").hide();
     $("#myCarousel").hide();
     $("#googleMap").hide();
@@ -86,7 +127,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#stretching", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>The Importance of Frequent Stretcing</p>" +
+        $("#viewSpace").append("<p>The Importance of Frequent Stretching</p>" +
             "<br>" + 
             "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
@@ -123,7 +164,7 @@ $(document).ready(function() {
                     "<label for='email' id='lableText'>Email:</label>" +
                     "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email address' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
-                    "<textarea class='form-control' rows='5' id='clientComments'></textarea>" +
+                    "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment' class='btn btn-primary'>Submit</button>" +
             "</div></div></div>" +
             "<br><p id='myMassage'>Return</p>");
