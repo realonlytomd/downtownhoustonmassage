@@ -162,7 +162,7 @@ $(document).ready(function() {
                 "<h3>Please leave reviews, comments or questions below. Include your email if you'd like an answer.</h3>" +
                 "<div class='form-group'>" +
                     "<label for='email' id='lableText'>Email:</label>" +
-                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email address' name='email'>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email address if you want a reply' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment' class='btn btn-primary'>Submit</button>" +
