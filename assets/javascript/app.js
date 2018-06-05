@@ -61,7 +61,7 @@ $(document).ready(function() {
         image.addClass("img-responsive");
         image.addClass("center-block");
         image.attr("src", "assets/img/" + stresspicture[i]);
-        image.attr("alt", "downtown houston massage stress");
+        image.attr("alt", "relax relaxation massage stress");
         $("#stressview").append(image);
 
         $("#stressview").show();
