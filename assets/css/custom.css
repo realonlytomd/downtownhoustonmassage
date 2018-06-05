@@ -31,19 +31,13 @@ h1 {
     font-size: 24px;
 }
 
-#stressview {
+#stressview, #logo, #myCarousel {
     margin-top: 16px;
     margin-bottom: 16px;
 }
 
-#logo {
-    margin-top: 16px;
-    margin-bottom: 16px;
-}
-
-#myCarousel {
-    margin-top: 16px;
-    margin-bottom: 16px;
+#myMassage {
+    cursor: pointer;
 }
 
 .myImage {
@@ -109,6 +103,11 @@ p {
     margin-top: 10px;    
 }
 
+#home {
+    background-color: #89c7f0;
+    color: black;
+    margin-right: 4px;
+}
 footer {
     font-family: 'Federo', sans-serif;
     color: bisque;

@@ -30,22 +30,31 @@ $(document).ready(function() {
         console.log(clientemail);
         console.log(clientcomment);
 
-          //  the "initial load"
+        //  the "initial load" into Firebase
 		database.ref().push({
             clientemail: clientemail,
             clientcomment: clientcomment     
         });
     
-            //empty out the input fields after submission
+        //empty out the input fields after submission
     
         $("#emailInput").val("");
         $("#clientCommentInput").val("");
     });
 
-    $("#stressview").hide();
-    $("#myCarousel").hide();
-    $("#googleMap").hide();
-    $("#viewSpace").hide();
+    function showLogo() {
+        $("#stressview").hide();
+        $("#logo").show();
+        $("#myCarousel").hide();
+        $("#googleMap").hide();
+        $("#viewSpace").hide();
+    }
+
+    showLogo();
+
+    $(document).on("click", "#home", function() {
+        showLogo();
+    });
 
     var stresspicture = ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
         "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
