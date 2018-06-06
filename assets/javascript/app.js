@@ -69,6 +69,7 @@ $(document).ready(function() {
         var image = $("<img>");
         image.addClass("img-responsive");
         image.addClass("center-block");
+        image.addClass("myImage");
         image.attr("src", "assets/img/" + stresspicture[i]);
         image.attr("alt", "relax relaxation massage stress");
         $("#stressview").append(image);
