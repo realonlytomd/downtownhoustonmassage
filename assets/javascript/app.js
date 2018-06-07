@@ -109,7 +109,7 @@ $(document).ready(function() {
         "<br><br><br><div class='row'>" +
         "<div class='col-xs-4' id='topic1'><h4>Topic1</h4></div>" +
         "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
-        "<div class='col-xs-4' id='topic2'><h4>Topic2</h4></div></div>");
+        "<div class='col-xs-4' id='prices'><h4>Prices</h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -184,10 +184,10 @@ $(document).ready(function() {
             "<br><p id='myMassage'>Return</p>");
     });
 
-    $(document).on("click", "#topic2", function() {
+    $(document).on("click", "#prices", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Topic 2</p>" +
+        $("#viewSpace").append("<p>Prices</p>" +
             "<br>" + 
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br><p id='myMassage'>Return</p>");
     });
 });
