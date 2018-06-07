@@ -104,7 +104,7 @@ $(document).ready(function() {
         "<div class='col-xs-4' id='benefits'><h4>Benefits</h4></div>" + 
         "<div class='col-xs-4' id='stretching'><h4>Stretching</h4></div></div>" +
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-6' id= 'regs'><h4>TX regulations</h4></div>" +
+        "<div class='col-xs-6' id= 'thoughts'><h4>Thoughts</h4></div>" +
         "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div></div>" + 
         "<br><br><br><div class='row'>" +
         "<div class='col-xs-4' id='topic1'><h4>Topic1</h4></div>" +
@@ -142,12 +142,14 @@ $(document).ready(function() {
             "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
     });
 
-    $(document).on("click", "#regs", function() {
+    $(document).on("click", "#thoughts", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p><a href='https://www.tdlr.texas.gov/mas/masrules.htm#117.91' target='_blank'>" +
-            "Texas Department of Licensing and Registration</a></p>" +
+        $("#viewSpace").append("<p>" +
+            "A Blog - My Random Thoughts about Massage Therapy</p>" +
             "<br>" +
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>This topic is under construction</p>" +
+            "<br>" +
+            "<p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#hours", function() {
@@ -165,7 +167,7 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<p>Topic 1</p>" +
             "<br>" + 
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>Please suggest a topic in the Comments input form.</p><br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -181,7 +183,7 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment' class='btn btn-primary'>Submit</button>" +
             "</div></div></div>" +
-            "<br><p id='myMassage'>Return</p>");
+            "<p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#prices", function() {
