@@ -154,7 +154,11 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<p>My General Hours</p>" +
             "<br>" + 
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>Monday - Thursday: 9 AM - 9 PM<br>" +
+            "Friday: 9 AM - 6 PM<br>" +
+            "Saturday: 11 AM - 6 PM<br>" +
+            "Sunday: 11 AM - 9 PM<br></p>" +
+            "<br><p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#topic1", function() {
