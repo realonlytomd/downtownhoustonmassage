@@ -32,8 +32,8 @@ $(document).ready(function() {
 
         //  the "initial load" into Firebase
 		database.ref().push({
-            clientemail: clientemail,
-            clientcomment: clientcomment     
+            clientcomment: clientcomment,
+            clientemail: clientemail
         });
     
         //empty out the input fields after submission
@@ -109,7 +109,7 @@ $(document).ready(function() {
         "<div class='col-xs-6' id= 'thoughts'><h4>Thoughts</h4></div>" +
         "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div></div>" + 
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-4' id='topic1'><h4>Topic1</h4></div>" +
+        "<div class='col-xs-4' id='parking'><h4>Parking</h4></div>" +
         "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
         "<div class='col-xs-4' id='prices'><h4>Prices</h4></div></div>");
     });
@@ -147,7 +147,7 @@ $(document).ready(function() {
     $(document).on("click", "#thoughts", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<p>" +
-            "A Blog - My Random Thoughts about Massage Therapy</p>" +
+            "My Random Thoughts about Massage Therapy - A Blog</p>" +
             "<br>" +
             "<p>This topic is under construction</p>" +
             "<br>" +
@@ -165,11 +165,11 @@ $(document).ready(function() {
             "<br><p id='myMassage'>Return</p>");
     });
 
-    $(document).on("click", "#topic1", function() {
+    $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Topic 1</p>" +
-            "<br>" + 
-            "<p>Please suggest a topic in the Comments input form.</p><br><p id='myMassage'>Return</p>");
+        $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
+        "id='parkingMap' src='assets/img/parkingmap_lines.jpg' alt='downtown parking'>" +
+        "<p id='myMassage'>Return</p>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -177,13 +177,13 @@ $(document).ready(function() {
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-1'></div>" +
             "<div class='col-xs-10'>" +
-                "<h3>Please leave reviews, comments or questions below. Include your email if you'd like an answer.</h3>" +
+                "<h3>Please leave reviews, comments or questions.</h3>" +
                 "<div class='form-group'>" +
                     "<label for='email' id='lableText'>Email:</label>" +
-                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email address if you want a reply' name='email'>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email If You Want a Reply' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
-                    "<button type='submit' id='addComment' class='btn btn-primary'>Submit</button>" +
+                    "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
             "<p id='myMassage'>Return</p>");
     });

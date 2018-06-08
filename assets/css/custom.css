@@ -32,9 +32,10 @@ span a {
     font-size: 24px;
 }
 
-#stressview, #logo, #myCarousel {
+#stressview, #logo, #myCarousel, #googleMap, #viewSpace {
     margin-top: 16px;
     margin-bottom: 16px;
+    height: 420px;
 }
 
 #myMassage, h2, h4 {
@@ -43,24 +44,18 @@ span a {
 
 .myImage {
     width: auto;
-    max-height: 400px;
+    max-height: 420px;
 }
 
-#googleMap {
+/*#googleMap #parkingMap{
     border-style: solid;
     border-color: black;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    height: 400px;
-}
+}*/
 
 #viewSpace {
     overflow: auto;
     border-style: solid;
     border-color: gainsboro;
-    margin-top: 16px;
-    margin-bottom: 16px;
-    height: 400px;
     /*background-color: #373536;*/
     background-image: url("../img/brownleather.jpg");
     background-size: cover;
@@ -81,9 +76,9 @@ h2, h3, h4 {
 
 #addComment {
     font-family: 'Federo', sans-serif;
-    color: gainsboro;
+    color: black;
     margin-top: 10px;
-    background-color: #373536;
+    background-color: #727272;
 }
 
 p {
