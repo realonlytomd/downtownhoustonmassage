@@ -57,7 +57,7 @@ span a {
 #viewSpace {
     overflow: auto;
     border-style: solid;
-    border-color: black;
+    border-color: gainsboro;
     margin-top: 16px;
     margin-bottom: 16px;
     height: 400px;
@@ -69,19 +69,19 @@ span a {
 
 h2, h3, h4 {
     font-family: 'Federo', sans-serif;
-    color: beige;
+    color: gainsboro;
     text-align: center;
 }
 
 #lableText {
     font-family: 'Federo', sans-serif;
-    color: beige;
+    color: gainsboro;
     margin-top: 10px;
 }
 
 #addComment {
     font-family: 'Federo', sans-serif;
-    color: beige;
+    color: gainsboro;
     margin-top: 10px;
     background-color: #373536;
 }
@@ -89,7 +89,7 @@ h2, h3, h4 {
 p {
     font-family: 'Federo', sans-serif;
     text-align: center;
-    color: beige;
+    color: gainsboro;
     font-size: 24px;
     margin-top: 10px;    
 }
