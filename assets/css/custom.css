@@ -47,17 +47,12 @@ span a {
     max-height: 420px;
 }
 
-/*#googleMap #parkingMap{
-    border-style: solid;
-    border-color: black;
-}*/
-
 #viewSpace {
     overflow: auto;
     border-style: solid;
     border-color: gainsboro;
-    /*background-color: #373536;*/
-    background-image: url("../img/brownleather.jpg");
+    /* background-color: #373536; */
+    background-image: url("../img/vignette2 (2).jpg");
     background-size: cover;
     background-position: center;
 }
