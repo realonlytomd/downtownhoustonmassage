@@ -168,7 +168,7 @@ $(document).ready(function() {
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
-        "id='parkingMap' src='assets/img/parkingmap_lines.jpg' alt='downtown parking'>" +
+        "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
         "<p id='myMassage'>Return</p>");
     });
 
