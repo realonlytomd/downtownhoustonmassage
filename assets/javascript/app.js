@@ -62,7 +62,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#stressed", function() {
 
-        var i = Math.floor(Math.random() * 13);
+        var i = Math.floor(Math.random() * stresspicture.length);
         console.log("i = " + i);
 
         $("#stressview").empty();
@@ -101,13 +101,13 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#googleMap").hide();
         $("#viewSpace").empty();
-        $("#viewSpace").append("<br><br><br><div class='row'>" +
+        $("#viewSpace").append("<br><br><br><br><div class='row'>" +
         "<div class='col-xs-4' id='flow'><h4>The Flow</h4></div>" +
         "<div class='col-xs-4' id='benefits'><h4>Benefits</h4></div>" + 
         "<div class='col-xs-4' id='stretching'><h4>Stretching</h4></div></div>" +
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-6' id= 'thoughts'><h4>Thoughts</h4></div>" +
-        "<div class='col-xs-6' id= 'hours'><h4>Hours</h4></div></div>" + 
+        "<div class='col-xs-2 col-xs-offset-3' id= 'thoughts'><h4>Thoughts</h4></div>" +
+        "<div class='col-xs-2 col-xs-offset-2' id= 'hours'><h4>Hours</h4></div></div>" + 
         "<br><br><br><div class='row'>" +
         "<div class='col-xs-4' id='parking'><h4>Parking</h4></div>" +
         "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +

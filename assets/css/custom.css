@@ -52,7 +52,7 @@ span a {
     border-style: solid;
     border-color: gainsboro;
     /* background-color: #373536; */
-    background-image: url("../img/vignette2 (2).jpg");
+    background-image: url("../img/blackleather.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -67,6 +67,10 @@ h2, h3, h4 {
     font-family: 'Federo', sans-serif;
     color: gainsboro;
     margin-top: 10px;
+}
+
+#parkingMap {
+    margin-top: 20px;
 }
 
 #addComment {
