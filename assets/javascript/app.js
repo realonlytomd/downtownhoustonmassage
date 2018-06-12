@@ -125,51 +125,51 @@ $(document).ready(function() {
 
     $(document).on("click", "#flow", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>The Flow of My Massage</p>" +
+        $("#viewSpace").append("<h3>The Flow of My Massage</h3>" +
             "<br>" +
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>This topic is under construction</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#benefits", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Benefits of Massage Therapy</p>" +
+        $("#viewSpace").append("<h3>Benefits of Massage Therapy</h3>" +
             "<br>" +
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>This topic is under construction</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#stretching", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>The Importance of Frequent Stretching</p>" +
+        $("#viewSpace").append("<h3>The Importance of Frequent Stretching</h3>" +
             "<br>" + 
-            "<p>This topic is under construction</p><br><p id='myMassage'>Return</p>");
+            "<p>This topic is under construction</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#thoughts", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>" +
-            "My Random Thoughts about Massage Therapy - A Blog</p>" +
+        $("#viewSpace").append("<h3>" +
+            "My Random Thoughts about Massage Therapy - A Blog</h3>" +
             "<br>" +
             "<p>This topic is under construction</p>" +
             "<br>" +
-            "<p id='myMassage'>Return</p>");
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#hours", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>My General Hours</p>" +
+        $("#viewSpace").append("<h3>My General Hours</h3>" +
             "<br>" + 
             "<p>Monday - Thursday: 9 AM - 9 PM<br>" +
             "Friday: 9 AM - 6 PM<br>" +
             "Saturday: 11 AM - 6 PM<br>" +
             "Sunday: 11 AM - 9 PM<br></p>" +
-            "<br><p id='myMassage'>Return</p>");
+            "<br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
-        "<p id='myMassage'>Return</p>");
+        "<h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -185,13 +185,13 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
-            "<p id='myMassage'>Return</p>");
+            "<h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#prices", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<p>Prices</p>" +
+        $("#viewSpace").append("<h3>Prices</h3>" +
             "<br>" + 
-            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br><p id='myMassage'>Return</p>");
+            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br><h4 id='myMassage'>Return</h4>");
     });
 });

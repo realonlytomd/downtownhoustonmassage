@@ -8,10 +8,20 @@ body {
 
 h1 {
     background-color: gainsboro;
-    font-family: 'Federo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     padding: 8px;
     margin-top: 8px;
     font-size: 24px;
+}
+
+.no-gutters {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.no-gutters > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
 }
 
 h2 {
@@ -20,7 +30,7 @@ h2 {
 
 span a {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .phnumber {
@@ -58,15 +68,16 @@ span a {
 }
 
 h2, h3, h4 {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: gainsboro;
     text-align: center;
 }
 
 #lableText {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: gainsboro;
     margin-top: 10px;
+    font-size: 18px;
 }
 
 #parkingMap {
@@ -74,14 +85,14 @@ h2, h3, h4 {
 }
 
 #addComment {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     color: black;
     margin-top: 10px;
     background-color: #727272;
 }
 
 p {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
     color: gainsboro;
     font-size: 24px;
@@ -99,7 +110,7 @@ button:focus {
 }
 
 footer {
-    font-family: 'Federo', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-align: center;
     background-color: gainsboro;
     border-top: 4px solid #727272;
