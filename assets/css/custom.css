@@ -5,15 +5,17 @@ html, body {
 
 body {
     box-sizing: border-box;
-    background-image: url("../img/graywoodslatvert.jpg");
-    background-repeat: repeat;
-    background-position: auto;
-    background-size: cover;
+    
 }
 
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
+    background-image: url("../img/blackleather.jpg");
+    background-repeat: repeat;
+    background-position: auto;
+    background-size: cover;
+    
 }
 
 h1 {
@@ -58,7 +60,7 @@ span a {
     height: 420px;
 }
 
-#myMassage, h2, h4 {
+#myMassage, h2, .topic {
     cursor: pointer;
 }
 
@@ -72,7 +74,7 @@ span a {
     border-style: solid;
     border-color: gainsboro;
     /* background-color: #373536; */
-    background-image: url("../img/blackleather.jpg");
+    background-image: url("../img/tomsidebwdark.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -81,6 +83,12 @@ h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     color: gainsboro;
     text-align: center;
+}
+
+.topic {
+    background-color: black;
+    padding-left: 4px;
+    padding-right: 4px;
 }
 
 #lableText {

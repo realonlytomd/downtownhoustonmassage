@@ -102,16 +102,16 @@ $(document).ready(function() {
         $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><div class='row'>" +
-        "<div class='col-xs-4' id='flow'><h4>The Flow</h4></div>" +
-        "<div class='col-xs-4' id='benefits'><h4>Benefits</h4></div>" + 
-        "<div class='col-xs-4' id='stretching'><h4>Stretching</h4></div></div>" +
+        "<div class='col-xs-4'><h4><span class='topic' id='flow'>The Flow</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='topic' id='benefits'>Benefits</span></h4></div>" + 
+        "<div class='col-xs-4'><h4><span class='topic' id='stretching'>Stretching</span></h4></div></div>" +
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-2 col-xs-offset-3' id= 'thoughts'><h4>Thoughts</h4></div>" +
-        "<div class='col-xs-2 col-xs-offset-2' id= 'hours'><h4>Hours</h4></div></div>" + 
+        "<div class='col-xs-2 col-xs-offset-3'><h4><span class='topic' id='thoughts'>Thoughts</span></h4></div>" +
+        "<div class='col-xs-2 col-xs-offset-2'><h4><span class='topic' id='hours'>Hours</span></h4></div></div>" + 
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-4' id='parking'><h4>Parking</h4></div>" +
-        "<div class='col-xs-4' id='comments'><h4>Comments</h4></div>" +
-        "<div class='col-xs-4' id='prices'><h4>Prices</h4></div></div>");
+        "<div class='col-xs-4'><h4><span class='topic' id='parking'>Parking</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='topic' id='comments'>Comments</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='topic' id='prices'>Prices</span></h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
