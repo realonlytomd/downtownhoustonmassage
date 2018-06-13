@@ -1,9 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     box-sizing: border-box;
     background-image: url("../img/graywoodslatvert.jpg");
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
+}
+
+.wrapper {
+    min-height: 100%;
+    margin-bottom: -50px;
 }
 
 h1 {
@@ -114,8 +124,12 @@ footer {
     text-align: center;
     background-color: gainsboro;
     border-top: 4px solid #727272;
-    margin-bottom: 8px;
-	padding: 8px;
+    margin-bottom: 0px;
+    padding: 8px;
+}
+
+.footer, .push {
+    height: 50px;
 }
 
 /* reduce font of email address for screens under 360px  */
