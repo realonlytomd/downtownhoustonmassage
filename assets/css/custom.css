@@ -11,7 +11,7 @@ body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
-    background-image: url("../img/blackleather.jpg");
+    background-image: url("../img/brownleather.jpg");
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
@@ -74,7 +74,7 @@ span a {
     border-style: solid;
     border-color: gainsboro;
     /* background-color: #373536; */
-    background-image: url("../img/tomsidebwdark.jpg");
+    background-image: url("../img/undressoverhead2.jpg");
     background-size: cover;
     background-position: center;
 }
