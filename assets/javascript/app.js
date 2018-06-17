@@ -142,7 +142,7 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3>The Importance of Frequent Stretching</h3>" +
             "<br>" + 
             "<p class='topic'>Just bend over! So many day to day aches can be alleviated" +
-            " by simply taking the time let your muscles relax.</p><br><h4 id='myMassage'>Return</h4>");
+            " by simply taking the time to let your muscles relax.</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#thoughts", function() {
