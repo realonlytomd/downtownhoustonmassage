@@ -143,7 +143,7 @@ $(document).ready(function() {
             "<br>" + 
             "<p class='topic'>Just bend over! So many day to day aches can be alleviated" +
             " by simply taking the time to let your muscles relax." +
-            " After a shower, or a long drive, or whenever, start with a gently bend in the knee, and just let your torso hang down to the floor. Don't" +
+            " After a shower, or a long drive, or whenever, start with a gentle bend in the knees, and just let your torso hang down to the floor. Don't" +
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Hold for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
