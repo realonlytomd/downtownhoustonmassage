@@ -67,12 +67,16 @@ span a {
 .myImage {
     width: auto;
     max-height: 420px;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: gainsboro;
 }
 
 #viewSpace {
     overflow: auto;
-    border-style: solid;
+    border-style: ridge;
     border-color: gainsboro;
+    border-width: 8px;
     /* background-color: #373536; */
     background-image: url("../img/undressoverhead4.jpg");
     background-size: cover;

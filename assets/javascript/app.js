@@ -142,7 +142,12 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3>The Importance of Frequent Stretching</h3>" +
             "<br>" + 
             "<p class='topic'>Just bend over! So many day to day aches can be alleviated" +
-            " by simply taking the time to let your muscles relax.</p><br><h4 id='myMassage'>Return</h4>");
+            " by simply taking the time to let your muscles relax." +
+            " After a shower, or a long drive, or whenever, start with a gently bend in the knee, and just let your torso hang down to the floor. Don't" +
+            " hold your head up; let gravity pull your head and torso to the floor." +
+            " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
+            " Hold for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
+            " further each day. Do it every day, twice or more times.</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#thoughts", function() {
