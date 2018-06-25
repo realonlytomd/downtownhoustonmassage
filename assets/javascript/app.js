@@ -134,7 +134,27 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3>Benefits of Massage Therapy</h3>" +
             "<br>" +
-            "<p>This topic is under construction</p><br><h4 id='myMassage'>Return</h4>");
+            "<p class='topic'>Years ago, I found this list" +
+            " of known benefits of massage therapy:" +
+            "<br>1. Posture gradually improves as the muscles around the spine become more flexible and less tense." +
+            "<br>2. Circulation increases, which benefits muscle recovery and healing." +
+            "<br>3. Massage encourages deeper breathing, which helps oxygen circulate to promote healing and growth." +
+            "<br>4. Joint flexibility improves and this relieves tension." +
+            "<br>5. Massage encourages a calm mind." +
+            "<br>6. A calm mind boosts alertness and improves attention." +
+            "<br>7. The cortisol that is decreased by massage can boost your lymph flow and immune cell function." +
+            "<br>8. The decrease in cortisol and increase in serotonin and dopamine provided by the massage may also reduce stress, anxiety and depression." +
+            "<br><br>That last one, I think, refers to: " + 
+            "<a id='longlink' href='https://www.ncbi.nlm.nih.gov/pubmed/16162447' target='blank'>https://www.ncbi.nlm.nih.gov/pubmed/16162447</a>" +
+            "<br>I do not remember where I saw this list. If someone knows, PLEASE" +
+            " drop me a note in the comments; I'll certainly give credit." +
+            "<br><br>Numbers 2 and 3 are often downplayed. Everyone knows that a massage helps relieve muscle soreness" +
+            " from workouts, but much more than that, your muscles can't grow without the increased" +
+            " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
+            "<br><br>And one of my favorite studies: " +
+            "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
+            "https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/</a>" +
+            "</p><br><h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#stretching", function() {
@@ -185,8 +205,8 @@ $(document).ready(function() {
             "<div class='col-xs-10'>" +
                 "<h3>Please leave reviews, comments or questions.</h3>" +
                 "<div class='form-group'>" +
-                    "<label for='email' id='lableText'>Email:</label>" +
-                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email If You Want a Reply' name='email'>" +
+                    "<label for='email' id='lableText'>Email or Phone:</label>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email or Phone For Reply' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +

@@ -93,6 +93,7 @@ h2, h3, h4 {
     background-color: black;
     padding-left: 4px;
     padding-right: 4px;
+    text-align: left;
 }
 
 #lableText {
@@ -148,5 +149,8 @@ footer {
 @media only screen and (max-device-width: 360px) {
     #email {
         font-size: 20px;
+    }
+    #longlink {
+        font-size: 10px;
     }
 }
