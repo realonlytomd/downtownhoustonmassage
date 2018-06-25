@@ -201,12 +201,11 @@ $(document).ready(function() {
     $(document).on("click", "#comments", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
-            "<div class='col-xs-1'></div>" +
-            "<div class='col-xs-10'>" +
+            "<div class='col-xs-12'>" +
                 "<h3>Please leave reviews, comments or questions.</h3>" +
                 "<div class='form-group'>" +
                     "<label for='email' id='lableText'>Email or Phone:</label>" +
-                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email or Phone For Reply' name='email'>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email/Phone For Reply' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
