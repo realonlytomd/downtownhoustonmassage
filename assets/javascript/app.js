@@ -127,7 +127,18 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3>The Flow of My Massage</h3>" +
             "<br>" +
-            "<p>This topic is under construction</p><br><h4 id='myMassage'>Return</h4>");
+            "<p class='topic'>The client usually starts face down, head in the cradle." +
+            " I use Effleurage (long, slow strokes) at first to spread the lotion." +
+            " Then  I use Petrissage (kneading strokes) to focus on right lower back, left lower back, then" +
+            " both sides of the upper back.<br>" +
+            "Generally, the order of what follows is: back of right leg and hip, back of left leg and hip," +
+            " the client turns over, and right and left arm in turn, followed by chest," +
+            " belly, front of left leg, and front of right leg. Hands and feet are" +
+            " massaged at the end of each arm or leg respectively.<br>" +
+            "Throughout the session, the client should just breath. Don't try to help as I move arms" +
+            " or legs as I need to.<br>" +
+            "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
+            "<h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#benefits", function() {
