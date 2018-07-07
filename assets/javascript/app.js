@@ -175,7 +175,7 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3>" +
             "My Random Thoughts about Massage Therapy - A Blog</h3>" +
             "<br>" +
-            "<p><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
+            "<p>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
             "<h3 id='myMassage'>Return</h3>");
     });
