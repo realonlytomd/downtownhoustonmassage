@@ -144,8 +144,8 @@ $(document).ready(function() {
             "<br>6. A calm mind boosts alertness and improves attention." +
             "<br>7. The cortisol that is decreased by massage can boost your lymph flow and immune cell function." +
             "<br>8. The decrease in cortisol and increase in serotonin and dopamine provided by the massage may also reduce stress, anxiety and depression." +
-            "<br><br>That last one, I think, refers to: " + 
-            "<a id='longlink' href='https://www.ncbi.nlm.nih.gov/pubmed/16162447' target='blank'>https://www.ncbi.nlm.nih.gov/pubmed/16162447</a>" +
+            "<br><br>That last one, I think, refers to this study: " + 
+            "<a id='longlink' href='https://www.ncbi.nlm.nih.gov/pubmed/16162447' target='blank'>Cortisol Decreases</a>" +
             "<br>I do not remember where I saw this list. If someone knows, PLEASE" +
             " drop me a note in the comments; I'll certainly give credit." +
             "<br><br>Numbers 2 and 3 are often downplayed. Everyone knows that a massage helps relieve muscle soreness" +
@@ -153,7 +153,7 @@ $(document).ready(function() {
             " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
             "<br><br>And one of my favorite studies: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
-            "https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/</a>" +
+            "Rabbit Study</a>" +
             "</p><br><h4 id='myMassage'>Return</h4>");
     });
 
@@ -175,7 +175,7 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3>" +
             "My Random Thoughts about Massage Therapy - A Blog</h3>" +
             "<br>" +
-            "<p>This topic is under construction</p>" +
+            "<p><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
             "<h3 id='myMassage'>Return</h3>");
     });
