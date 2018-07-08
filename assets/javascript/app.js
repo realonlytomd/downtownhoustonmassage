@@ -130,13 +130,13 @@ $(document).ready(function() {
             "<p class='topic'>The client usually starts face down, head in the cradle." +
             " I use Effleurage (long, slow strokes) at first to spread the lotion." +
             " Then  I use Petrissage (kneading strokes) to focus on right lower back, left lower back, then" +
-            " both sides of the upper back.<br>" +
+            " both sides of the upper back.<br><br>" +
             "Generally, the order of what follows is: back of right leg and hip, back of left leg and hip," +
             " the client turns over, and right and left arm in turn, followed by chest," +
             " belly, front of left leg, and front of right leg. Hands and feet are" +
-            " massaged at the end of each arm or leg respectively.<br>" +
-            "Throughout the session, the client should just breath. Don't try to help as I move arms" +
-            " or legs as I need to.<br>" +
+            " massaged at the end of each arm or leg respectively.<br><br>" +
+            "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
+            " or legs as I need to.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
             "<h4 id='myMassage'>Return</h4>");
     });
@@ -147,17 +147,17 @@ $(document).ready(function() {
             "<br>" +
             "<p class='topic'>Years ago, I found this list" +
             " of known benefits of massage therapy:" +
-            "<br>1. Posture gradually improves as the muscles around the spine become more flexible and less tense." +
-            "<br>2. Circulation increases, which benefits muscle recovery and healing." +
-            "<br>3. Massage encourages deeper breathing, which helps oxygen circulate to promote healing and growth." +
-            "<br>4. Joint flexibility improves and this relieves tension." +
-            "<br>5. Massage encourages a calm mind." +
-            "<br>6. A calm mind boosts alertness and improves attention." +
-            "<br>7. The cortisol that is decreased by massage can boost your lymph flow and immune cell function." +
-            "<br>8. The decrease in cortisol and increase in serotonin and dopamine provided by the massage may also reduce stress, anxiety and depression." +
+            "<br><br>1. Posture gradually improves as the muscles around the spine become more flexible and less tense." +
+            "<br><br>2. Circulation increases, which benefits muscle recovery and healing." +
+            "<br><br>3. Massage encourages deeper breathing, which helps oxygen circulate to promote healing and growth." +
+            "<br><br>4. Joint flexibility improves and this relieves tension." +
+            "<br><br>5. Massage encourages a calm mind." +
+            "<br><br>6. A calm mind boosts alertness and improves attention." +
+            "<br><br>7. The cortisol that is decreased by massage can boost your lymph flow and immune cell function." +
+            "<br><br>8. The decrease in cortisol and increase in serotonin and dopamine provided by the massage may also reduce stress, anxiety and depression." +
             "<br><br>That last one, I think, refers to this study: " + 
             "<a id='longlink' href='https://www.ncbi.nlm.nih.gov/pubmed/16162447' target='blank'>Cortisol Decreases</a>" +
-            "<br>I do not remember where I saw this list. If someone knows, PLEASE" +
+            "<br><br>I do not remember where I saw this list. If someone knows, PLEASE" +
             " drop me a note in the comments; I'll certainly give credit." +
             "<br><br>Numbers 2 and 3 are often downplayed. Everyone knows that a massage helps relieve muscle soreness" +
             " from workouts, but much more than that, your muscles can't grow without the increased" +
@@ -188,7 +188,7 @@ $(document).ready(function() {
             "<br>" +
             "<p>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h4 id='myMassage'>Return</h4>");
     });
 
     $(document).on("click", "#hours", function() {
