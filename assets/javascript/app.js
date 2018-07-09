@@ -138,7 +138,7 @@ $(document).ready(function() {
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
             " or legs as I need to.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
-            "<h4 id='myMassage'>Return</h4>");
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#benefits", function() {
@@ -164,8 +164,8 @@ $(document).ready(function() {
             " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
             "<br><br>And one of my favorite studies: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
-            "Rabbit Study</a>" +
-            "</p><br><h4 id='myMassage'>Return</h4>");
+            "Rabbit Study</a></p><br>" +
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#stretching", function() {
@@ -177,8 +177,9 @@ $(document).ready(function() {
             " After a shower, or a long drive, or whenever, start with a gentle bend in the knees, and just let your torso hang down to the floor. Don't" +
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
-            " Hold for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
-            " further each day. Do it every day, twice or more times.</p><br><h4 id='myMassage'>Return</h4>");
+            " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
+            " further each day. Do it every day, twice or more times.</p><br>" +
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#thoughts", function() {
@@ -188,7 +189,7 @@ $(document).ready(function() {
             "<br>" +
             "<p>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
-            "<h4 id='myMassage'>Return</h4>");
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#hours", function() {
@@ -198,15 +199,15 @@ $(document).ready(function() {
             "<p>Monday - Thursday: 9 AM - 9 PM<br>" +
             "Friday: 9 AM - 6 PM<br>" +
             "Saturday: 11 AM - 6 PM<br>" +
-            "Sunday: 11 AM - 9 PM<br></p>" +
-            "<br><h4 id='myMassage'>Return</h4>");
+            "Sunday: 11 AM - 9 PM<br></p><br>" +
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
-        "<h4 id='myMassage'>Return</h4>");
+        "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -221,13 +222,14 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
-            "<h4 id='myMassage'>Return</h4>");
+            "<h3 id='myMassage'>Return</h3>");
     });
 
     $(document).on("click", "#prices", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3>Prices</h3>" +
             "<br>" + 
-            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br><h4 id='myMassage'>Return</h4>");
+            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br>" +
+            "<h3 id='myMassage'>Return</h3>");
     });
 });
