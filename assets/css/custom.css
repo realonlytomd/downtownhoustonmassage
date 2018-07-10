@@ -128,6 +128,12 @@ p {
     margin-right: 4px;
 }
 
+#appt {
+    background-color: #727272;
+    color: black;
+    margin-right: 4px;
+}
+
 button:focus {
     outline: none;
 }
