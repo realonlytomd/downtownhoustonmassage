@@ -11,7 +11,8 @@ body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
-    background-image: url("../img/brownleather.jpg");
+    /*background-image: url("../img/brownleather.jpg");*/
+    background-color: #dcece9;
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
@@ -19,7 +20,8 @@ body {
 }
 
 h1 {
-    background-color: gainsboro;
+    /*background-color: gainsboro;*/
+    background-color: #006a66;
     font-family: 'Oswald', sans-serif;
     padding: 8px;
     margin-top: 8px;
@@ -85,7 +87,8 @@ span a {
 
 h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
-    color: gainsboro;
+    /*color: gainsboro;*/
+    color: #006a66;
     text-align: center;
 }
 
@@ -141,7 +144,8 @@ button:focus {
 footer {
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    background-color: gainsboro;
+    /*background-color: gainsboro;*/
+    background-color: #006a66;
     border-top: 4px solid #727272;
     margin-bottom: 0px;
     padding: 8px;
@@ -149,6 +153,16 @@ footer {
 
 .footer, .push {
     height: 50px;
+}
+
+/* increase footer height when screen under 458px */
+@media only screen and (max-device-width: 458px) {
+    .footer, .push {
+        height: 65px;
+    }
+    .wrapper {
+        margin-bottom: -65px;
+    }
 }
 
 /* reduce font of email address for screens under 360px  */
