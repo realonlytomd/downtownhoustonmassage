@@ -11,8 +11,9 @@ body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
-    /*background-image: url("../img/brownleather.jpg");*/
-    background-color: #dcece9;
+    /*background-image: url("../img/brownleather.jpg");
+    background-color: #dcece9;*/
+    background-color: #dddddd;
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
@@ -21,7 +22,7 @@ body {
 
 h1 {
     /*background-color: gainsboro;*/
-    background-color: #006a66;
+    background-color: #8c9fbc;
     font-family: 'Oswald', sans-serif;
     padding: 8px;
     margin-top: 8px;
@@ -40,6 +41,9 @@ h1 {
 
 h2 {
     margin-top: 6px;
+    font-family: 'Oswald', sans-serif;
+    color: #455772;
+    text-align: center;
 }
 
 span a {
@@ -71,13 +75,13 @@ span a {
     max-height: 420px;
     border-style: ridge;
     border-width: 8px;
-    border-color: gainsboro;
+    border-color: #8c9fbc;
 }
 
 #viewSpace {
     overflow: auto;
     border-style: ridge;
-    border-color: gainsboro;
+    border-color: #8c9fbc;
     border-width: 8px;
     /* background-color: #373536; */
     background-image: url("../img/undressoverhead4.jpg");
@@ -85,10 +89,15 @@ span a {
     background-position: bottom;
 }
 
-h2, h3, h4 {
+#googleMap {
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #8c9fbc;
+}
+
+h3, h4 {
     font-family: 'Oswald', sans-serif;
-    /*color: gainsboro;*/
-    color: #006a66;
+    color: gainsboro;
     text-align: center;
 }
 
@@ -114,7 +123,7 @@ h2, h3, h4 {
     font-family: 'Oswald', sans-serif;
     color: black;
     margin-top: 10px;
-    background-color: #727272;
+    background-color: #dddddd;
 }
 
 p {
@@ -125,14 +134,8 @@ p {
     margin-top: 10px;    
 }
 
-#home {
-    background-color: #727272;
-    color: black;
-    margin-right: 4px;
-}
-
-#appt {
-    background-color: #727272;
+#home, #appt {
+    background-color: white;
     color: black;
     margin-right: 4px;
 }
@@ -145,8 +148,8 @@ footer {
     font-family: 'Oswald', sans-serif;
     text-align: center;
     /*background-color: gainsboro;*/
-    background-color: #006a66;
-    border-top: 4px solid #727272;
+    background-color: #8c9fbc;
+    /* border-top: 4px solid #727272; */
     margin-bottom: 0px;
     padding: 8px;
 }
