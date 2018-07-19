@@ -27,6 +27,7 @@ h1 {
     padding: 8px;
     margin-top: 8px;
     font-size: 24px;
+    color: black;
 }
 
 .no-gutters {
@@ -53,6 +54,7 @@ span a {
 
 .phnumber {
     white-space: nowrap;
+    color: black;
 }
 
 #email {
@@ -61,7 +63,7 @@ span a {
 }
 
 #stressview, #logo, #myCarousel, #googleMap, #viewSpace {
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 16px;
     height: 420px;
 }

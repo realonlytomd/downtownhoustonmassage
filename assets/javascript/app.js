@@ -42,18 +42,19 @@ $(document).ready(function() {
         $("#clientCommentInput").val("");
     });
 
-    function showLogo() {
+    
+    function showStudio() {
         $("#stressview").hide();
-        $("#logo").show();
-        $("#myCarousel").hide();
-        $("#googleMap").hide();
+        $("#logo").hide();
+        $("#myCarousel").show();
         $("#viewSpace").hide();
+        $("#googleMap").hide();
     }
 
-    showLogo();
+    showStudio();
 
     $(document).on("click", "#home", function() {
-        showLogo();
+        showStudio();
     });
 
     var stresspicture = ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
@@ -82,15 +83,6 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#googleMap").hide();
         
-    });
-
-    $(document).on("click", "#myStudio", function() {
-
-        $("#stressview").hide();
-        $("#logo").hide();
-        $("#myCarousel").show();
-        $("#viewSpace").hide();
-        $("#googleMap").hide();
     });
 
     $(document).on("click", "#myMassage", function() {
