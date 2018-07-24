@@ -86,7 +86,7 @@ span a {
     border-color: #8c9fbc;
     border-width: 8px;
     /* background-color: #373536; */
-    background-image: url("../img/undressoverhead4.jpg");
+    background-image: url("../img/vignette2blue.jpg");
     background-size: cover;
     background-position: bottom;
 }
@@ -104,6 +104,13 @@ h3, h4 {
 }
 
 .topic {
+    background-color: black;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+}
+
+.topicp {
     background-color: black;
     padding-left: 4px;
     padding-right: 4px;

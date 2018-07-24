@@ -117,9 +117,9 @@ $(document).ready(function() {
 
     $(document).on("click", "#flow", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>The Flow of My Massage</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
-            "<p class='topic'>The client usually starts face down, head in the cradle." +
+            "<p class='topicp'>The client usually starts face down, head in the cradle." +
             " I use Effleurage (long, slow strokes) at first to spread the lotion." +
             " Then  I use Petrissage (kneading strokes) to focus on right lower back, left lower back, then" +
             " both sides of the upper back.<br><br>" +
@@ -130,14 +130,14 @@ $(document).ready(function() {
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
             " or legs as I need to.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#benefits", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>Benefits of Massage Therapy</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
             "<br>" +
-            "<p class='topic'>Years ago, I found this list" +
+            "<p class='topicp'>Years ago, I found this list" +
             " of known benefits of massage therapy:" +
             "<br><br>1. Posture gradually improves as the muscles around the spine become more flexible and less tense." +
             "<br><br>2. Circulation increases, which benefits muscle recovery and healing." +
@@ -157,56 +157,56 @@ $(document).ready(function() {
             "<br><br>And one of my favorite studies: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
             "Rabbit Study</a></p><br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#stretching", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>The Importance of Frequent Stretching</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
             "<br>" + 
-            "<p class='topic'>Just bend over! So many day to day aches can be alleviated" +
+            "<p class='topicp'>Just bend over! So many day to day aches can be alleviated" +
             " by simply taking the time to let your muscles relax." +
             " After a shower, or a long drive, or whenever, start with a gentle bend in the knees, and just let your torso hang down to the floor. Don't" +
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
             " further each day. Do it every day, twice or more times.</p><br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#thoughts", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>" +
-            "My Random Thoughts about Massage Therapy - A Blog</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>" +
+            "My Random Thoughts about Massage Therapy - A Blog</span></h3>" +
             "<br>" +
-            "<p>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
+            "<p class='topicp'>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#hours", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>My General Hours</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>My General Hours</span></h3>" +
             "<br>" + 
-            "<p>Monday - Thursday: 9 AM - 9 PM<br>" +
+            "<p><span class='topic'>Monday - Thursday: 9 AM - 9 PM<br>" +
             "Friday: 9 AM - 6 PM<br>" +
             "Saturday: 11 AM - 6 PM<br>" +
-            "Sunday: 11 AM - 9 PM<br></p><br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "Sunday: 11 AM - 9 PM<br></span></p><br>" +
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
-        "<h3 id='myMassage'>Return</h3>");
+        "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#comments", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +
-                "<h3>Please leave reviews, comments or questions.</h3>" +
+                "<h3><span class='topic'>Please leave reviews, comments or questions.</span></h3>" +
                 "<div class='form-group'>" +
                     "<label for='email' id='lableText'>Email or Phone:</label>" +
                     "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email/Phone For Reply' name='email'>" +
@@ -214,14 +214,14 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#prices", function() {
         $("#viewSpace").empty();
-        $("#viewSpace").append("<h3>Prices</h3>" +
+        $("#viewSpace").append("<h3><span class='topic'>Prices</span></h3>" +
             "<br>" + 
-            "<p>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</p><br>" +
-            "<h3 id='myMassage'>Return</h3>");
+            "<p><span class='topic'>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</span></p><br>" +
+            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
     });
 });
