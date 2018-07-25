@@ -72,7 +72,7 @@ span a {
     height: 420px;
 }
 
-#myMassage, h2, .topic {
+#myServices, #myMassage, h2, .return {
     cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ h3, h4 {
     text-align: center;
 }
 
-.topic {
+.topic, .return {
     background-color: black;
     padding-left: 4px;
     padding-right: 4px;

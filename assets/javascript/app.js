@@ -85,6 +85,21 @@ $(document).ready(function() {
         
     });
 
+    //need to make a new function when mymassage title is clicked
+    // it will bring up a simple menu of my services that mirrors when
+    // client clicks on the make an appt. button that takes them to square
+
+    $(document).on("click", "#myServices", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#googleMap").hide();
+        $("#viewSpace").empty();
+        $("#viewSpace").append("<h3><span class='topic'>Under Construction</span></h3>" +
+            "<h3><span class='return' id='myMassage'>All the Details</span></h3>");
+    });
+
     $(document).on("click", "#myMassage", function() {
 
         $("#stressview").hide();
@@ -94,16 +109,16 @@ $(document).ready(function() {
         $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><div class='row'>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='flow'>Flow</span></h4></div>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='benefits'>Benefits</span></h4></div>" + 
-        "<div class='col-xs-4'><h4><span class='topic' id='stretching'>Stretching</span></h4></div></div>" +
+        "<div class='col-xs-4'><h4><span class='return' id='flow'>Flow</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='return' id='benefits'>Benefits</span></h4></div>" + 
+        "<div class='col-xs-4'><h4><span class='return' id='stretching'>Stretching</span></h4></div></div>" +
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-2 col-xs-offset-3'><h4><span class='topic' id='thoughts'>Thoughts</span></h4></div>" +
-        "<div class='col-xs-2 col-xs-offset-2'><h4><span class='topic' id='hours'>Hours</span></h4></div></div>" + 
+        "<div class='col-xs-2 col-xs-offset-3'><h4><span class='return' id='thoughts'>Thoughts</span></h4></div>" +
+        "<div class='col-xs-2 col-xs-offset-2'><h4><span class='return' id='hours'>Hours</span></h4></div></div>" + 
         "<br><br><br><div class='row'>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='parking'>Parking</span></h4></div>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='comments'>Comments</span></h4></div>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='prices'>Prices</span></h4></div></div>");
+        "<div class='col-xs-4'><h4><span class='return' id='parking'>Parking</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='return' id='comments'>Comments</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='return' id='prices'>Prices</span></h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -130,7 +145,7 @@ $(document).ready(function() {
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
             " or legs as I need to.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#benefits", function() {
@@ -157,7 +172,7 @@ $(document).ready(function() {
             "<br><br>And one of my favorite studies: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
             "Rabbit Study</a></p><br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#stretching", function() {
@@ -171,7 +186,7 @@ $(document).ready(function() {
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
             " further each day. Do it every day, twice or more times.</p><br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#thoughts", function() {
@@ -181,7 +196,7 @@ $(document).ready(function() {
             "<br>" +
             "<p class='topicp'>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
             "<br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#hours", function() {
@@ -192,14 +207,14 @@ $(document).ready(function() {
             "Friday: 9 AM - 6 PM<br>" +
             "Saturday: 11 AM - 6 PM<br>" +
             "Sunday: 11 AM - 9 PM<br></span></p><br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
-        "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+        "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -214,7 +229,7 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#prices", function() {
@@ -222,6 +237,6 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3><span class='topic'>Prices</span></h3>" +
             "<br>" + 
             "<p><span class='topic'>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</span></p><br>" +
-            "<h3><span class='topic' id='myMassage'>Return</span></h3>");
+            "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 });
