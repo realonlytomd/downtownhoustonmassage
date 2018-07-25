@@ -94,7 +94,7 @@ $(document).ready(function() {
         $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><div class='row'>" +
-        "<div class='col-xs-4'><h4><span class='topic' id='flow'>The Flow</span></h4></div>" +
+        "<div class='col-xs-4'><h4><span class='topic' id='flow'>Flow</span></h4></div>" +
         "<div class='col-xs-4'><h4><span class='topic' id='benefits'>Benefits</span></h4></div>" + 
         "<div class='col-xs-4'><h4><span class='topic' id='stretching'>Stretching</span></h4></div></div>" +
         "<br><br><br><div class='row'>" +
