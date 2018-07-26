@@ -76,6 +76,12 @@ span a {
     cursor: pointer;
 }
 
+#myServices {
+    padding: 6px 10px 6px 10px;
+    background-color: #1e3663;
+    color: white;
+}
+
 .myImage {
     width: auto;
     max-height: 420px;
