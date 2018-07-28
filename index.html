@@ -17,8 +17,7 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Oswald:300|Roboto:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Federo" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css"
-		integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css" integrity="sha384-OHBBOqpYHNsIqQy8hL1U+8OXf9hH6QRxi0+EODezv82DfnZoV7qoHAZDwMwEJvSw" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 </head>
 
@@ -39,7 +38,7 @@
 
 		<div class="col-md-4 text-center">
 		
-			<h1 id="massageHeading"><span class="animated infinite pulse" id="myServices">My Massage</span></h1>
+			<h1 class="animated infinite pulse" id="massageHeading"><span id="myServices">My Massage</span></h1>
 			
 		</div>
 		
@@ -131,6 +130,31 @@
 				</a> -->
 			</div>
 
+			<div class="container-fluid" id="massageInfo">
+				<div class="row no-gutters">
+					<h1>Deep Tissue, Sports, and Swedish Therapeutic Massage.
+						<span class="sectionLink animated infinite flash" id="myMassage">Details</span>
+						<span class="sectionLink animated infinite flash" id="myLocation">Location</span>
+						<span class="sectionLink animated infinite flash" id="stressed">Stressed?</span></h1>
+					<p class="topicp">Located in a convenient and quiet loft in the historic Market Square District of Downtown Houston. The therapist has over 23 years of experience working on men with all types of jobs and activity levels, from athletes to businessmen.</p>
+				</div>
+				<div class="row no-gutters">
+					<div class="col-xs-6">
+						<h1 class="text-center">Services</h1>
+						<p><span class="topic">30 Minute Session - $40<br>
+							1 Hour Session - $80<br>
+							1.5 Hour Session - $100</span></p>
+					</div>
+					<div class="col-xs-6">
+						<h1 class="text-center">General Hours</h1>
+						<p><span class="topic">Monday - Thursday: 9 AM - 9 PM<br>
+							Friday: 9 AM - 6 PM<br>
+							Saturday: 11 AM - 6 PM<br>
+							Sunday: 11 AM - 9 PM</span></p>
+					</div>
+				</div>
+			</div>
+
 			<div class="container-fluid" id="viewSpace">
 			</div>
 
@@ -154,7 +178,7 @@
 
 			<footer class="footer">
 				<a target="_blank" href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
-					<button id="appt">*NEW* Book Appointment Online</button></a>
+					<button id="appt">Book Appointment Online</button></a>
 				<button id="home">Home</button>
 				<span class="phnumber">&#169; 2018 Tom McLaughlin, Houston, TX</span>
 			</footer>

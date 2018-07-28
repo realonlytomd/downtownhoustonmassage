@@ -17,7 +17,6 @@ body {
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
-    
 }
 
 h1 {
@@ -66,13 +65,13 @@ span a {
     font-size: 24px;
 }
 
-#stressview, #logo, #myCarousel, #googleMap, #viewSpace {
+#stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace {
     margin-top: 10px;
     margin-bottom: 16px;
     height: 420px;
 }
 
-#myServices, #myMassage, h2, .return {
+#myServices, #myMassage, #myLocation, #stressed, h2, .return {
     cursor: pointer;
 }
 
@@ -80,6 +79,10 @@ span a {
     padding: 6px 10px 6px 10px;
     background-color: #1e3663;
     color: white;
+}
+
+.sectionLink {
+    margin-left: 90px;
 }
 
 .myImage {
@@ -90,7 +93,7 @@ span a {
     border-color: #8c9fbc;
 }
 
-#viewSpace {
+#viewSpace, #massageInfo {
     overflow: auto;
     border-style: ridge;
     border-color: #8c9fbc;

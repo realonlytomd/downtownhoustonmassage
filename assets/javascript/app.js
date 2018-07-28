@@ -48,6 +48,7 @@ $(document).ready(function() {
         $("#logo").hide();
         $("#myCarousel").show();
         $("#viewSpace").hide();
+        $("#massageInfo").hide();
         $("#googleMap").hide();
     }
 
@@ -81,6 +82,7 @@ $(document).ready(function() {
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").hide();
+        $("#massageInfo").hide();
         $("#googleMap").hide();
         
     });
@@ -93,11 +95,9 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#viewSpace").show();
+        $("#viewSpace").hide();
+        $("#massageInfo").show();
         $("#googleMap").hide();
-        $("#viewSpace").empty();
-        $("#viewSpace").append("<h3><span class='topic'>Under Construction</span></h3>" +
-            "<h3><span class='return' id='myMassage'>All the Details</span></h3>");
     });
 
     $(document).on("click", "#myMassage", function() {
@@ -106,6 +106,7 @@ $(document).ready(function() {
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").show();
+        $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><div class='row'>" +
@@ -127,6 +128,7 @@ $(document).ready(function() {
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#viewSpace").hide();
+        $("#massageInfo").hide();
         $("#googleMap").show();
     });
 
