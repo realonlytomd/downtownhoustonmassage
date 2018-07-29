@@ -156,6 +156,10 @@ p {
     margin-top: 10px;    
 }
 
+.info {
+    font-size: 18px;
+}
+
 #home, #appt {
     background-color: white;
     color: black;
@@ -191,11 +195,15 @@ footer {
 }
 
 /* reduce font of email address for screens under 360px  */
-@media only screen and (max-device-width: 360px) {
+@media only screen and (max-device-width: 370px) {
     #email {
         font-size: 20px;
     }
     #longlink {
         font-size: 20px;
     }
+    .info {
+        font-size: 14px;
+    }
 }
+
