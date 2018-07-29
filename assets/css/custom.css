@@ -30,7 +30,7 @@ h1 {
 }
 
 #massageHeading {
-    padding: 21px;
+    padding: 15px;
 }
 
 .no-gutters {
@@ -79,6 +79,7 @@ span a {
     padding: 6px 10px 6px 10px;
     background-color: #1e3663;
     color: white;
+    display: inline-block;
 }
 
 .sectionLink {
