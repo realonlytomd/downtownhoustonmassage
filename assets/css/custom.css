@@ -73,17 +73,23 @@ span a {
 
 #myServices, #myMassage, #myLocation, #stressed, h2, .return {
     cursor: pointer;
+    /* to ensure animate.css works */
+    display: inline-block;
+}
+
+#myMassage, #myLocation, #stressed {
+    text-decoration: underline;
 }
 
 #myServices {
     padding: 6px 10px 6px 10px;
     background-color: #1e3663;
     color: white;
-    display: inline-block;
 }
 
 .sectionLink {
-    margin-left: 90px;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .myImage {
@@ -205,6 +211,14 @@ footer {
     }
     .info {
         font-size: 14px;
+    }
+}
+
+/* to decrease distance between pulsing links */
+@media only screen and (max-device-width: 400px) {
+    .sectionLink {
+        margin-left: 5px;
+        margin-right: 5px;
     }
 }
 
