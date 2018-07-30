@@ -124,24 +124,25 @@ h3, h4 {
 }
 
 .topic, .return {
-    background-color: black;
-    padding-left: 4px;
-    padding-right: 4px;
+    background-color: #1e3663;
+    padding: 4px;
     text-align: center;
 }
 
 .topicp {
-    background-color: black;
+    background-color: #1e3663;
     padding-left: 4px;
     padding-right: 4px;
     text-align: left;
 }
 
 #lableText {
+    background-color: #1e3663;
     font-family: 'Oswald', sans-serif;
     color: gainsboro;
     margin-top: 10px;
     font-size: 18px;
+    padding: 4px;
 }
 
 #parkingMap {
