@@ -109,17 +109,14 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#viewSpace").empty();
-        $("#viewSpace").append("<br><br><br><br><div class='row'>" +
+        $("#viewSpace").append("<br><br><br><br><br><div class='row'>" +
         "<div class='col-xs-4'><h4><span class='return' id='flow'>Flow</span></h4></div>" +
         "<div class='col-xs-4'><h4><span class='return' id='benefits'>Benefits</span></h4></div>" + 
         "<div class='col-xs-4'><h4><span class='return' id='stretching'>Stretching</span></h4></div></div>" +
-        "<br><br><br><div class='row'>" +
-        "<div class='col-xs-2 col-xs-offset-3'><h4><span class='return' id='thoughts'>Thoughts</span></h4></div>" +
-        "<div class='col-xs-2 col-xs-offset-2'><h4><span class='return' id='hours'>Hours</span></h4></div></div>" + 
-        "<br><br><br><div class='row'>" +
+        "<br><br><br><br><div class='row'>" +
         "<div class='col-xs-4'><h4><span class='return' id='parking'>Parking</span></h4></div>" +
         "<div class='col-xs-4'><h4><span class='return' id='comments'>Comments</span></h4></div>" +
-        "<div class='col-xs-4'><h4><span class='return' id='prices'>Prices</span></h4></div></div>");
+        "<div class='col-xs-4'><h4><span class='return' id='thoughts'>Thoughts</span></h4></div></div>");
     });
 
     $(document).on("click", "#myLocation", function() {
@@ -201,17 +198,6 @@ $(document).ready(function() {
             "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
-    $(document).on("click", "#hours", function() {
-        $("#viewSpace").empty();
-        $("#viewSpace").append("<h3><span class='topic'>My General Hours</span></h3>" +
-            "<br>" + 
-            "<p><span class='topic'>Monday - Thursday: 9 AM - 9 PM<br>" +
-            "Friday: 9 AM - 6 PM<br>" +
-            "Saturday: 11 AM - 6 PM<br>" +
-            "Sunday: 11 AM - 9 PM<br></span></p><br>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
-    });
-
     $(document).on("click", "#parking", function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
@@ -231,14 +217,6 @@ $(document).ready(function() {
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
-    });
-
-    $(document).on("click", "#prices", function() {
-        $("#viewSpace").empty();
-        $("#viewSpace").append("<h3><span class='topic'>Prices</span></h3>" +
-            "<br>" + 
-            "<p><span class='topic'>Half-Hour: $40<br>Hour: $80<br>Ninety-Minute: $100</span></p><br>" +
             "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 });
