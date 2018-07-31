@@ -129,7 +129,7 @@ h3, h4 {
 
 .topic, .return {
     background-color: #1e3663;
-    padding: 4px;
+    padding: 0px 4px 4px 4px;
     text-align: center;
 }
 
@@ -224,6 +224,13 @@ footer {
     .sectionLink {
         margin-left: 5px;
         margin-right: 5px;
+    }
+}
+
+/* to keep h3 titles in details page not overwriting for smaller screens */
+@media only screen and (max-device-width: 530px) {
+    h3 span {
+        display: block;
     }
 }
 
