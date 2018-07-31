@@ -75,7 +75,34 @@ $(document).ready(function() {
         image.addClass("animated");
         image.addClass("fadeIn");
         image.attr("src", "assets/img/" + stresspicture[i]);
-        image.attr("alt", "relax relaxation massage stress");
+        image.attr("alt", "relax relaxation massage stress beautiful view calm");
+        image.attr("id", "newStressed");
+        $("#stressview").append(image);
+
+        $("#stressview").show();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").hide();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
+        
+    });
+
+    $(document).on("click", "#newStressed", function() {
+
+        var i = Math.floor(Math.random() * stresspicture.length);
+        console.log("i = " + i);
+
+        $("#stressview").empty();
+        var image = $("<img>");
+        image.addClass("img-responsive");
+        image.addClass("center-block");
+        image.addClass("myImage");
+        image.addClass("animated");
+        image.addClass("fadeIn");
+        image.attr("src", "assets/img/" + stresspicture[i]);
+        image.attr("alt", "relax relaxation massage stress beautiful view calm");
+        image.attr("id", "newStressed");
         $("#stressview").append(image);
 
         $("#stressview").show();

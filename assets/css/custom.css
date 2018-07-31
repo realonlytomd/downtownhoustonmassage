@@ -77,6 +77,10 @@ span a {
     display: inline-block;
 }
 
+#newStressed {
+    cursor: pointer;
+}
+
 #myMassage, #myLocation, #stressed {
     text-decoration: underline;
 }
