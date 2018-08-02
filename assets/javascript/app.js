@@ -160,14 +160,14 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
-            "<p class='topicp'>The client usually starts face down, head in the cradle." +
-            " I use Effleurage (long, slow strokes) at first to spread the lotion." +
-            " Then  I use Petrissage (kneading strokes) to focus on right lower back, left lower back, then" +
+            "<p class='topicp'>The client usually starts face down." +
+            " I use Effleurage (long, slow strokes) at first to spread the lotion," +
+            " then Petrissage (kneading strokes) to focus on right lower back, left lower back, then" +
             " both sides of the upper back.<br><br>" +
             "Generally, the order of what follows is: back of right leg and hip, back of left leg and hip," +
             " the client turns over, and right and left arm in turn, followed by chest," +
             " belly, front of left leg, and front of right leg. Hands and feet are" +
-            " massaged at the end of each arm or leg respectively.<br><br>" +
+            " massaged at the end of each arm or leg, respectively.<br><br>" +
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
             " or legs as I need to.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
@@ -179,15 +179,15 @@ $(document).ready(function() {
         $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
             "<br>" +
             "<p class='topicp'>Years ago, I found this list" +
-            " of known benefits of massage therapy:" +
+            " of benefits of massage therapy:" +
             "<br><br>1. Posture gradually improves as the muscles around the spine become more flexible and less tense." +
             "<br><br>2. Circulation increases, which benefits muscle recovery and healing." +
             "<br><br>3. Massage encourages deeper breathing, which helps oxygen circulate to promote healing and growth." +
-            "<br><br>4. Joint flexibility improves and this relieves tension." +
-            "<br><br>5. Massage encourages a calm mind." +
-            "<br><br>6. A calm mind boosts alertness and improves attention." +
-            "<br><br>7. The cortisol that is decreased by massage can boost your lymph flow and immune cell function." +
-            "<br><br>8. The decrease in cortisol and increase in serotonin and dopamine provided by the massage may also reduce stress, anxiety and depression." +
+            "<br><br>4. Joint flexibility improves." +
+            "<br><br>5. The stress hormone, cortisol, is decreased during a massage, while the hormones serotonin and dopamine (calm hormones) are increased." +
+            "<br><br>6. These effects encourage a calm mind which boosts alertness and improves attention." +
+            "<br><br>7. These hormonal changes can also boost your lymph flow and immune cell function." +
+            "<br><br>8. This may also reduce stress, anxiety and depression." +
             "<br><br>That last one, I think, refers to this study: " + 
             "<a id='longlink' href='https://www.ncbi.nlm.nih.gov/pubmed/16162447' target='blank'>Cortisol Decreases</a>" +
             "<br><br>I do not remember where I saw this list. If someone knows, PLEASE" +
@@ -195,7 +195,7 @@ $(document).ready(function() {
             "<br><br>Numbers 2 and 3 are often downplayed. Everyone knows that a massage helps relieve muscle soreness" +
             " from workouts, but much more than that, your muscles can't grow without the increased" +
             " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
-            "<br><br>And one of my favorite studies: " +
+            "<br><br>This is my favorite study showing the importance of massage in muscle recovery: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
             "Rabbit Study</a></p><br>" +
             "<h3><span class='return' id='myMassage'>Return</span></h3>");
