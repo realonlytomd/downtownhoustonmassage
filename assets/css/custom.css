@@ -11,9 +11,8 @@ body {
 .wrapper {
     min-height: 100%;
     margin-bottom: -50px;
-    /*background-image: url("../img/brownleather.jpg");
-    background-color: #dcece9;*/
-    background-color: #dddddd;
+    /*background-image: url("../img/charcoalflannel.jpg");*/
+    background-color: #e6e2eb;
     background-repeat: repeat;
     background-position: auto;
     background-size: cover;
