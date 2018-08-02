@@ -60,11 +60,14 @@ $(document).ready(function() {
 
     var stresspicture = ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
         "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
-        "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg", "stressbackground(12).jpg"];
+        "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg", "stressbackground(12).jpg",
+        "stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", "stressbackground(16).jpg",
+        "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg", "stressbackground(20).jpg"];
 
     $(document).on("click", "#stressed", function() {
 
         var i = Math.floor(Math.random() * stresspicture.length);
+        console.log(stresspicture.length);
         console.log("i = " + i);
 
         $("#stressview").empty();
