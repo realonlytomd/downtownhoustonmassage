@@ -22,14 +22,14 @@ h1 {
     /*background-color: gainsboro;*/
     background-color: #8c9fbc;
     font-family: 'Oswald', sans-serif;
-    padding: 8px;
+    padding: 6px;
     margin-top: 8px;
     font-size: 24px;
     color: black;
 }
 
 #massageHeading {
-    padding: 15px;
+    padding: 13px;
 }
 
 .no-gutters {
@@ -137,6 +137,7 @@ h3, h4 {
     padding-left: 4px;
     padding-right: 4px;
     text-align: left;
+    font-size: 22px;
 }
 
 #lableText {
