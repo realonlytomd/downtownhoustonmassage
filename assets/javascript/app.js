@@ -19,7 +19,7 @@ $(document).ready(function() {
 
     // capture the submit button click
 
-    $(document).on("click", "#addComment", function() {
+    $(document).on("click", "#addComment", function(event) {
         event.preventDefault();
   
         // Store and retrieve the most recent client inputs.
