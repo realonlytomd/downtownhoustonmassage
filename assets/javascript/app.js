@@ -214,7 +214,7 @@ $(document).ready(function() {
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
-            " further each day. Do it every day, twice or more times.</p><br>" +
+            " further each day. Do it every day, two or more times.</p><br>" +
             "<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
