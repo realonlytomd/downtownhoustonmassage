@@ -172,7 +172,7 @@ p {
     font-size: 18px;
 }
 
-#home, #appt {
+button#home, #appt {
     background-color: white;
     color: black;
     margin-right: 4px;
