@@ -236,6 +236,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#comments", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +
