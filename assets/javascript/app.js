@@ -179,8 +179,8 @@ $(document).ready(function() {
             " massaged at the end of each arm or leg, respectively.<br><br>" +
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
             " or legs as I need to.<br><br>" +
-            "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
+            "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>");
+            //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#benefits", function() {
@@ -212,8 +212,8 @@ $(document).ready(function() {
             " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
             "<br><br>This is my favorite study showing the importance of massage in muscle recovery: " +
             "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
-            "Rabbit Study</a></p><br>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
+            "Rabbit Study</a></p><br>");
+            //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#stretching", function() {
@@ -232,8 +232,8 @@ $(document).ready(function() {
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
-            " further each day. Do it every day, two or more times.</p><br>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
+            " further each day. Do it every day, two or more times.</p><br>");
+            //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#thoughts", function() {
@@ -248,8 +248,8 @@ $(document).ready(function() {
             "My Random Thoughts about Massage Therapy - A Blog</span></h3>" +
             "<br>" +
             "<p class='topicp'>7/7/2018<br><a href='https://twitter.com/ChrisHallbeck/status/1015274366916063237?s=19' target='blank'>Promise this won't happen</a></p>" +
-            "<br>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
+            "<br>");
+            //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#parking", function() {
@@ -261,8 +261,8 @@ $(document).ready(function() {
         $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
-        "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
-        "<h3><span class='return' id='myMassage'>Return</span></h3>");
+        "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>");
+        //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
     $(document).on("click", "#comments", function() {
@@ -282,7 +282,7 @@ $(document).ready(function() {
                     "<label for='comment' id='lableText'>Comments:</label>" +
                     "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
-            "</div></div></div>" +
-            "<h3><span class='return' id='myMassage'>Return</span></h3>");
+            "</div></div></div>");
+            //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 });
