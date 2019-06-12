@@ -230,7 +230,7 @@ footer {
 /* to keep h3 titles in details page not overwriting for smaller screens */
 @media only screen and (max-device-width: 530px) {
     h3 span {
-        display: block;
+        display: inline-block;
     }
 }
 

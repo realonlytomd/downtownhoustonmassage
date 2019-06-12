@@ -160,6 +160,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#flow", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
@@ -178,6 +184,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#benefits", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
             "<br>" +
@@ -205,6 +217,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#stretching", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
             "<br>" + 
@@ -219,6 +237,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#thoughts", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>" +
             "My Random Thoughts about Massage Therapy - A Blog</span></h3>" +
@@ -229,6 +253,12 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#parking", function() {
+        $("#stressview").hide();
+        $("#logo").hide();
+        $("#myCarousel").hide();
+        $("#viewSpace").show();
+        $("#massageInfo").hide();
+        $("#googleMap").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>" +
