@@ -18,14 +18,18 @@ body {
     background-size: cover;
 }
 
+#navColor {
+    background-color: #1e3663;
+}
+
 h1 {
-    /*background-color: gainsboro;*/
-    background-color: #8c9fbc;
+    /* background-color: gainsboro;
+    background-color: #8c9fbc; */
     font-family: 'Oswald', sans-serif;
     padding: 6px;
     margin-top: 8px;
     font-size: 24px;
-    color: black;
+    color: gainsboro;
 }
 
 #massageHeading {
@@ -33,13 +37,13 @@ h1 {
 }
 
 .no-gutters {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 .no-gutters > [class*="col-"] {
-    padding-right: 0;
-    padding-left: 0;
+    padding-right: 0px;
+    padding-left: 0px;
 }
 
 h2 {
@@ -61,7 +65,7 @@ span a {
 
 #email {
     display: inline-block;
-    font-size: 24px;
+    font-size: 16px;
 }
 
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace {
@@ -84,11 +88,11 @@ span a {
     text-decoration: underline;
 }
 
-#myServices {
+/*#myServices {
     padding: 6px 10px 6px 10px;
     background-color: #1e3663;
     color: white;
-}
+}*/
 
 .sectionLink {
     margin-left: 45px;
@@ -130,6 +134,7 @@ h3, h4 {
     background-color: #1e3663;
     padding: 0px 4px 4px 4px;
     text-align: center;
+    display: inline-block;
 }
 
 .topicp {

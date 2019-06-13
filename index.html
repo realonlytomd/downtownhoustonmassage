@@ -27,7 +27,7 @@
 
 <div class="container-fluid">
 
-	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="navColor">
 		<div class="container-fluid">
 			<div class="navbar-header">
       			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -42,10 +42,7 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a href="#">Texas LMT #012704</a></li>
-								<li><a href="#">Bio</a></li>
-								<li><a href="#">Services</a></li>
-								<li><a href="#">Hours</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myServices">Studio, Services, and Hours</a></li>
 							</ul>
 					</li>
 					<li class="dropdown">
@@ -182,33 +179,33 @@
 			</div>
 
 			<div class="container-fluid" id="massageInfo">
-				<div class="row">
-					<div class="col-xs-12">
-						<h1 class="text-center">Services</h1>
-						<p class="topic info">Thirty Minute Session - $40<br>
-							One Hour Session - $80<br>
-							Ninety Minute Session - $100</p>
-					</div>
-				</div>
-				
 				<div class="row no-gutters">
-					<h1 class="text-center">Deep Tissue, Sports, and Swedish Therapeutic Massage.<br>
-						<span class="animated infinite pulse" id="myMassage">Details</span>
+					<h1 class="text-center"><span class="topic">Deep Tissue, Sports, and Swedish Therapeutic Massage.</span><br>
+						<!--<span class="animated infinite pulse" id="myMassage">Details</span>
 						<span class="sectionLink animated infinite pulse" id="myLocation">Location</span>
-						<span class="animated infinite pulse" id="stressed">Stressed?</span></h1>
-					<p class="topicp">Located in a convenient and quiet loft in the historic Market 
-						Square District of Downtown Houston. The therapist has over 23 years of 
+						<span class="animated infinite pulse" id="stressed">Stressed?</span> --></h1>
+					<p class="text-center topicp">The studio is located in a convenient and quiet loft in the historic Market 
+						Square District of Downtown Houston. The therapist has over 24 years of 
 						experience working on men with all types of jobs and levels of activity, 
 						from businessmen to athletes.</p>
 				</div>
+
+				<div class="row">
+					<div class="col-xs-12">
+						<h1 class="text-center"><span class="topic">Services</span></h1>
+						<p class="text-center info"><span class="topic">Thirty Minute Session - $40</span><br>
+							<span class="topic">One Hour Session - $80</span><br>
+							<span class="topic">Ninety Minute Session - $100</span></p>
+					</div>
+				</div>
 				
 				<div class="row">
 					<div class="col-xs-12">
-						<h1 class="text-center">General Hours</h1>
-						<p class="topic info">Mon-Thurs: 9 AM - 9 PM<br>
-							Fri: 9 AM - 6 PM<br>
-							Sat: 11 AM - 6 PM<br>
-							Sun: 11 AM - 9 PM</p>
+						<h1 class="text-center"><span class="topic">General Hours</span></h1>
+						<p class="info"><span class="topic">Mon-Thurs: 9 AM - 9 PM</span><br>
+							<span class="topic">Fri: 9 AM - 6 PM</span><br>
+							<span class="topic">Sat: 11 AM - 6 PM</span><br>
+							<span class="topic">Sun: 11 AM - 9 PM</span></p>
 					</div>
 				</div>
 			</div>
@@ -235,10 +232,8 @@
 		<div class="col-md-12 text-center">
 
 			<footer class="footer">
-				<a target="_blank" href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
-					<button id="appt">Book Appointment Online</button></a>
-				<button id="home">Home</button>
-				<span class="phnumber">&#169; 2019 Tom McLaughlin, Houston, TX</span>
+				<span class="phnumber">Texas LMT #012704 </span>
+				<span class="phnumber"> &#169; 2019 Tom McLaughlin, Houston, TX</span>
 			</footer>
 
 		</div>
