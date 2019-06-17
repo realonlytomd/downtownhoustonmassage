@@ -39,9 +39,6 @@ h1 {
 .no-gutters {
     margin-left: 0px;
     margin-right: 0px;
-}
-
-.no-gutters > [class*="col-"] {
     padding-right: 0px;
     padding-left: 0px;
 }
@@ -202,7 +199,7 @@ footer {
     height: 50px;
 }
 
-/* increase footer height when screen under 458px */
+/* increase footer height when screen under 458px 
 @media only screen and (max-device-width: 458px) {
     .footer, .push {
         height: 65px;
@@ -210,7 +207,7 @@ footer {
     .wrapper {
         margin-bottom: -65px;
     }
-}
+} */
 
 /* reduce font of email address for screens under 360px  */
 @media only screen and (max-device-width: 370px) {
