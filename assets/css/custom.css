@@ -18,6 +18,13 @@ body {
     background-size: cover;
 }
 
+#newBackground {
+    margin-top: 57px;
+    background-image: url("../img/downtownfromBL2.jpg");
+    background-position: top;
+    background-size: cover;
+}
+
 #navColor {
     background-color: #1e3663;
 }
@@ -68,7 +75,7 @@ span a {
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace {
     margin-top: 10px;
     margin-bottom: 16px;
-    height: 420px;
+    /*height: 420px;  Need to fix this!*/
 }
 
 #myServices, #myMassage, #myLocation, #stressed, h2, .return {
