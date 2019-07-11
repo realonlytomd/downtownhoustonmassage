@@ -23,55 +23,51 @@
 
 <body>
 
-<div class="wrapper">
-
-<div class="container-fluid">
+<div class="wrapper container-fluid">
 
 	<nav class="navbar navbar-inverse navbar-fixed-top" id="navColor">
-		<div class="container-fluid">
-			<div class="navbar-header">
-      			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
-      			</button>
-      			<a class="navbar-brand" href="#" id="home">DowntownHoustonMassage</a>
-			</div>
-			<div class="collapse navbar-collapse" id="myNavbar">
-				<ul class="nav navbar-nav">
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <span class="caret"></span></a>
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>                        
+			</button>
+			<a class="navbar-brand" href="#" id="home">DowntownHoustonMassage</a>
+		</div>
+		<div class="collapse navbar-collapse" id="myNavbar">
+			<ul class="nav navbar-nav">
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Info <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myServices">Studio, Services, and Hours</a></li>
+						</ul>
+				</li>
+				<li class="dropdown">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="tel:(713) 520-9504">(713) 520-9504</a></li>
+							<li><a href="mailto:onlytommassage@gmail.com" id="email">
+									onlytommassage@gmail.com</a></li>
+							<!--<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myLocation">Location</a></li> -->
+							<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="parking">Parking</a></li>
+							<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="comments">Comments</a></li>
+						</ul>
+				</li>
+				<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Details <span class="caret"></span></a>
 							<ul class="dropdown-menu">
-								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myServices">Studio, Services, and Hours</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="flow">Flow</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="benefits">Benefits</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="stretching">Stretching</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="thoughts">Thoughts (A Blog)</a></li>
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="stressed">"I'm stressed RIGHT NOW!"</a></li>
 							</ul>
-					</li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Contact <span class="caret"></span></a>
-							<ul class="dropdown-menu">
-								<li><a href="tel:(713) 520-9504">(713) 520-9504</a></li>
-								<li><a href="mailto:onlytommassage@gmail.com" id="email">
-										onlytommassage@gmail.com</a></li>
-								<!--<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myLocation">Location</a></li> -->
-								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="parking">Parking</a></li>
-								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="comments">Comments</a></li>
-							</ul>
-					</li>
-					<li class="dropdown">
-							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Details <span class="caret"></span></a>
-								<ul class="dropdown-menu">
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="flow">Flow</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="benefits">Benefits</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="stretching">Stretching</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="thoughts">Thoughts (A Blog)</a></li>
-									<li><a data-toggle="collapse" data-target=".navbar-collapse.in" id="stressed">"I'm stressed RIGHT NOW!"</a></li>
-								</ul>
-					</li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a target="_blank" href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
-						<button id="appt">Book Online</button></a></li>
-				</ul>
-			</div>
+				</li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a target="_blank" href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
+					<button id="appt">Book Online</button></a></li>
+			</ul>
 		</div>
 	</nav>
 
@@ -223,20 +219,14 @@
 
 </div>
 
-</div>
+<div class="row container-fluid">
 
-<div class="container-fluid">
+	<div class="col-md-12 text-center no-gutters">
 
-	<div class="row">
-
-		<div class="col-md-12 text-center no-gutters">
-
-			<footer class="footer">
-				<span class="phnumber">Texas LMT #012704 </span>
-				<span class="phnumber"> &#169; 2019 Tom McLaughlin, Houston, TX</span>
-			</footer>
-
-		</div>
+		<footer class="footer">
+			<span class="phnumber">Texas LMT #012704 </span>
+			<span class="phnumber"> &#169; 2019 Tom McLaughlin, Houston, TX</span>
+		</footer>
 
 	</div>
 
