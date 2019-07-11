@@ -46,7 +46,7 @@ $(document).ready(function() {
     function showStudio() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").show();
+        $("#myCarousel").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();

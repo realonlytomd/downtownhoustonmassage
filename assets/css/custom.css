@@ -1,5 +1,5 @@
 html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
 }
 
@@ -20,8 +20,10 @@ body {
 
 #newBackground {
     margin-top: 57px;
+    height: 100vh;
     background-image: url("../img/downtownfromBL2.jpg");
     background-position: top;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
