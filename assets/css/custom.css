@@ -5,7 +5,6 @@ html, body {
 
 body {
     box-sizing: border-box;
-    
 }
 
 .wrapper {
@@ -21,7 +20,7 @@ body {
     background-image: url("../img/downtownfromBL2.jpg");
     background-position: left top;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
 }
 
 #navColor {
