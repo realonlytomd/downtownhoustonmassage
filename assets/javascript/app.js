@@ -46,7 +46,8 @@ $(document).ready(function() {
     function showStudio() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
+        $("#myCarousel").show();
+        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -85,6 +86,7 @@ $(document).ready(function() {
         $("#stressview").show();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -111,6 +113,7 @@ $(document).ready(function() {
         $("#stressview").show();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -125,6 +128,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
@@ -135,6 +139,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -154,6 +159,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").show();
@@ -163,6 +169,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -187,6 +194,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -220,6 +228,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -240,6 +249,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -256,6 +266,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -269,6 +280,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
+        $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
