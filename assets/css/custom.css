@@ -7,11 +7,13 @@ body {
     box-sizing: border-box;
 }
 
+#colColor {
+    background-color: #e6e2eb;
+}
+
 .wrapper {
     min-height: 100vh;
     margin-bottom: -50px;
-    /*background-image: url("../img/charcoalflannel.jpg");*/
-    background-color: #e6e2eb;
 }
 
 #newBackground {
