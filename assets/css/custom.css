@@ -76,7 +76,7 @@ span a {
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace {
     margin-top: 84px;
     margin-bottom: 16px;
-    height: 420px;
+    /*height: 420px;*/
 }
 
 #myServices, #myMassage, #myLocation, #stressed, h2, .return {
@@ -105,8 +105,6 @@ span a {
 }
 
 .myImage {
-    width: auto;
-    max-height: 420px;
     border-style: ridge;
     border-width: 8px;
     border-color: #8c9fbc;
