@@ -12,7 +12,7 @@ body {
 }
 
 .wrapper {
-    /*min-height: 100vh;*/
+    min-height: 100vh;
     margin-bottom: -50px;
 }
 
@@ -115,10 +115,10 @@ span a {
     border-style: ridge;
     border-color: #8c9fbc;
     border-width: 8px;
-    /* background-color: #373536; */
-    background-image: url("../img/vignette2blue.jpg");
+    background-color: #e6e2eb;
+    /*background-image: url("../img/vignette2blue.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: bottom;*/
 }
 
 #googleMap {
@@ -142,8 +142,8 @@ h3, h4 {
 
 .topicp {
     background-color: #1e3663;
-    padding-left: 4px;
-    padding-right: 4px;
+    padding-left: 8px;
+    padding-right: 8px;
     text-align: left;
     font-size: 22px;
 }
