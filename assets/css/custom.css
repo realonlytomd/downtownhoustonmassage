@@ -105,20 +105,23 @@ span a {
 }
 
 .myImage {
+    width: 100%;
+    /*max-height: 54vh;*/
     border-style: ridge;
     border-width: 8px;
     border-color: #8c9fbc;
 }
 
 #viewSpace, #massageInfo {
+    /*max-height: 80vh;*/
     overflow: auto;
     border-style: ridge;
     border-color: #8c9fbc;
     border-width: 8px;
-    background-color: #e6e2eb;
-    /*background-image: url("../img/vignette2blue.jpg");
+    /*background-color: #e6e2eb;*/
+    background-image: url("../img/blueplanks.jpg");
     background-size: cover;
-    background-position: bottom;*/
+    background-position: bottom;
 }
 
 #googleMap {
