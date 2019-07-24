@@ -51,7 +51,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         console.log("background color: " + $("footer").css("background-color"));
-        if($("footer").css("background-color") === "rgb(0, 128, 0)") {
+        if($("footer").css("background-color") === "rgb(30, 54, 99)") {
             console.log("less than 768");
             console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();

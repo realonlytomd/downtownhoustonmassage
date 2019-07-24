@@ -73,7 +73,7 @@ span a {
     font-size: 16px;
 }
 
-#stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace {
+#stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace, #newBackground {
     margin-top: 84px;
     margin-bottom: 16px;
     /*height: 420px;*/
@@ -220,7 +220,11 @@ footer {
 
 @media only screen and (max-device-width: 768px) {
     footer {
-        background-color: green;
+        background-color: #1e3663;
+    }
+
+    .phnumber {
+        color: #9d9d9d;
     }
 }
 
