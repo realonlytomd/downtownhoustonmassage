@@ -48,7 +48,7 @@
 								<li><a href="tel:(713) 520-9504">(713) 520-9504</a></li>
 								<li><a href="mailto:onlytommassage@gmail.com" id="email">
 										onlytommassage@gmail.com</a></li>
-								<!--<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myLocation">Location</a></li> -->
+								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myLocation">Location</a></li>
 								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="parking">Parking</a></li>
 								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="comments">Comments</a></li>
 							</ul>
@@ -76,7 +76,7 @@
 	<div class="wrapper">
 		<div class="row">
 			<div class="col-xs-12">
-				<div id="newBackground" class="carousel slide" data-ride="carousel" data-interval="2000" data-wrap="true">
+				<div id="newBackground" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true">
 					<ol class="carousel-indicators">
 						<li data-target="#newBackground" data-slide-to="0" class="active"></li>
 						<li data-target="#newBackground" data-slide-to="1"></li>
@@ -129,7 +129,7 @@
 					<img class="img-responsive center-block myImage" src="assets/img/downtownfromBL2.jpg" alt="downtown houston massage">
 				</div>
 
-				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" data-wrap="true">
+				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true">
 
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -234,17 +234,22 @@
 	
 </div>
 
-<!--<script>
-	function myMap() {
-		var myCenter = new google.maps.LatLng(29.763544,-95.360475);
-  		var mapCanvas = document.getElementById("googleMap");
-  		var mapOptions = {center: myCenter, zoom: 12};
-  		var map = new google.maps.Map(mapCanvas, mapOptions);
-  		var marker = new google.maps.Marker({position:myCenter});
-  		marker.setMap(map);
+<script>
+	function initMap() {
+		var myLatLng = {lat: 29.763544, lng: -95.360475};
+		var map = new google.maps.Map(document.getElementById("googleMap"), {
+			center: myLatLng,
+			zoom: 12
+		});
+
+		var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map
+		});
 	}
-</script> 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjivwQqkdkXy5ur2kLIG26CMspGzF7xFo&callback=myMap"></script> -->
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvqG1FvnDRkPRlQfG0SAi2EzqLHtkioTw&callback=initMap">
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="assets/javascript/app.js"></script>
