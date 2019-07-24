@@ -74,7 +74,11 @@ $(document).ready(function() {
         "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
         "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg", "stressbackground(12).jpg",
         "stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", "stressbackground(16).jpg",
-        "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg", "stressbackground(20).jpg"];
+        "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg", "stressbackground(20).jpg",
+        "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).png", "stressbackground(24).jpg",
+        "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg", "stressbackground(28).jpg",
+        "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg", "stressbackground(32).jpg", "stressbackground(33).jpg",
+        "stressbackground(34).jpg", "stressbackground(35).jpg"];
 
     $(document).on("click", "#stressed", function() {
 
