@@ -220,7 +220,7 @@ footer {
 
 @media only screen and (max-device-width: 768px) {
     footer {
-        background-color: #455772;
+        background-color: green;
     }
 }
 

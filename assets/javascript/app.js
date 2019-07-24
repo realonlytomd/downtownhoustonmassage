@@ -50,13 +50,15 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
-
-        if($("footer").style.background-color === "#455772") {
+        console.log("background color: " + $("footer").css("background-color"));
+        if($("footer").css("background-color") === "rgb(0, 128, 0)") {
             console.log("less than 768");
+            console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
             $("#newBackground").show(); 
         } else {
             console.log("widescreen");
+            console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").show();
             $("#newBackground").hide();
         }
