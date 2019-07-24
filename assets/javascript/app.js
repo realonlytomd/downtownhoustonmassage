@@ -44,13 +44,22 @@ $(document).ready(function() {
 
     
     function showStudio() {
+        console.log("in showstudio");
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").show();
-        $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+
+        if($("footer").style.background-color === "#455772") {
+            console.log("less than 768");
+            $("#myCarousel").hide();
+            $("#newBackground").show(); 
+        } else {
+            console.log("widescreen");
+            $("#myCarousel").show();
+            $("#newBackground").hide();
+        }
     }
 
     showStudio();
