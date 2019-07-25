@@ -95,35 +95,12 @@ $(document).ready(function() {
         image.addClass("fadeIn");
         image.attr("src", "assets/img/" + stresspicture[i]);
         image.attr("alt", "relax relaxation massage stress beautiful view calm");
-        image.attr("id", "newStressed");
+        image.attr("id", "stressed");
         $("#stressview").append(image);
-
-        $("#stressview").show();
-        $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
-        $("#viewSpace").hide();
-        $("#massageInfo").hide();
-        $("#googleMap").hide();
-        
-    });
-
-    $(document).on("click", "#newStressed", function() {
-
-        var i = Math.floor(Math.random() * stresspicture.length);
-        console.log("i = " + i);
-
-        $("#stressview").empty();
-        var image = $("<img>");
-        image.addClass("img-responsive");
-        image.addClass("center-block");
-        image.addClass("myImage");
-        image.addClass("animated");
-        image.addClass("fadeIn");
-        image.attr("src", "assets/img/" + stresspicture[i]);
-        image.attr("alt", "relax relaxation massage stress beautiful view calm");
-        image.attr("id", "newStressed");
-        $("#stressview").append(image);
+        $("#stressview").append("<div id='stressed' class='carousel-caption'><span " +
+        "class='glyphicon glyphicon-hand-up' aria-hidden='true' " +
+        "style='font-size:60px;text-shadow:2px 2px 4px #000000;'>" +
+        "</span></div>");
 
         $("#stressview").show();
         $("#logo").hide();

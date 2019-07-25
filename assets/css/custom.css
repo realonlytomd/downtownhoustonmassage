@@ -112,6 +112,10 @@ span a {
     border-color: #8c9fbc;
 }
 
+.carousel-caption {
+    top: 100px;
+}
+
 #viewSpace, #massageInfo {
     /*max-height: 80vh;*/
     overflow: auto;
