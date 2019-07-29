@@ -79,12 +79,38 @@ $(document).ready(function() {
         "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg", "stressbackground(28).jpg",
         "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg", "stressbackground(32).jpg", "stressbackground(33).jpg",
         "stressbackground(34).jpg", "stressbackground(35).jpg"];
+    
+    var stressIndex;
+    var usedIndex;
 
     $(document).on("click", "#stressed", function() {
 
-        var i = Math.floor(Math.random() * stresspicture.length);
-        console.log(stresspicture.length);
-        console.log("i = " + i);
+        pickStress();
+
+    });
+
+    function pickStress() {
+        stressIndex = Math.floor(Math.random() * stresspicture.length);
+        console.log("stressIndex = " + stressIndex);
+
+        // adding a function to check for previous use of a pic. A used index will
+        // be pushed into an array. The current pic will check with that array to see
+        // if it's been used. If not, go ahead and build the pic for display. If so, pick another index.
+        // when all the pics have been used, reset the array to zero.
+
+        if (stressIndex === usedIndex) {
+            console.log("stressIndex is equel to usedIndex, need to pick again!");
+            pickStress();
+        } else {
+            buildStresspic();
+        }
+    }
+
+    // function to build the image to display in the stress relief pic div.
+    function buildStresspic() {
+        usedIndex = stressIndex;
+        console.log("usedIndex: " + usedIndex);
+        console.log("picture has been chosen! end of this iteration. next line is new pick");
 
         $("#stressview").empty();
         var image = $("<img>");
@@ -93,7 +119,7 @@ $(document).ready(function() {
         image.addClass("myImage");
         image.addClass("animated");
         image.addClass("fadeIn");
-        image.attr("src", "assets/img/" + stresspicture[i]);
+        image.attr("src", "assets/img/" + stresspicture[stressIndex]);
         image.attr("alt", "relax relaxation massage stress beautiful view calm");
         image.attr("id", "stressed");
         $("#stressview").append(image);
@@ -109,8 +135,12 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
-        
-    });
+
+        // stop testing for repeating pictures at 5
+        if (usedIndex.length === 5) {
+            usedIndex = [];
+        }
+    }
 
     //need to make a new function when mymassage title is clicked
     // it will bring up a simple menu of my services that mirrors when
