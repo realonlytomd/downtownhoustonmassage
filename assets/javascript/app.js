@@ -78,10 +78,9 @@ $(document).ready(function() {
         "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).png", "stressbackground(24).jpg",
         "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg", "stressbackground(28).jpg",
         "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg", "stressbackground(32).jpg", "stressbackground(33).jpg",
-        "stressbackground(34).jpg", "stressbackground(35).jpg"];
+        "stressbackground(34).jpg", "stressbackground(35).jpg", "stressbackground(36).gif"];
     
     var stressIndex;
-    var usedIndex;
 
     $(document).on("click", "#stressed", function() {
 
@@ -92,25 +91,18 @@ $(document).ready(function() {
     function pickStress() {
         stressIndex = Math.floor(Math.random() * stresspicture.length);
         console.log("stressIndex = " + stressIndex);
+        
+        // A possible "new" way
+        // using .splice(), simply remove the chosen stressIndex from the array stresspicture.
+        // then when a new index is chose, the used index is simply not available.
+        // the array must be rebuilt as all the pics are spliced out.
+        
+        buildStresspic();
 
-        // adding a function to check for previous use of a pic. A used index will
-        // be pushed into an array. The current pic will check with that array to see
-        // if it's been used. If not, go ahead and build the pic for display. If so, pick another index.
-        // when all the pics have been used, reset the array to zero.
-
-        if (stressIndex === usedIndex) {
-            console.log("stressIndex is equel to usedIndex, need to pick again!");
-            pickStress();
-        } else {
-            buildStresspic();
-        }
     }
 
     // function to build the image to display in the stress relief pic div.
     function buildStresspic() {
-        usedIndex = stressIndex;
-        console.log("usedIndex: " + usedIndex);
-        console.log("picture has been chosen! end of this iteration. next line is new pick");
 
         $("#stressview").empty();
         var image = $("<img>");
@@ -125,7 +117,7 @@ $(document).ready(function() {
         $("#stressview").append(image);
         $("#stressview").append("<div id='stressed' class='carousel-caption'><span " +
         "class='glyphicon glyphicon-chevron-right' aria-hidden='true' " +
-        "style='font-size:40px;text-shadow:2px 2px 4px #000000;'>" +
+        "style='font-size:30px;text-shadow:2px 2px 4px #000000;'>" +
         "</span></div>");
 
         $("#stressview").show();
@@ -135,11 +127,21 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        // remove this now used stressIndex from the stresspicture array
+        stresspicture.splice(parseInt(stressIndex), 1);
 
-        // stop testing for repeating pictures at 5
-        if (usedIndex.length === 5) {
-            usedIndex = [];
+        if (stresspicture.length === 0) {
+            stresspicture = ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
+            "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
+            "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg", "stressbackground(12).jpg",
+            "stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", "stressbackground(16).jpg",
+            "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg", "stressbackground(20).jpg",
+            "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).png", "stressbackground(24).jpg",
+            "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg", "stressbackground(28).jpg",
+            "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg", "stressbackground(32).jpg", "stressbackground(33).jpg",
+            "stressbackground(34).jpg", "stressbackground(35).jpg", "stressbackground(36).gif"];
         }
+
     }
 
     //need to make a new function when mymassage title is clicked
