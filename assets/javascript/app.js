@@ -92,9 +92,8 @@ $(document).ready(function() {
         stressIndex = Math.floor(Math.random() * stresspicture.length);
         console.log("stressIndex = " + stressIndex);
         
-        // A possible "new" way
         // using .splice(), simply remove the chosen stressIndex from the array stresspicture.
-        // then when a new index is chose, the used index is simply not available.
+        // then when a new index is chosen, the used index is simply not available.
         // the array must be rebuilt as all the pics are spliced out.
         
         buildStresspic();
@@ -143,10 +142,6 @@ $(document).ready(function() {
         }
 
     }
-
-    //need to make a new function when mymassage title is clicked
-    // it will bring up a simple menu of my services that mirrors when
-    // client clicks on the make an appt. button that takes them to square
 
     $(document).on("click", "#myServices", function() {
         $("#stressview").hide();
