@@ -16,15 +16,6 @@ body {
     margin-bottom: -50px;
 }
 
-#newBackground {
-    margin-top: 51px;
-    /*height: 100vh;
-    background-image: url("../img/downtownfromBL2.jpg");
-    background-position: left top;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;*/
-}
-
 #navColor {
     background-color: #1e3663;
     /*height: 56px;*/
@@ -74,8 +65,8 @@ span a {
 }
 
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace, #newBackground {
-    margin-top: 84px;
-    margin-bottom: 16px;
+    margin-top: 51px;
+    margin-bottom: 0px;
     /*height: 420px;*/
 }
 
@@ -106,7 +97,15 @@ span a {
 
 .myImage {
     width: 100%;
-    /*max-height: 54vh;*/
+    /*max-height: 54vh;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #8c9fbc; */
+}
+
+.myImageStress {
+    width: 100%;
+    /*max-height: 54vh; */
     border-style: ridge;
     border-width: 8px;
     border-color: #8c9fbc;

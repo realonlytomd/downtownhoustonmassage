@@ -107,7 +107,7 @@ $(document).ready(function() {
         var image = $("<img>");
         image.addClass("img-responsive");
         image.addClass("center-block");
-        image.addClass("myImage");
+        image.addClass("myImageStress");
         image.addClass("animated");
         image.addClass("fadeIn");
         image.attr("src", "assets/img/" + stresspicture[stressIndex]);
