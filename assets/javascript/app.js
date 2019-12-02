@@ -16,6 +16,8 @@ $(document).ready(function() {
     var database = firebase.database();
     var clientemail = "";
     var clientcomment = "";
+    var blogDate = "";
+    var blogToday = "";
 
     // capture the submit button click
 
@@ -40,6 +42,18 @@ $(document).ready(function() {
     
         $("#emailInput").val("");
         $("#clientCommentInput").val("");
+    });
+
+    $(document).on("click", "#addPost", function(event) {
+        event.preventDefault();
+
+        // Retrieve the blog post and today's date.
+
+        // load the data to firebase.
+
+        // empty the input fields of the blog post
+
+        // retrive the data from firebase and prepend to the blog div
     });
 
     
