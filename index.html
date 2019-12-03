@@ -12,6 +12,8 @@
   		gtag('config', 'UA-120964638-1');
 	</script>
 	<script src="https://www.gstatic.com/firebasejs/4.6.0/firebase.js"></script>
+	<!--<script src="https://www.gstatic.com/firebasejs/7.5.0/firebase-app.js"></script>
+	requires changes in app.js-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -65,6 +67,7 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
+					<li><button id="enterBlogModal">Blog</button></li>
 					<li><a target="_blank" href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
 						<button id="appt">Book Online</button></a></li>
 				</ul>
@@ -74,6 +77,24 @@
 	
 		
 	<div class="wrapper">
+		<!-- Modal to make inputs to massage blog -->
+		<div class="modal fade" id="blogEntry" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-body">
+						<h1>Blog Input</h1>
+						<div class="form-group">
+							<label for="blogTodayInput">Enter blog input:</label>
+							<textarea class="form-control" rows="10" name="blogTodayInput" id="blogTodayInput"></textarea>
+						</div>
+						<button type="submit" id="addPost">Submit</button>
+					</div>
+				<div class="modal-footer">
+					<button type="button" data-dismiss="modal">Close</button>
+				</div>
+				</div>
+			</div>
+		</div>
 		<div class="row">
 			<div class="col-xs-12 no-gutters">
 				<div id="newBackground" class="carousel slide" data-ride="carousel" data-interval="5000" data-wrap="true">
@@ -248,6 +269,8 @@
 </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>-->
 <script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>

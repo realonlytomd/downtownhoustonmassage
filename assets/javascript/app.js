@@ -28,6 +28,8 @@ $(document).ready(function() {
   
         clientemail = $("#emailInput").val().trim();
         clientcomment = $("#clientCommentInput").val().trim();
+        blogDate = "";
+        blogToday = "";
   
         console.log(clientemail);
         console.log(clientcomment);
@@ -35,7 +37,9 @@ $(document).ready(function() {
         //  the "initial load" into Firebase
 		database.ref().push({
             clientcomment: clientcomment,
-            clientemail: clientemail
+            clientemail: clientemail,
+            blogDate: blogDate,
+            blogToday: blogToday
         });
     
         //empty out the input fields after submission
@@ -44,16 +48,39 @@ $(document).ready(function() {
         $("#clientCommentInput").val("");
     });
 
+    $(document).on("click", "#enterBlogModal", function() {
+        $("#blogEntry").modal("show");
+    });
+
     $(document).on("click", "#addPost", function(event) {
         event.preventDefault();
 
-        // Retrieve the blog post and today's date.
+        // Retrieve the blog post and today's date, in correct format
+        clientemail = "";
+        clientcomment = "";
+        blogToday = $("#blogTodayInput").val().trim();
+        blogDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
         // load the data to firebase.
 
-        // empty the input fields of the blog post
+        database.ref().push({
+            clientcomment: clientcomment,
+            clientemail: clientemail,
+            blogDate: blogDate,
+            blogToday: blogToday
+        });
 
-        // retrive the data from firebase and prepend to the blog div
+        // empty the input fields of the blog post
+        $("#blogTodayInput").val("");
+    });
+
+    // Create Firebase "watcher". Responds when a new input has been made (child)
+	database.ref().on("child_added", function(snapshot) {
+        //print value of snapshot to console
+        console.log("child added shapshot of firebase data: " + snapshot.val());
+    
+    }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code);
     });
 
     
