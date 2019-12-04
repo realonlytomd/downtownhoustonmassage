@@ -77,7 +77,13 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds when a new input has been made (child)
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
-        console.log("child added shapshot of firebase data: " + snapshot.val());
+        console.log("child added shapshot of firebase data: ", snapshot.val());
+        var newEntry = $("<div>");
+        var newDate = $("<h5>").text(snapshot.val().blogDate);
+        var newText = $("<h5>").text(snapshot.val().blogToday);
+        newEntry.append(newDate);
+        newEntry.append(newText);
+        $("#blog").prepend(newEntry);
     
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code);
@@ -96,12 +102,14 @@ $(document).ready(function() {
             console.log("less than 768");
             console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
-            $("#newBackground").show(); 
+            $("#newBackground").show();
+            $("#blog").show();
         } else {
             console.log("widescreen");
             console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").show();
             $("#newBackground").hide();
+            $("#blog").show();
         }
     }
 
