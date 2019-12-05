@@ -48,9 +48,23 @@ $(document).ready(function() {
         $("#clientCommentInput").val("");
     });
 
+    // this brings up a modal to test if only I am entering into the blog
     $(document).on("click", "#enterBlogModal", function() {
-        $("#blogEntry").modal("show");
+        $("#modalBlogTest").modal("show");
     });
+
+    // if password entered correctly, bring up modal to enter in blog
+    $(document).on("click", "#subPassTest", function() {
+        if ($("input#passwordEntry").val().trim() === "technotom2blog") {
+            $("input#passwordEntry").val("");
+            $("#modalBlogTest").modal("hide");
+            $("#blogEntry").modal("show");
+        } else {
+            $("input#passwordEntry").val("");
+            $("#modalBlogTest").modal("hide");
+        }  
+    });
+
 
     $(document).on("click", "#addPost", function(event) {
         event.preventDefault();
@@ -72,6 +86,7 @@ $(document).ready(function() {
 
         // empty the input fields of the blog post
         $("#blogTodayInput").val("");
+        $("#blogEntry").modal("hide");
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
