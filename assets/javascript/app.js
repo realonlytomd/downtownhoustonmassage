@@ -92,14 +92,19 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds when a new input has been made (child)
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
-        console.log("child added shapshot of firebase data: ", snapshot.val());
+        console.log("child added shapshot of firebase data (val): ", snapshot.val());
         var newEntry = $("<div>");
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
-        newEntry.append(newDate);
-        newEntry.append(newText);
-        $("#blog").prepend(newEntry);
-    
+        // test if there is no entry for date, so it doesn't print
+        if ( snapshot.val().blogDate === "") {
+            console.log("must be just a comment input");
+        } else {
+            newEntry.append(newDate);
+            newEntry.append(newText);
+            newEntry.attr("id", "addTextBorder");
+            $("#blog").prepend(newEntry);
+        }
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code);
     });
@@ -147,9 +152,8 @@ $(document).ready(function() {
     var stressIndex;
 
     $(document).on("click", "#stressed", function() {
-
+        $("#blog").hide();
         pickStress();
-
     });
 
     function pickStress() {
@@ -215,6 +219,7 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
+        $("#blog").hide();
     });
 
     $(document).on("click", "#myMassage", function() {
@@ -226,6 +231,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><br><div class='row'>" +
         "<div class='col-xs-4'><h4><span class='return' id='flow'>Flow</span></h4></div>" +
@@ -246,6 +252,7 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").show();
+        $("#blog").hide();
     });
 
     $(document).on("click", "#flow", function() {
@@ -256,6 +263,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
@@ -281,6 +289,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
             "<br>" +
@@ -315,6 +324,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
             "<br>" + 
@@ -328,6 +338,7 @@ $(document).ready(function() {
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
+    // this function is currently not needed as the "blog" is on the home screen
     $(document).on("click", "#thoughts", function() {
         $("#stressview").hide();
         $("#logo").hide();
@@ -353,6 +364,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>");
@@ -367,6 +379,7 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +

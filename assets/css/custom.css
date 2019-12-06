@@ -38,6 +38,10 @@ div#blog {
     background-color: #1e3663;
 }
 
+#addTextBorder {
+    border-bottom-style: solid;
+}
+
 h1 {
     /* background-color: gainsboro;
     background-color: #8c9fbc; */
