@@ -117,19 +117,18 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#blog").show();
         console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
             console.log("less than 768");
             console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
             $("#newBackground").show();
-            $("#blog").show();
         } else {
             console.log("widescreen");
             console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").show();
             $("#newBackground").hide();
-            $("#blog").show();
         }
     }
 
