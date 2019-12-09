@@ -244,7 +244,7 @@ footer {
     }
 } */
 
-@media only screen and (max-device-width: 770px) {
+@media only screen and (orientation:portrait) {
     footer {
         background-color: #1e3663;
     }
