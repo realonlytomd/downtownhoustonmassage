@@ -87,7 +87,7 @@ span a {
 }
 
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace, #newBackground {
-    margin-top: 52px;
+    margin-top: 56px;
     /*margin-bottom: 0px;
     height: 420px;*/
 }
@@ -246,6 +246,10 @@ footer {
 } */
 
 @media only screen and (orientation: portrait) {
+    #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace, #newBackground {
+        margin-top: 50px;
+    }
+
     footer {
         background-color: #1e3663;
     }
