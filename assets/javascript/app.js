@@ -205,7 +205,8 @@ $(document).ready(function() {
         stresspicture.splice(parseInt(stressIndex), 1);
 
         if (stresspicture.length === 0) {
-            var stresspicture = 
+            console.log("rebuilding stresspicture");
+            stresspicture = 
             ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
             "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
             "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg",
