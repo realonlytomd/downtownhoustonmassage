@@ -344,13 +344,24 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
             "<br>" + 
-            "<p class='topicp'>Just bend over! So many day to day aches can be alleviated" +
+            "<p class='topicp'>Back, Hams and Glutes!<br>So many day to day aches can be alleviated" +
             " by simply taking the time to let your muscles relax." +
             " After a shower, or a long drive, or whenever, start with a gentle bend in the knees, and just let your torso hang down to the floor. Don't" +
             " hold your head up; let gravity pull your head and torso to the floor." +
             " Keep breathing. Feel the backs of the legs and your lower back begin to release." +
             " Just rest there for 20 seconds. Don't bounce. It's no big deal. You'll relax a little" +
             " further each day. Do it every day, two or more times.</p><br>");
+        $("#viewSpace").append("<p class='topicp'>Lunges!<br>Look up the psoas muscle. Now put" +
+            " one knee on the floor, and then the other leg's foot in front, so that the knee is" + 
+            " at a 90 degree angle. Scooch (a technical term) that foot a few inches further away." + 
+            " Now slowly and slightly move your hips forward. Do not lean your torso over the front" +
+            " leg; keep it upright, as well as your head facing forward. You'll feel a slight" +
+            " stretch in the thigh muscles (your quads) of the leg with the knee on the ground." + 
+            " Imagine a rod through your hips. Keep that rod perpendicular to the ground (don't" +
+            " tilt your hips). Keep that slight stretch in your front quads. Now release that" +
+            " slight stretch and repeat with switched legs. Remember your psoas muscle? This" +
+            " stretch keeps that muscle stretched as well. It's very important to have a limber" +
+            " psoas muscle for proper body alignment and posture.</p><br>");
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
