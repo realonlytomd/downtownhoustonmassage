@@ -32,13 +32,6 @@ div#blog {
     padding: 6px;
 }
 
-#enterBlogModal {
-    margin-top: 15px;
-    margin-left: 15px;
-    background-color: #1e3663;
-    border-color: #1e3663;
-}
-
 #addTextBorder {
     border-bottom-style: solid;
 }
