@@ -52,7 +52,7 @@
 								<li><a href="mailto:onlytommassage@gmail.com" id="email">
 										onlytommassage@gmail.com</a></li>
 								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="myLocation">Location</a></li>
-								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="parking">Parking</a></li>
+								<!-- <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="parking">Parking</a></li> -->
 								<li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#" id="comments">Comments</a></li>
 							</ul>
 					</li>
@@ -298,7 +298,10 @@
 
 <script>
 	function initMap() {
-		var myLatLng = {lat: 29.763544, lng: -95.360475};
+		var myLatLng = {
+			lat: 29.763544, lng: -95.360475
+		};
+
 		var map = new google.maps.Map(document.getElementById("googleMap"), {
 			center: myLatLng,
 			zoom: 12
@@ -308,6 +311,14 @@
 			position: myLatLng,
 			map: map
 		});
+
+		var circle = new google.maps.Circle({
+            center: myLatLng,
+            map: map,
+            radius: 10000,          // IN METERS.
+            strokeColor: "#FFF",
+            strokeWeight: 2
+        });
 	}
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvqG1FvnDRkPRlQfG0SAi2EzqLHtkioTw&callback=initMap">
