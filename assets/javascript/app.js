@@ -357,10 +357,10 @@ $(document).ready(function() {
             " Now slowly and slightly move your hips forward. Do not lean your torso over the front" +
             " leg; keep it upright, as well as your head facing forward. You'll feel a slight" +
             " stretch in the thigh muscles (your quads) of the leg with the knee on the ground." + 
-            " Imagine a rod through your hips. Keep that rod perpendicular to the ground (don't" +
+            " Imagine a rod through your hips. Keep that rod parallel to the ground (don't" +
             " tilt your hips). Keep that slight stretch in your front quads. Now release that" +
             " slight stretch and repeat with switched legs. Remember your psoas muscle? This" +
-            " stretch keeps that muscle stretched as well. It's very important to have a limber" +
+            " stretch keeps that muscle lengthened. It's very important to have a limber" +
             " psoas muscle for proper body alignment and posture.</p><br>");
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
