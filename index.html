@@ -296,7 +296,11 @@
 	</div>
 	
 </div>
-
+<!-- add marker to add back in baloon
+var marker = new google.maps.Marker({
+			position: myLatLng,
+			map: map
+		});-->
 <script>
 	function initMap() {
 		var myLatLng = {
@@ -308,15 +312,12 @@
 			zoom: 11
 		});
 
-		var marker = new google.maps.Marker({
-			position: myLatLng,
-			map: map
-		});
+		
 
 		var circle = new google.maps.Circle({
             center: myLatLng,
             map: map,
-			radius: 12000,          // IN METERS.
+			radius: 11000,          // IN METERS.
 			fillColor: '#7e9',
 			fillOpacity: 0.1,
             strokeColor: "#7e9",
