@@ -204,10 +204,9 @@ p {
     font-size: 18px;
 }
 
-button#home, #appt {
+#appt {
     background-color: white;
     color: black;
-    margin-right: 15px;
 }
 
 button:focus {
