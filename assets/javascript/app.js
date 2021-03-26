@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log("hello");
+    //console.log("hello");
 
     // Initialize Firebase
   var config = {
@@ -31,8 +31,8 @@ $(document).ready(function() {
         blogDate = "";
         blogToday = "";
   
-        console.log(clientemail);
-        console.log(clientcomment);
+        //console.log(clientemail);
+        //console.log(clientcomment);
 
         //  the "initial load" into Firebase
 		database.ref().push({
@@ -92,13 +92,13 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds when a new input has been made (child)
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
-        console.log("child added shapshot of firebase data (val): ", snapshot.val());
+        //console.log("child added shapshot of firebase data (val): ", snapshot.val());
         var newEntry = $("<div>");
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
         // test if there is no entry for date, so it doesn't print
         if (snapshot.val().blogDate === "") {
-            console.log("must be just a comment input");
+            //console.log("must be just a comment input");
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
@@ -108,7 +108,7 @@ $(document).ready(function() {
             var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
             var arr = str.match(urlRE);
             if (arr !== null) {
-                console.table("this is the result of the new match: ", arr);
+                //console.table("this is the result of the new match: ", arr);
                 newEntry.append(
                     "<a href=" +
                     arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
@@ -122,22 +122,22 @@ $(document).ready(function() {
 
     
     function showStudio() {
-        console.log("in showstudio");
+        //console.log("in showstudio");
         $("#stressview").hide();
         $("#logo").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
-        console.log("background color: " + $("footer").css("background-color"));
+        //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
-            console.log("less than 768");
-            console.log("background color: " + $("footer").css("background-color"));
+            //console.log("less than 768");
+            //console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
             $("#newBackground").show();
         } else {
-            console.log("widescreen");
-            console.log("background color: " + $("footer").css("background-color"));
+            //console.log("widescreen");
+            //console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").show();
             $("#newBackground").hide();
         }
@@ -176,7 +176,7 @@ $(document).ready(function() {
 
     function pickStress() {
         stressIndex = Math.floor(Math.random() * stresspicture.length);
-        console.log("stressIndex = " + stressIndex);
+        //console.log("stressIndex = " + stressIndex);
         
         // using .splice(), simply remove the chosen stressIndex from the array stresspicture.
         // then when a new index is chosen, the used index is simply not available.
@@ -216,7 +216,7 @@ $(document).ready(function() {
         stresspicture.splice(parseInt(stressIndex), 1);
 
         if (stresspicture.length === 0) {
-            console.log("rebuilding stresspicture");
+            //console.log("rebuilding stresspicture");
             stresspicture = 
             ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
             "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
