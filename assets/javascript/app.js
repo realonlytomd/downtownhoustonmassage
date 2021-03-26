@@ -92,7 +92,7 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds when a new input has been made (child)
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
-        //console.log("child added shapshot of firebase data (val): ", snapshot.val());
+        console.log("child added shapshot of firebase data (val): ", snapshot.val());
         var newEntry = $("<div>");
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
@@ -102,6 +102,17 @@ $(document).ready(function() {
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
+            // if there's a URL, append it here.
+            // use a regex(?) to check anywhere in the string for a url
+            var str = snapshot.val().blogToday;
+            var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
+            var arr = str.match(urlRE);
+            if (arr !== null) {
+                console.table("this is the result of the new match: ", arr);
+                newEntry.append(
+                    "<a href=" +
+                    arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
+            }
             newEntry.attr("id", "addTextBorder");
             $("#blog").prepend(newEntry);
         }
