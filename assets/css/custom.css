@@ -21,6 +21,11 @@ body {
     /*height: 56px;*/
 }
 
+/* .animation {
+    animation: typewriter 4s steps(charater count) 1s 1 normal both,
+    blinkCursor 500ms steps(character count) infinite normal;
+} */
+
 .blog {
     margin-top: -28vh;
 }
