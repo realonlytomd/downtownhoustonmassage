@@ -35,6 +35,9 @@ div#blog {
     overflow: auto;
     background-color: #e6e2eb;
     padding: 6px;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #8c9fbc;
 }
 
 #addTextBorder {
