@@ -198,11 +198,12 @@ $(document).ready(function() {
         image.addClass("fadeIn");
         image.attr("src", "assets/img/" + stresspicture[stressIndex]);
         image.attr("alt", "relax relaxation massage stress beautiful view calm");
+        image.attr("title", "Click for Next");
         image.attr("id", "stressed");
         $("#stressview").append(image);
         $("#stressview").append("<div id='stressed' class='carousel-caption'><span " +
         "class='glyphicon glyphicon-chevron-right' aria-hidden='true' " +
-        "style='font-size:30px;text-shadow:2px 2px 4px #000000;'>" +
+        "style='font-size:30px; text-shadow:2px 2px 4px #000000;'>" +
         "</span></div>");
 
         $("#stressview").show();
