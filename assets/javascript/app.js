@@ -196,6 +196,7 @@ $(document).ready(function() {
         image.addClass("myImageStress");
         image.addClass("animated");
         image.addClass("fadeIn");
+        image.attr("title", "Click for Next");
         image.attr("src", "assets/img/" + stresspicture[stressIndex]);
         image.attr("alt", "relax relaxation massage stress beautiful view calm");
         image.attr("id", "stressed");
