@@ -304,7 +304,8 @@ $(document).ready(function() {
             " belly, front of left leg, and front of right leg. Hands and feet are" +
             " massaged at the end of each arm or leg, respectively.<br><br>" +
             "Throughout the session, the client should just breathe. Don't try to help as I move arms" +
-            " or legs as I need to.<br><br>" +
+            " or legs as I need to.<br>Draping is up to the comfort of the client, but in cooler weather," +
+            " the table is heated which makes for a cozy massage even without a cover.<br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>");
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
