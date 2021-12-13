@@ -292,7 +292,6 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
-        $("#viewSpace").show();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
             "<p class='topicp'>The client usually starts face down." +
@@ -307,6 +306,7 @@ $(document).ready(function() {
             " or legs as I need to.<br><br>Draping is up to the comfort of the client, but in cooler weather," +
             " the table is heated which makes for a cozy massage even without a cover.<br><br>" +
             "Feedback is encouraged, or if you'd rather fall asleep, please do!</p><br>");
+        $("#viewSpace").show();
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
