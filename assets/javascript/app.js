@@ -284,15 +284,15 @@ $(document).ready(function() {
     });
 
     $(document).on("click", "#flow", function() {
+        $("#viewSpace").empty();
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
-        $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
-        $("#viewSpace").empty();
+        $("#viewSpace").show();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
             "<p class='topicp'>The client usually starts face down." +
