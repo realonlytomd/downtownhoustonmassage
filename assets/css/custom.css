@@ -217,8 +217,8 @@ p {
     font-size: 18px;
 }
 li a[target] {
-    padding-left: 0px;
-    padding-right: 5px;
+    padding-left: 3px;
+    padding-right: 3px;
 }
 
 #appt {
