@@ -216,9 +216,13 @@ p {
 .info {
     font-size: 18px;
 }
+li a[target] {
+    padding-left: 0px;
+    padding-right: 5px;
+}
 
 #appt {
-    background-color: #d858c0;
+    background-color: #8c9fbc;
     color: black;
 }
 
