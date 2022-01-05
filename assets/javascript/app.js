@@ -165,7 +165,13 @@ $(document).ready(function() {
         "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
         "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
         "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
-        "stressbackground(60).jpg", "stressbackground(61).jpg"];
+        "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
+        "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
+        "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
+        "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
+        "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
+        "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
+        "stressbackground(84).jpg", "stressbackground(85).jpg"];
     
     var stressIndex;
 
@@ -234,7 +240,13 @@ $(document).ready(function() {
             "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
             "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
             "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
-            "stressbackground(60).jpg", "stressbackground(61).jpg"];
+            "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
+            "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
+            "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
+            "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
+            "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
+            "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
+            "stressbackground(84).jpg", "stressbackground(85).jpg"];
         }
 
     }
