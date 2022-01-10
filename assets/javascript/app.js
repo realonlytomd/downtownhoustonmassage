@@ -149,29 +149,41 @@ $(document).ready(function() {
         showStudio();
     });
 
-    var stresspicture = 
-        ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
-        "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
-        "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg",
-        "stressbackground(12).jpg","stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", 
-        "stressbackground(16).jpg", "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg",
-        "stressbackground(20).jpg", "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).png", 
-        "stressbackground(24).jpg", "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg",
-        "stressbackground(28).jpg", "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg",
-        "stressbackground(32).jpg", "stressbackground(33).jpg", "stressbackground(34).jpg", "stressbackground(35).jpg",
-        "stressbackground(36).gif", "stressbackground(37).jpg", "stressbackground(38).jpg", "stressbackground(39).jpg",
-        "stressbackground(40).jpg", "stressbackground(41).jpg", "stressbackground(42).jpg", "stressbackground(43).jpg",
-        "stressbackground(44).jpg", "stressbackground(45).gif", "stressbackground(46).jpg", "stressbackground(47).jpg",
-        "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
-        "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
-        "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
-        "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
-        "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
-        "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
-        "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
-        "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
-        "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
-        "stressbackground(84).jpg", "stressbackground(85).jpg"];
+    function buildStresspicture() {
+        var stresspicture = [];
+        for (i=0; i<82; i++) {
+            stresspicture.push("stressbackground(" + i + ").jpg");
+        }
+        for (i=0; i<2; 1++) {
+            stresspicture.push("stressbackground(" + i + ").gif");
+        }
+    }
+
+    buildStresspicture();
+
+    // var stresspicture = 
+    //     ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
+    //     "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
+    //     "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg",
+    //     "stressbackground(12).jpg","stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", 
+    //     "stressbackground(16).jpg", "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg",
+    //     "stressbackground(20).jpg", "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).jpg", 
+    //     "stressbackground(24).jpg", "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg",
+    //     "stressbackground(28).jpg", "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg",
+    //     "stressbackground(32).jpg", "stressbackground(33).jpg", "stressbackground(34).jpg", "stressbackground(35).jpg",
+    //     "stressbackground(36).gif", "stressbackground(37).jpg", "stressbackground(38).jpg", "stressbackground(39).jpg",
+    //     "stressbackground(40).jpg", "stressbackground(41).jpg", "stressbackground(42).jpg", "stressbackground(43).jpg",
+    //     "stressbackground(44).jpg", "stressbackground(45).gif", "stressbackground(46).jpg", "stressbackground(47).jpg",
+    //     "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
+    //     "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
+    //     "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
+    //     "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
+    //     "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
+    //     "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
+    //     "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
+    //     "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
+    //     "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
+    //     "stressbackground(84).jpg", "stressbackground(85).jpg"];
     
     var stressIndex;
 
@@ -223,30 +235,32 @@ $(document).ready(function() {
         stresspicture.splice(parseInt(stressIndex), 1);
 
         if (stresspicture.length === 0) {
-            //console.log("rebuilding stresspicture");
-            stresspicture = 
-            ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
-            "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
-            "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg",
-            "stressbackground(12).jpg","stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", 
-            "stressbackground(16).jpg", "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg",
-            "stressbackground(20).jpg", "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).png", 
-            "stressbackground(24).jpg", "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg",
-            "stressbackground(28).jpg", "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg",
-            "stressbackground(32).jpg", "stressbackground(33).jpg", "stressbackground(34).jpg", "stressbackground(35).jpg",
-            "stressbackground(36).gif", "stressbackground(37).jpg", "stressbackground(38).jpg", "stressbackground(39).jpg",
-            "stressbackground(40).jpg", "stressbackground(41).jpg", "stressbackground(42).jpg", "stressbackground(43).jpg",
-            "stressbackground(44).jpg", "stressbackground(45).gif", "stressbackground(46).jpg", "stressbackground(47).jpg",
-            "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
-            "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
-            "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
-            "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
-            "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
-            "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
-            "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
-            "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
-            "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
-            "stressbackground(84).jpg", "stressbackground(85).jpg"];
+            console.log("rebuilding stresspicture");
+            buildStresspicture();
+
+            // stresspicture = 
+            // ["stressbackground(0).jpg", "stressbackground(1).jpg", "stressbackground(2).jpg", "stressbackground(3).jpg",
+            // "stressbackground(4).jpg", "stressbackground(5).jpg", "stressbackground(6).jpg", "stressbackground(7).jpg",
+            // "stressbackground(8).jpg", "stressbackground(9).jpg", "stressbackground(10).jpg", "stressbackground(11).jpg",
+            // "stressbackground(12).jpg","stressbackground(13).jpg", "stressbackground(14).jpg", "stressbackground(15).jpg", 
+            // "stressbackground(16).jpg", "stressbackground(17).jpg", "stressbackground(18).jpg", "stressbackground(19).jpg",
+            // "stressbackground(20).jpg", "stressbackground(21).jpg", "stressbackground(22).jpg", "stressbackground(23).jpg", 
+            // "stressbackground(24).jpg", "stressbackground(25).jpg", "stressbackground(26).jpg", "stressbackground(27).jpg",
+            // "stressbackground(28).jpg", "stressbackground(29).jpg", "stressbackground(30).jpg", "stressbackground(31).jpg",
+            // "stressbackground(32).jpg", "stressbackground(33).jpg", "stressbackground(34).jpg", "stressbackground(35).jpg",
+            // "stressbackground(36).gif", "stressbackground(37).jpg", "stressbackground(38).jpg", "stressbackground(39).jpg",
+            // "stressbackground(40).jpg", "stressbackground(41).jpg", "stressbackground(42).jpg", "stressbackground(43).jpg",
+            // "stressbackground(44).jpg", "stressbackground(45).gif", "stressbackground(46).jpg", "stressbackground(47).jpg",
+            // "stressbackground(48).jpg", "stressbackground(49).jpg", "stressbackground(50).jpg", "stressbackground(51).jpg",
+            // "stressbackground(52).jpg", "stressbackground(53).jpg", "stressbackground(54).jpg", "stressbackground(55).jpg",
+            // "stressbackground(56).jpg", "stressbackground(57).gif", "stressbackground(58).jpg", "stressbackground(59).jpg", 
+            // "stressbackground(60).jpg", "stressbackground(61).jpg", "stressbackground(62).jpg", "stressbackground(63).jpg",
+            // "stressbackground(64).jpg", "stressbackground(65).jpg", "stressbackground(66).jpg", "stressbackground(67).jpg",
+            // "stressbackground(68).jpg", "stressbackground(69).jpg", "stressbackground(70).jpg", "stressbackground(71).jpg",
+            // "stressbackground(72).jpg","stressbackground(73).jpg", "stressbackground(74).jpg", "stressbackground(75).jpg", 
+            // "stressbackground(76).jpg", "stressbackground(77).jpg", "stressbackground(78).jpg", "stressbackground(79).jpg",
+            // "stressbackground(80).jpg", "stressbackground(81).jpg", "stressbackground(82).jpg", "stressbackground(83).jpg", 
+            // "stressbackground(84).jpg", "stressbackground(85).jpg"];
         }
 
     }
