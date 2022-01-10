@@ -1,6 +1,6 @@
 $(document).ready(function() {
     //console.log("hello");
-
+    var stresspicture = [];
     // Initialize Firebase
   var config = {
     apiKey: "AIzaSyAyKdK5VRE1gkf3aV9Snx7dBVUXgGPdBUk",
@@ -151,14 +151,15 @@ $(document).ready(function() {
 
     function buildStresspicture() {
         var stresspicture = [];
-        for (i=0; i<82; i++) {
+        for (i=0; i<83; i++) {
             stresspicture.push("stressbackground(" + i + ").jpg");
         }
         for (i=0; i<2; 1++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
+        console.log("stresspicture: ", stresspicture);
     }
-
+    
     buildStresspicture();
 
     // var stresspicture = 
