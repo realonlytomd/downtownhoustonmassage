@@ -154,7 +154,7 @@ $(document).ready(function() {
         for (i=0; i<83; i++) {
             stresspicture.push("stressbackground(" + i + ").jpg");
         }
-        for (i=0; i<2; i++) {
+        for (i=0; i<3; i++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
         console.log("stresspicture: ", stresspicture);
