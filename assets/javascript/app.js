@@ -151,10 +151,10 @@ $(document).ready(function() {
 
     function buildStresspicture() {
         var stresspicture = [];
-        for (i=0; i<83; i++) {
+        for (var i=0; i<83; i++) {
             stresspicture.push("stressbackground(" + i + ").jpg");
         }
-        for (i=0; i<3; i++) {
+        for (var i=0; i<3; i++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
         console.log("stresspicture: ", stresspicture);
