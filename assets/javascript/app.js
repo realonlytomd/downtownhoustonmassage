@@ -207,7 +207,9 @@ $(document).ready(function() {
 
     // function to build the image to display in the stress relief pic div.
     function buildStresspic() {
-
+        console.log("inside buildStresspic, stressIndex: ", stressIndex);
+        console.log("inside buildStresspic, stresspicture: ", stresspicture);
+        console.log("inside buildStresspic, stresspicture.length: ", stresspicture.length);
         $("#stressview").empty();
         var image = $("<img>");
         image.addClass("img-responsive");
