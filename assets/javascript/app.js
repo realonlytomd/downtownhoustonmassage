@@ -236,7 +236,7 @@ $(document).ready(function() {
         $("#googleMap").hide();
         // remove this now used stressIndex from the stresspicture array
         stresspicture.splice(parseInt(stressIndex), 1);
-        console.log("stresspicture.length: ", stresspicture.length);
+        console.log("after splice, stresspicture.length: ", stresspicture.length);
         if (stresspicture.length === 0) {
             console.log("rebuilding stresspicture");
             buildStresspicture();
