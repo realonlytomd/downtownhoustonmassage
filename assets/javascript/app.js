@@ -157,7 +157,7 @@ $(document).ready(function() {
         for (i=0; i<3; i++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
-        console.log("stresspicture: ", stresspicture);
+        //console.log("stresspicture: ", stresspicture);
     }
     
     buildStresspicture();
