@@ -2,15 +2,15 @@ $(document).ready(function() {
     //console.log("hello");
     var stresspicture = [];
     // Initialize Firebase
-  var config = {
+    var config = {
     apiKey: "AIzaSyAyKdK5VRE1gkf3aV9Snx7dBVUXgGPdBUk",
     authDomain: "downtownmassagecomments.firebaseapp.com",
     databaseURL: "https://downtownmassagecomments.firebaseio.com",
     projectId: "downtownmassagecomments",
     storageBucket: "downtownmassagecomments.appspot.com",
     messagingSenderId: "560623673001"
-  };
-  firebase.initializeApp(config);
+    };
+    firebase.initializeApp(config);
 
   //create variables
     var database = firebase.database();
