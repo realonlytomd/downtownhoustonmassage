@@ -179,9 +179,9 @@ $(document).ready(function() {
 
     // function to build the image to display in the stress relief pic div.
     function buildStresspic() {
-        console.log("inside buildStresspic, stressIndex: ", stressIndex);
-        console.log("inside buildStresspic, stresspicture: ", stresspicture);
-        console.log("inside buildStresspic, stresspicture.length: ", stresspicture.length);
+        // console.log("inside buildStresspic, stressIndex: ", stressIndex);
+        // console.log("inside buildStresspic, stresspicture: ", stresspicture);
+        // console.log("inside buildStresspic, stresspicture.length: ", stresspicture.length);
         $("#stressview").empty();
         var image = $("<img>");
         image.addClass("img-responsive");
@@ -213,9 +213,9 @@ $(document).ready(function() {
 
         stresspicture.splice(parseInt(stressIndex), 1);
 
-        console.log("after splice, stresspicture.length: ", stresspicture.length);
+        // console.log("after splice, stresspicture.length: ", stresspicture.length);
         if (stresspicture.length === 0) {
-            console.log("rebuilding stresspicture");
+            // console.log("rebuilding stresspicture");
             buildStresspicture();
         }
 
