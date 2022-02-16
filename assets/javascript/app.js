@@ -1,4 +1,10 @@
 $(document).ready(function() {
+    // this boolean is true only one time - when setting up my email and password
+    // in firebase
+    // it should be false for the rest of the time
+    var first = true;
+    var me; // the userCredential.user from firebase
+    
     //console.log("hello");
     var stresspicture = [];
     // Initialize Firebase
@@ -55,6 +61,28 @@ $(document).ready(function() {
 
     // if password entered correctly, bring up modal to enter in blog
     $(document).on("click", "#subPassTest", function() {
+        // but, I only want to do this 1 time - the first time I use it.
+        // so creating a fake counter, it'll be set to true one time
+        //
+        
+        if (first) {
+            var myemail = "onlytommassage@gmail.com"
+            var mypassword = "technotom2blog"
+            firebase.auth().createUserWithEmailAndPassword(myemail, mypassword)
+                .then((userCredential) => {
+                // Signed in 
+                console.log("userCredential: ", userCredential);
+                console.log("userCredential.user: ", userCredential.user);
+                me = userCredential.user;
+                // ...
+                })
+                .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                // ..
+                });
+        }
+        
         if ($("input#passwordEntry").val().trim() === "technotom2blog") {
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
