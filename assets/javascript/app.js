@@ -72,7 +72,7 @@ $(document).ready(function() {
                 .then((userCredential) => {
                 // Signed in 
                 console.log("userCredential: ", userCredential);
-                console.log("userCredential.user: ", userCredential.user);
+                console.log("userCredential.user: " + userCredential.user);
                 me = userCredential.user;
                 // ...
                 })
