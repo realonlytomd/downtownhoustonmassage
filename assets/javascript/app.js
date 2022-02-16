@@ -73,6 +73,8 @@ $(document).ready(function() {
                 // Signed in 
                 console.log("userCredential: ", userCredential);
                 console.log("userCredential.user: ", userCredential.user);
+                console.log("userCredential.m: ", userCredential.m);
+                console.log("userCredential.email: ", userCredential.email);
                 me = userCredential.user;
                 // ...
                 })
