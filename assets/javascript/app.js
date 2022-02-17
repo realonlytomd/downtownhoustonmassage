@@ -57,29 +57,30 @@ $(document).ready(function() {
 
     // if password entered correctly, bring up modal to enter in blog
     $(document).on("click", "#subPassTest", function() {
-        // but, I only want to do this 1 time - the first time I use it.
-        // so creating a fake counter, it'll be set to true one time
-        //
+        // I'm hardcoding in my user password to update the blog
+        // This can be removed as I understand how to use firebase's log in process
         if ($("input#passwordEntry").val().trim() === "technotom2blog") {
             
-            var myemail = "onlytommassage@gmail.com"
-            var mypassword = "technotom2blog"
-            firebase.auth().createUserWithEmailAndPassword(myemail, mypassword)
-                .then((userCredential) => {
-                // Signed in 
-                console.log("userCredential: ", userCredential);
-                console.log("userCredential.user: ", userCredential.user);
-                console.log("userCredential.m: ", userCredential.m);
-                console.log("userCredential.email: ", userCredential.email);
-                me = userCredential.user;
-                // ...
-                })
-                .catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                console.log("errorMessage: ", errorMessage);
-                // ..
-                });
+            // The following is for creating myself as a user in the firebase data
+            // 
+            // var myemail = "onlytommassage@gmail.com"
+            // var mypassword = "technotom2blog"
+            // firebase.auth().createUserWithEmailAndPassword(myemail, mypassword)
+            //     .then((userCredential) => {
+            //     // Signed in 
+            //     console.log("userCredential: ", userCredential);
+            //     console.log("userCredential.user: ", userCredential.user);
+            //     console.log("userCredential.m: ", userCredential.m);
+            //     console.log("userCredential.email: ", userCredential.email);
+            //     me = userCredential.user;
+            //     // ...
+            //     })
+            //     .catch((error) => {
+            //     var errorCode = error.code;
+            //     var errorMessage = error.message;
+            //     console.log("errorMessage: ", errorMessage);
+            //     // ..
+            //     });
             
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
