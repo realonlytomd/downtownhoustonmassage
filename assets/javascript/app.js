@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
+    var meUid; // the userCredential.uid from firebase
     
     var stresspicture = [];
     // Initialize Firebase
@@ -63,9 +64,9 @@ $(document).ready(function() {
             
             // The following is for creating myself as a user in the firebase data
             // 
-            // var myemail = "onlytommassage@gmail.com"
-            // var mypassword = "technotom2blog"
-            // firebase.auth().createUserWithEmailAndPassword(myemail, mypassword)
+            var myemail = "onlytommassage@gmail.com"
+            var mypassword = $("input#passwordEntry").val().trim();
+            // firebase.auth().createUserWithEmailAndPassword(myemai$l, mypassword)
             //     .then((userCredential) => {
             //     // Signed in 
             //     console.log("userCredential: ", userCredential);
@@ -81,6 +82,24 @@ $(document).ready(function() {
             //     console.log("errorMessage: ", errorMessage);
             //     // ..
             //     });
+            // The following is for signing in an existing user - me
+            firebase.auth().signInWithEmailAndPassword(myemail, mypassword)
+                .then((userCredential) => {
+                    // Signed in
+                    console.log("userCredential: ", userCredential);
+                    console.log("userCredential.user: ", userCredential.user);
+                    console.log("userCredential.m: ", userCredential.m);
+                    console.log("userCredential.email: ", userCredential.email);
+                    console.log("userCredential.uid: ", userCredential.uid);
+                    me = userCredential.m;
+                    meUid = userCredential.uid;
+                    // ...
+                })
+                .catch((error) => {
+                    var errorCode = error.code;
+                    var errorMessage = error.message;
+                });
+
             
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
