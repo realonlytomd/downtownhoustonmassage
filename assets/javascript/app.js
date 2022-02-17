@@ -52,12 +52,14 @@ $(document).ready(function() {
     });
 
     // this brings up a modal to test if only I am entering into the blog
-    $(document).on("click", "#enterBlogModal", function() {
+    $(document).on("click", "#enterBlogModal", function(event) {
+        event.preventDefault();
         $("#modalBlogTest").modal("show");
     });
 
     // if password entered correctly, bring up modal to enter in blog
-    $(document).on("click", "#subPassTest", function() {
+    $(document).on("click", "#subPassTest", function(event) {
+        event.preventDefault();
         // I'm hardcoding in my user password to update the blog
         // This can be removed as I understand how to use firebase's log in process
         if ($("input#passwordEntry").val().trim() === "technotom2blog") {
