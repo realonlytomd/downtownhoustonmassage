@@ -109,6 +109,7 @@ $(document).ready(function() {
         } else {
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
+            console.log("oops, didn't type in correct password");
         }
         
         
