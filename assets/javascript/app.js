@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
     var meUid; // the userCredential.uid from firebase
-    
+
     var stresspicture = [];
     // Initialize Firebase
     var config = {
@@ -98,6 +98,8 @@ $(document).ready(function() {
                 .catch((error) => {
                     var errorCode = error.code;
                     var errorMessage = error.message;
+                    console.log("errorMessage: ", errorMessage);
+
                 });
 
             
