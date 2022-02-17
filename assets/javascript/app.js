@@ -60,62 +60,49 @@ $(document).ready(function() {
     // if password entered correctly, bring up modal to enter in blog
     $(document).on("click", "#subPassTest", function(event) {
         event.preventDefault();
-        // I'm hardcoding in my user password to update the blog
-        // This can be removed as I understand how to use firebase's log in process
-        if ($("input#passwordEntry").val().trim() === "technotom2blog") {
-            
-            // The following is for creating myself as a user in the firebase data
-            // 
-            var myemail = "onlytommassage@gmail.com"
-            var mypassword = $("input#passwordEntry").val().trim();
-            // firebase.auth().createUserWithEmailAndPassword(myemai$l, mypassword)
-            //     .then((userCredential) => {
-            //     // Signed in 
-            //     console.log("userCredential: ", userCredential);
-            //     console.log("userCredential.user: ", userCredential.user);
-            //     console.log("userCredential.m: ", userCredential.m);
-            //     console.log("userCredential.email: ", userCredential.email);
-            //     me = userCredential.user;
-            //     // ...
-            //     })
-            //     .catch((error) => {
-            //     var errorCode = error.code;
-            //     var errorMessage = error.message;
-            //     console.log("errorMessage: ", errorMessage);
-            //     // ..
-            //     });
-            // The following is for signing in an existing user - me
-            firebase.auth().signInWithEmailAndPassword(myemail, mypassword)
-                .then((userCredential) => {
-                    // Signed in
-                    console.log("userCredential: ", userCredential);
-                    console.log("userCredential.user: ", userCredential.user);
-                    console.log("userCredential.m: ", userCredential.m);
-                    console.log("userCredential.email: ", userCredential.email);
-                    console.log("userCredential.uid: ", userCredential.uid);
-                    me = userCredential.m;
-                    meUid = userCredential.uid;
-                    // ...
-                })
-                .catch((error) => {
-                    var errorCode = error.code;
-                    var errorMessage = error.message;
-                    console.log("errorMessage: ", errorMessage);
-
-                });
-
-            
+        // The following is for creating myself as a user in the firebase data
+        var myemail = "onlytommassage@gmail.com"
+        var mypassword = $("input#passwordEntry").val().trim();
+        // This section is only for creating myself as an authorized user the first time.
+        // firebase.auth().createUserWithEmailAndPassword(myemai$l, mypassword)
+        //     .then((userCredential) => {
+        //     // Signed in 
+        //     console.log("userCredential: ", userCredential);
+        //     console.log("userCredential.user: ", userCredential.user);
+        //     console.log("userCredential.m: ", userCredential.m);
+        //     console.log("userCredential.email: ", userCredential.email);
+        //     me = userCredential.user;
+        //     // ...
+        //     })
+        //     .catch((error) => {
+        //     var errorCode = error.code;
+        //     var errorMessage = error.message;
+        //     console.log("errorMessage: ", errorMessage);
+        //     // ..
+        //     });
+        // The following is for signing in an existing user - me
+        firebase.auth().signInWithEmailAndPassword(myemail, mypassword)
+            .then((userCredential) => {
+            // Signed in
+            console.log("userCredential: ", userCredential);
+            console.log("userCredential.user: ", userCredential.user);
+            console.log("userCredential.m: ", userCredential.m);
+            console.log("userCredential.email: ", userCredential.email);
+            console.log("userCredential.uid: ", userCredential.uid);
+            me = userCredential.m;
+            meUid = userCredential.uid;
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
             $("#blogEntry").modal("show");
-        } else {
-            $("input#passwordEntry").val("");
-            $("#modalBlogTest").modal("hide");
-            console.log("oops, didn't type in correct password");
-        }
-        
-        
-          
+            })
+            .catch((error) => {
+                var errorCode = error.code;
+                var errorMessage = error.message;
+                console.log("errorMessage: ", errorMessage);
+                console.log("oops, didn't type in correct password");
+                $("input#passwordEntry").val("");
+                $("#modalBlogTest").modal("hide");
+            });  
     });
 
 
