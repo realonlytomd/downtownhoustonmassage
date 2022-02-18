@@ -91,6 +91,7 @@ $(document).ready(function() {
             console.log("userCredential.uid: ", userCredential.uid);
             me = userCredential.m;
             meUid = userCredential.uid;
+            console.log("meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
             $("#blogEntry").modal("show");
