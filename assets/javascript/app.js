@@ -102,14 +102,24 @@ $(document).ready(function() {
                 console.log("oops, didn't type in correct password");
                 $("input#passwordEntry").val("");
                 $("#modalBlogTest").modal("hide");
-            });  
+            });
+        // Later, if I want to add the ability update password...
+        // const user = firebase.auth().currentUser;
+        // const newPassword = getASecureRandomPassword();
+
+        // user.updatePassword(newPassword).then(() => {
+        // // Update successful.
+        // }).catch((error) => {
+        // // An error ocurred
+        // // ...
+        // });
     });
 
 
     $(document).on("click", "#addPost", function(event) {
         event.preventDefault();
 
-        // Retrieve the blog post and today's date, in correct format
+        // Retrieve the blog post and today's date in correct format
         clientemail = "";
         clientcomment = "";
         blogToday = $("#blogTodayInput").val().trim();
@@ -117,7 +127,7 @@ $(document).ready(function() {
 
         // load the data to firebase.
 
-        database.ref().push({
+        database.ref('users/' + meUid).push({
             clientcomment: clientcomment,
             clientemail: clientemail,
             blogDate: blogDate,
@@ -130,7 +140,7 @@ $(document).ready(function() {
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
-	database.ref().on("child_added", function(snapshot) {
+	database.ref('users/' + meUid).on("child_added", function(snapshot) {
         //print value of snapshot to console
         //console.log("child added shapshot of firebase data (val): ", snapshot.val());
         var newEntry = $("<div>");
