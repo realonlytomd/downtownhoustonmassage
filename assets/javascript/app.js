@@ -141,7 +141,7 @@ $(document).ready(function() {
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
-	database.ref(meUid).on("child_added", function(snapshot) {
+	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
         console.log("child added shapshot of firebase data (val): ", snapshot.val());
         var newEntry = $("<div>");
