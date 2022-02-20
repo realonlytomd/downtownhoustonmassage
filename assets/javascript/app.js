@@ -144,12 +144,12 @@ $(document).ready(function() {
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
         console.log("child added shapshot of firebase data (val): ", snapshot.val());
-        console.log("shapshot.users.meUid.blogDate.val(): ", snapshot.users.meUid.blogDate.val());
+        console.log("shapshot.val().users.meUid.blogDate: ", snapshot.val().users.meUid.blogDate);
         var newEntry = $("<div>");
-        var newDate = $("<h5>").text(snapshot.users.meUid.blogDate.val());
-        var newText = $("<h5>").text(snapshot.users.meUid.blogToday.val());
+        var newDate = $("<h5>").text(snapshot.val().users.meUid.blogDate);
+        var newText = $("<h5>").text(snapshot.val().users.meUid.blogToday);
         // test if there is no entry for date, so it doesn't print
-        if (snapshot.val().blogDate === "") {
+        if (snapshot.val().users.meUid.blogDate === "") {
             //console.log("must be just a comment input");
         } else {
             newEntry.append(newDate);
