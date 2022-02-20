@@ -128,7 +128,7 @@ $(document).ready(function() {
 
         // load the data to firebase.
 
-        database.ref("users/" + meUid).unshift({
+        database.ref("users/" + meUid).push({
             clientcomment: clientcomment,
             clientemail: clientemail,
             blogDate: blogDate,
