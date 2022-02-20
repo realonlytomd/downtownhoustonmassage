@@ -156,7 +156,7 @@ $(document).ready(function() {
             newEntry.append(newText);
             // if there's a URL, append it here.
             // use a regex(?) to check anywhere in the string for a url
-            var str = snapshot.val().blogToday;
+            var str = snapshot.val().users.meUid.blogToday;
             var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
             var arr = str.match(urlRE);
             if (arr !== null) {
