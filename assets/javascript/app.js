@@ -141,10 +141,10 @@ $(document).ready(function() {
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
-	database.ref("users/" + meUid).on("child_added", function(snapshot) {
+	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
         console.log("child added shapshot of firebase data (val): ", snapshot.val());
-        console.log("shapshot.val().users.meUid.blogDate: ", snapshot.val().blogDate);
+        console.log("shapshot.val().blogDate: ", snapshot.val().blogDate);
         var newEntry = $("<div>");
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
