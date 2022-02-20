@@ -141,13 +141,13 @@ $(document).ready(function() {
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
-	database.ref().on("child_added", function(snapshot) {
+	database.ref("users/" + meUid).on("child_added", function(snapshot) {
         //print value of snapshot to console
-        //console.log("child added shapshot of firebase data (val): ", snapshot.val());
-        console.log("shapshot.val().users.meUid.blogDate: ", snapshot.val().users.meUid.blogDate);
+        console.log("child added shapshot of firebase data (val): ", snapshot.val());
+        console.log("shapshot.val().users.meUid.blogDate: ", snapshot.val().blogDate);
         var newEntry = $("<div>");
-        var newDate = $("<h5>").text(snapshot.val().users.meUid.blogDate);
-        var newText = $("<h5>").text(snapshot.val().users.meUid.blogToday);
+        var newDate = $("<h5>").text(snapshot.val().blogDate);
+        var newText = $("<h5>").text(snapshot.val().blogToday);
         // test if there is no entry for date, so it doesn't print
         if (snapshot.val().users.meUid.blogDate === "") {
             //console.log("must be just a comment input");
@@ -156,7 +156,7 @@ $(document).ready(function() {
             newEntry.append(newText);
             // if there's a URL, append it here.
             // use a regex(?) to check anywhere in the string for a url
-            var str = snapshot.val().users.meUid.blogToday;
+            var str = snapshot.val().blogToday;
             var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
             var arr = str.match(urlRE);
             if (arr !== null) {
