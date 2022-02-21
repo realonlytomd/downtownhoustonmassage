@@ -149,7 +149,7 @@ $(document).ready(function() {
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
         // test if there is no entry for date, so it doesn't print
-        if (snapshot.val().users.meUid.blogDate === "") {
+        if (snapshot.val().blogDate === "") {
             //console.log("must be just a comment input");
         } else {
             newEntry.append(newDate);
