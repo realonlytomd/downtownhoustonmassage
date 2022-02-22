@@ -135,6 +135,9 @@ $(document).ready(function() {
             blogToday: blogToday
         });
 
+        // trying to remove just the original blog posts
+        database.ref().remove();
+
         // empty the input fields of the blog post
         $("#blogTodayInput").val("");
         $("#blogEntry").modal("hide");
