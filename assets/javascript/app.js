@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
-    var meUid; // the userCredential.uid from firebase
+    meUid = localStorage.getItem("meUid"); // the userCredential.uid from firebase
 
     var stresspicture = [];
     // Initialize Firebase
@@ -91,6 +91,7 @@ $(document).ready(function() {
             console.log("userCredential.uid: ", userCredential.uid);
             me = userCredential.m;
             meUid = userCredential.uid;
+            localStorage.setItem("meUid", meUid);
             console.log("meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
