@@ -1,7 +1,8 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
-    meUid = localStorage.getItem("meUid"); // the userCredential.uid from firebase
+    //meUid = localStorage.getItem("meUid"); // the userCredential.uid from firebase
+    var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
@@ -90,8 +91,8 @@ $(document).ready(function() {
             console.log("userCredential.email: ", userCredential.email);
             console.log("userCredential.uid: ", userCredential.uid);
             me = userCredential.m;
-            meUid = userCredential.uid;
-            localStorage.setItem("meUid", meUid);
+            //meUid = userCredential.uid;
+            //localStorage.setItem("meUid", meUid);
             console.log(" after log in to firebase, meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
