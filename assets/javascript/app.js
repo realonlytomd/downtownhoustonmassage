@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
     meUid = localStorage.getItem("meUid"); // the userCredential.uid from firebase
-
+    console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
     var config = {
@@ -92,7 +92,7 @@ $(document).ready(function() {
             me = userCredential.m;
             meUid = userCredential.uid;
             localStorage.setItem("meUid", meUid);
-            console.log("meUid: " + meUid);
+            console.log(" after log in to firebase, meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
             $("#blogEntry").modal("show");
@@ -144,7 +144,7 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds when a new input has been made (child)
 	database.ref().on("child_added", function(snapshot) {
         //print value of snapshot to console
-        console.log("meUid: " + meUid);
+        console.log("while in child_added, meUid: " + meUid);
         console.log("child added shapshot of firebase data (val): ", snapshot.val());
         console.log("shapshot.val().blogDate: ", snapshot.val().blogDate);
         console.log("shapshot.val().users.meUid.blogDate: ", snapshot.val().users.meUid.blogDate);
