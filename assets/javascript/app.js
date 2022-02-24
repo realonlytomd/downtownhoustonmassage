@@ -90,7 +90,7 @@ $(document).ready(function() {
             console.log("userCredential.m: ", userCredential.m);
             console.log("userCredential.email: ", userCredential.email);
             console.log("userCredential.uid: ", userCredential.uid);
-            console.log(typeof userCredential.uid);
+            console.log("what is userCrential.uid? " + typeof userCredential.uid);
             me = userCredential.m;
             //meUid = userCredential.uid;
             //localStorage.setItem("meUid", meUid);
