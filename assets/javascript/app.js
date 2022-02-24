@@ -1,9 +1,8 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
-    //meUid = localStorage.getItem("meUid"); // the userCredential.uid from firebase
-    // going to try setting this BEFORE executing the child added below....
-    var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
+    var meUid; // the userCredential.uid from firebase
+    //var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
@@ -91,10 +90,8 @@ $(document).ready(function() {
             console.log("userCredential.m: ", userCredential.m);
             console.log("userCredential.email: ", userCredential.email);
             console.log("userCredential.uid: ", userCredential.uid);
-            console.log("what is userCrential.uid? " + typeof userCredential.uid);
             me = userCredential.m;
-            //meUid = userCredential.uid;
-            //localStorage.setItem("meUid", meUid);
+            meUid = userCredential.uid;
             console.log(" after log in to firebase, meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
@@ -145,48 +142,34 @@ $(document).ready(function() {
     });
 
     // Create Firebase "watcher". Responds when a new input has been made (child)
-    function initialBlog() {
-        meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
-        console.log("In initialBlog but before child_added, meUid: " + meUid);
-        database.ref("users/" + meUid).on("child_added", function(snapshot) {
-            //print value of snapshot to console
-            console.log("while in child_added, meUid: " + meUid);
-            console.log("child added shapshot of firebase data (val): ", snapshot.val());
-            console.log("shapshot.val().blogDate: ", snapshot.val().blogDate);
-            var newEntry = $("<div>");
-            var newDate = $("<h5>").text(snapshot.val().blogDate);
-            var newText = $("<h5>").text(snapshot.val().blogToday);
-            // test if there is no entry for date, so it doesn't print
-            if (snapshot.val().blogDate === "") {
-                //console.log("must be just a comment input");
-            } else {
-                newEntry.append(newDate);
-                newEntry.append(newText);
-                // if there's a URL, append it here.
-                // use a regex(?) to check anywhere in the string for a url
-                var str = snapshot.val().blogToday;
-                var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
-                var arr = str.match(urlRE);
-                if (arr !== null) {
-                    //console.table("this is the result of the new match: ", arr);
-                    newEntry.append(
-                        "<a href=" +
-                        arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
-                }
-                newEntry.attr("id", "addTextBorder");
-                $("#blog").prepend(newEntry);
+    database.ref("users/" + meUid).on("child_added", function(snapshot) {
+        var newEntry = $("<div>");
+        var newDate = $("<h5>").text(snapshot.val().blogDate);
+        var newText = $("<h5>").text(snapshot.val().blogToday);
+        // test if there is no entry for date, so it doesn't print
+        if (snapshot.val().blogDate === "") {
+            //console.log("must be just a comment input");
+        } else {
+            newEntry.append(newDate);
+            newEntry.append(newText);
+            // if there's a URL, append it here.
+            // use a regex(?) to check anywhere in the string for a url
+            var str = snapshot.val().blogToday;
+            var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
+            var arr = str.match(urlRE);
+            if (arr !== null) {
+                //console.table("this is the result of the new match: ", arr);
+                newEntry.append(
+                    "<a href=" +
+                    arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
             }
-        }, function(errorObject) {
-            console.log("The read failed: " + errorObject.code);
-        });
-    }
-	
-    $(document).on("click", "#home", function(event) {
-        event.preventDefault;
-        initialBlog();
+            newEntry.attr("id", "addTextBorder");
+            $("#blog").prepend(newEntry);
+        }
+    }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code);
     });
-
-    
+ 
     function showStudio() {
         //console.log("in showstudio");
         $("#stressview").hide();
