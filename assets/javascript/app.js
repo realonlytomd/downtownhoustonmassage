@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
-    var meUid; // the userCredential.uid from firebase
-    //var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
+    //var meUid; // the userCredential.uid from firebase
+    var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2";
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
