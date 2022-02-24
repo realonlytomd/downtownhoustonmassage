@@ -181,7 +181,10 @@ $(document).ready(function() {
         });
     }
 	
-    initialBlog();
+    $(document).on("click", "#home", function(event) {
+        event.preventDefault;
+        initialBlog();
+    });
 
     
     function showStudio() {
