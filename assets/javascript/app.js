@@ -200,7 +200,7 @@ $(document).ready(function() {
 
     function buildStresspicture() {
         
-        for (i=62; i<83; i++) {
+        for (i=62; i<84; i++) {
             stresspicture.push("stressbackground(" + i + ").jpg");
         }
         for (i=0; i<3; i++) {
