@@ -175,7 +175,8 @@ $(document).ready(function() {
                     // call function to load blog
                     // I wonder if reloading the page is better?
                     //window.location.reload();
-                    loadDb();
+                    // but 1st, trying leaving the loadDb out of a function.
+                    // loadDb();
                 } else {
                   // User is signed out
                   // ...
@@ -190,8 +191,8 @@ $(document).ready(function() {
             // ...
         });
     });
-    function loadDb() {
-        console.log("inside function loadDB.");
+    //function loadDb() {
+        console.log("just ahead of function loadDB.");
         // Create Firebase "watcher". Responds when a new input has been made (child)
         database.ref("users/" + meUid).on("child_added", function(snapshot) {
             var newEntry = $("<div>");
@@ -220,7 +221,7 @@ $(document).ready(function() {
         }, function(errorObject) {
             console.log("The read failed: " + errorObject.code);
         });
-    }
+    //}
     
  
     function showStudio() {
