@@ -58,6 +58,18 @@ $(document).ready(function() {
         $("#modalBlogTest").modal("show");
     });
 
+    // sign me out
+    $(document).on("click", "#signMeOut", function(event) {
+        event.preventDefault();
+        firebase.auth().signOut().then(() => {
+            // Sign-out successful.
+          }).catch((error) => {
+            // An error happened.
+          });
+    });
+
+
+
     // if password entered correctly, bring up modal to enter in blog
     $(document).on("click", "#subPassTest", function(event) {
         event.preventDefault();
