@@ -61,11 +61,13 @@ $(document).ready(function() {
     // sign me out
     $(document).on("click", "#signMeOut", function(event) {
         event.preventDefault();
+        console.log("inside sign me out");
         firebase.auth().signOut()
             .then(() => {
             // Sign-out successful.
             console.log("I've signed out");
-            }).catch((error) => {
+            })
+            .catch((error) => {
                 console.log("error: ", error);
             // An error happened.
           });
