@@ -146,13 +146,15 @@ $(document).ready(function() {
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
         event.preventDefault;
+        console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
+            console.log("inside loadBlog .then");
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     meUid = user.uid;
-                    console.log("inside loadBlog, meUid: " + meUid);
+                    console.log("inside loadBlog after state change, meUid: " + meUid);
                     // call function to load blog
                    // loadDb();
                 } else {
