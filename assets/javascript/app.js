@@ -139,36 +139,66 @@ $(document).ready(function() {
         // empty the input fields of the blog post
         $("#blogTodayInput").val("");
         $("#blogEntry").modal("hide");
+        //loadDb();
     });
 
-    // Create Firebase "watcher". Responds when a new input has been made (child)
-    database.ref("users/" + meUid).on("child_added", function(snapshot) {
-        var newEntry = $("<div>");
-        var newDate = $("<h5>").text(snapshot.val().blogDate);
-        var newText = $("<h5>").text(snapshot.val().blogToday);
-        // test if there is no entry for date, so it doesn't print
-        if (snapshot.val().blogDate === "") {
-            //console.log("must be just a comment input");
-        } else {
-            newEntry.append(newDate);
-            newEntry.append(newText);
-            // if there's a URL, append it here.
-            // use a regex(?) to check anywhere in the string for a url
-            var str = snapshot.val().blogToday;
-            var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
-            var arr = str.match(urlRE);
-            if (arr !== null) {
-                //console.table("this is the result of the new match: ", arr);
-                newEntry.append(
-                    "<a href=" +
-                    arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
-            }
-            newEntry.attr("id", "addTextBorder");
-            $("#blog").prepend(newEntry);
-        }
-    }, function(errorObject) {
-        console.log("The read failed: " + errorObject.code);
+    // when a regular user goes to the site and clicks the text in the blog window,
+    // this function starts and the user is logged in anonymously.
+    $(document).on("click", "#loadBlog", function(event) {
+        event.preventDefault;
+        firebase.auth().signInAnonymously()
+        .then(() => {
+            // Signed in.. And assign anonymous user an uid
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    meUid = user.uid;
+                    // call function to load blog
+                   // loadDb();
+                } else {
+                  // User is signed out
+                  // ...
+                }
+            });
+
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("errorMessage: ", errorMessage);
+            // ...
+        });
     });
+    //function loadDb() {
+        // Create Firebase "watcher". Responds when a new input has been made (child)
+        database.ref("users/" + meUid).on("child_added", function(snapshot) {
+            var newEntry = $("<div>");
+            var newDate = $("<h5>").text(snapshot.val().blogDate);
+            var newText = $("<h5>").text(snapshot.val().blogToday);
+            // test if there is no entry for date, so it doesn't print
+            if (snapshot.val().blogDate === "") {
+                //console.log("must be just a comment input");
+            } else {
+                newEntry.append(newDate);
+                newEntry.append(newText);
+                // if there's a URL, append it here.
+                // use a regex(?) to check anywhere in the string for a url
+                var str = snapshot.val().blogToday;
+                var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
+                var arr = str.match(urlRE);
+                if (arr !== null) {
+                    //console.table("this is the result of the new match: ", arr);
+                    newEntry.append(
+                        "<a href=" +
+                        arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
+                }
+                newEntry.attr("id", "addTextBorder");
+                $("#blog").prepend(newEntry);
+            }
+        }, function(errorObject) {
+            console.log("The read failed: " + errorObject.code);
+        });
+    //}
+    
  
     function showStudio() {
         //console.log("in showstudio");
