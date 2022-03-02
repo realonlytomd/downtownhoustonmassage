@@ -3,7 +3,7 @@ $(document).ready(function() {
     var me; // the userCredential.user from firebase
     // instead of writing over the uid each time the app loads, don't initialize it here.
     //var meUid; // the userCredential.uid from firebase
-    console.log("top of app, get meUid: " + meUid);
+    //console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
     var config = {
