@@ -171,7 +171,7 @@ $(document).ready(function() {
                     meUid = user.uid;
                     console.log("inside loadBlog after state change, meUid: " + meUid);
                     // call function to load blog
-                   // loadDb();
+                    loadDb();
                 } else {
                   // User is signed out
                   // ...
@@ -186,7 +186,7 @@ $(document).ready(function() {
             // ...
         });
     });
-    //function loadDb() {
+    function loadDb() {
         // Create Firebase "watcher". Responds when a new input has been made (child)
         database.ref("users/" + meUid).on("child_added", function(snapshot) {
             var newEntry = $("<div>");
@@ -215,7 +215,7 @@ $(document).ready(function() {
         }, function(errorObject) {
             console.log("The read failed: " + errorObject.code);
         });
-    //}
+    }
     
  
     function showStudio() {
