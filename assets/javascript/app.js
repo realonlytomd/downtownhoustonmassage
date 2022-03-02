@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
+    // instead of writing over the uid each time the app loads, don't initialize it here.
     //var meUid; // the userCredential.uid from firebase
-    var meUid;
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
@@ -108,8 +108,9 @@ $(document).ready(function() {
             console.log("userCredential.email: ", userCredential.email);
             console.log("userCredential.uid: ", userCredential.uid);
             me = userCredential.m;
-            meUid = userCredential.uid;
-            console.log(" after log in to firebase, meUid: " + meUid);
+            // initialie meUid here for just me
+            var meUid = userCredential.uid;
+            console.log(" after I log in to firebase, meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
             $("#blogEntry").modal("show");
@@ -145,7 +146,7 @@ $(document).ready(function() {
         blogDate = moment().format("dddd, MMMM Do YYYY, h:mm:ss a");
 
         // load the data to firebase.
-
+        // meUid here is set from my just logging in
         database.ref("users/" + meUid).push({
             clientcomment: clientcomment,
             clientemail: clientemail,
@@ -156,13 +157,13 @@ $(document).ready(function() {
         // empty the input fields of the blog post
         $("#blogTodayInput").val("");
         $("#blogEntry").modal("hide");
-        //loadDb();
+        loadDb();
     });
 
     // when a regular user goes to the site and clicks the text in the blog window,
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
-        event.preventDefault;
+        event.preventDefault();
         console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
@@ -170,13 +171,15 @@ $(document).ready(function() {
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
-                    meUid = user.uid;
+                    var meUid = user.uid; // meUid initialized here for anon login
                     console.log("inside loadBlog after state change, meUid: " + meUid);
-                    // call function to load blog
-                    // I wonder if reloading the page is better?
+                    
+                    // reloading the page now will let child_added work without
+                    // writing over meUid, except that meUid hasn't been initialized at all
                     //window.location.reload();
-                    // but 1st, trying leaving the loadDb out of a function.
-                    // loadDb();
+                    // try calling loadDb() again.
+                    loadDb();
+                    
                 } else {
                   // User is signed out
                   // ...
@@ -191,8 +194,10 @@ $(document).ready(function() {
             // ...
         });
     });
-    //function loadDb() {
+    function loadDb() {
         console.log("just ahead of function loadDB.");
+        // BUT, meUid isn't initialized at all yet, this has to be called
+        // both when I log in, and where an anon user logs in
         // Create Firebase "watcher". Responds when a new input has been made (child)
         database.ref("users/" + meUid).on("child_added", function(snapshot) {
             var newEntry = $("<div>");
@@ -221,7 +226,7 @@ $(document).ready(function() {
         }, function(errorObject) {
             console.log("The read failed: " + errorObject.code);
         });
-    //}
+    }
     
  
     function showStudio() {
