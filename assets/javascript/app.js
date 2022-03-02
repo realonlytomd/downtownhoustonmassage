@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var me; // the userCredential.user from firebase
     // instead of writing over the uid each time the app loads, don't initialize it here.
-    //var meUid; // the userCredential.uid from firebase
+    var meUid; // the userCredential.uid from firebase
     //console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
@@ -109,7 +109,7 @@ $(document).ready(function() {
             console.log("userCredential.uid: ", userCredential.uid);
             me = userCredential.m;
             // initialie meUid here for just me
-            var meUid = userCredential.uid;
+            meUid = userCredential.uid;
             console.log(" after I log in to firebase, meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
@@ -171,7 +171,7 @@ $(document).ready(function() {
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
-                    var meUid = user.uid; // meUid initialized here for anon login
+                    meUid = user.uid; // meUid initialized here for anon login
                     console.log("inside loadBlog after state change, meUid: " + meUid);
                     
                     // reloading the page now will let child_added work without
