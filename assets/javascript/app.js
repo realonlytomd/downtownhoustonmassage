@@ -152,6 +152,7 @@ $(document).ready(function() {
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     meUid = user.uid;
+                    console.log("inside loadBlog, meUid: " + meUid);
                     // call function to load blog
                    // loadDb();
                 } else {
