@@ -173,6 +173,8 @@ $(document).ready(function() {
                     meUid = user.uid;
                     console.log("inside loadBlog after state change, meUid: " + meUid);
                     // call function to load blog
+                    // I wonder if reloading the page is better?
+                    //window.location.reload();
                     loadDb();
                 } else {
                   // User is signed out
@@ -189,6 +191,7 @@ $(document).ready(function() {
         });
     });
     function loadDb() {
+        console.log("inside function loadDB.");
         // Create Firebase "watcher". Responds when a new input has been made (child)
         database.ref("users/" + meUid).on("child_added", function(snapshot) {
             var newEntry = $("<div>");
