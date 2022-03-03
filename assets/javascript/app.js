@@ -177,8 +177,6 @@ $(document).ready(function() {
                     // reloading the page now will let child_added work without
                     // writing over meUid, except that meUid hasn't been initialized at all
                     //window.location.reload();
-                    // try calling loadDb() again.
-                    loadDb();
                     
                 } else {
                   // User is signed out
