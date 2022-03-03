@@ -3,7 +3,7 @@ $(document).ready(function() {
     var me; // the userCredential.user from firebase
     // instead of writing over the uid each time the app loads, don't initialize it here.
     var meUid; // the userCredential.uid from firebase
-    //console.log("top of app, get meUid: " + meUid);
+    console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
     var config = {
@@ -194,9 +194,8 @@ $(document).ready(function() {
             // ...
         });
     });
-    function loadDb() {
-        console.log("just ahead of function loadDB.");
-        // BUT, meUid isn't initialized at all yet, this has to be called
+        // The child_added call must be left in the open,
+        // so meUid must be defined from the beginning
         // both when I log in, and where an anon user logs in
         // Create Firebase "watcher". Responds when a new input has been made (child)
         database.ref("users/" + meUid).on("child_added", function(snapshot) {
@@ -226,7 +225,6 @@ $(document).ready(function() {
         }, function(errorObject) {
             console.log("The read failed: " + errorObject.code);
         });
-    }
     
  
     function showStudio() {
