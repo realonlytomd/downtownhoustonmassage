@@ -157,7 +157,7 @@ $(document).ready(function() {
         // empty the input fields of the blog post
         $("#blogTodayInput").val("");
         $("#blogEntry").modal("hide");
-        loadDb();
+        
     });
 
     // when a regular user goes to the site and clicks the text in the blog window,
