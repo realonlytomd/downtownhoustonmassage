@@ -73,8 +73,6 @@ $(document).ready(function() {
           });
     });
 
-
-
     // if password entered correctly, bring up modal to enter in blog
     $(document).on("click", "#subPassTest", function(event) {
         event.preventDefault();
