@@ -191,36 +191,36 @@ $(document).ready(function() {
         });
     });
 
-        // so meUid must be defined from the beginning
-        // both when I log in, and where an anon user logs in
-        // Create Firebase "watcher". Responds when a new input has been made (child)
-        database.ref("users/" + meUid).on("child_added", function(snapshot) {
-            var newEntry = $("<div>");
-            var newDate = $("<h5>").text(snapshot.val().blogDate);
-            var newText = $("<h5>").text(snapshot.val().blogToday);
-            // test if there is no entry for date, so it doesn't print
-            if (snapshot.val().blogDate === "") {
-                //console.log("must be just a comment input");
-            } else {
-                newEntry.append(newDate);
-                newEntry.append(newText);
-                // if there's a URL, append it here.
-                // use a regex(?) to check anywhere in the string for a url
-                var str = snapshot.val().blogToday;
-                var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
-                var arr = str.match(urlRE);
-                if (arr !== null) {
-                    //console.table("this is the result of the new match: ", arr);
-                    newEntry.append(
-                        "<a href=" +
-                        arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
-                }
-                newEntry.attr("id", "addTextBorder");
-                $("#blog").prepend(newEntry);
+    // so meUid must be defined from the beginning
+    // both when I log in, and where an anon user logs in
+    // Create Firebase "watcher". Responds when a new input has been made (child)
+    database.ref("users/" + meUid).on("child_added", function(snapshot) {
+        var newEntry = $("<div>");
+        var newDate = $("<h5>").text(snapshot.val().blogDate);
+        var newText = $("<h5>").text(snapshot.val().blogToday);
+        // test if there is no entry for date, so it doesn't print
+        if (snapshot.val().blogDate === "") {
+            //console.log("must be just a comment input");
+        } else {
+            newEntry.append(newDate);
+            newEntry.append(newText);
+            // if there's a URL, append it here.
+            // use a regex(?) to check anywhere in the string for a url
+            var str = snapshot.val().blogToday;
+            var urlRE= new RegExp("([a-zA-Z0-9]+://)?([a-zA-Z0-9_]+:[a-zA-Z0-9_]+@)?([a-zA-Z0-9.-]+\\.[A-Za-z]{2,4})(:[0-9]+)?([^ ])+");
+            var arr = str.match(urlRE);
+            if (arr !== null) {
+                //console.table("this is the result of the new match: ", arr);
+                newEntry.append(
+                    "<a href=" +
+                    arr[0] + " target='_blank'>[CLICK HERE TO FOLLOW LINK]</a>");
             }
-        }, function(errorObject) {
-            console.log("The read failed: " + errorObject.code);
-        });
+            newEntry.attr("id", "addTextBorder");
+            $("#blog").prepend(newEntry);
+        }
+    }, function(errorObject) {
+        console.log("The read failed: " + errorObject.code);
+    });
     
  
     function showStudio() {
