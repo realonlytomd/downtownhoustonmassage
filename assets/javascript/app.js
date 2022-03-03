@@ -190,7 +190,7 @@ $(document).ready(function() {
             // ...
         });
     });
-        // The child_added call must be left in the open,
+
         // so meUid must be defined from the beginning
         // both when I log in, and where an anon user logs in
         // Create Firebase "watcher". Responds when a new input has been made (child)
