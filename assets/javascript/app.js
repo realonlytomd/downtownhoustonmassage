@@ -1,8 +1,8 @@
 $(document).ready(function() {
 
-    var me; // the userCredential.user from firebase
-    // instead of writing over the uid each time the app loads, don't initialize it here.
-    var meUid = ""; // the userCredential.uid from firebase
+    // instead of writing over the uid each time I log in, just initialize it here.
+    // since this string is how the db is written
+    var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2"; // the userCredential.uid from firebase
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
@@ -105,10 +105,9 @@ $(document).ready(function() {
             console.log("userCredential.m: ", userCredential.m);
             console.log("userCredential.email: ", userCredential.email);
             console.log("userCredential.uid: ", userCredential.uid);
-            me = userCredential.m;
             // initialie meUid here for just me
-            meUid = userCredential.uid;
-            console.log(" after I log in to firebase, meUid: " + meUid);
+            // meUid = userCredential.uid;
+            console.log(" after I log in to firebase, don't write over meUid: " + meUid);
             $("input#passwordEntry").val("");
             $("#modalBlogTest").modal("hide");
             $("#blogEntry").modal("show");
@@ -169,11 +168,10 @@ $(document).ready(function() {
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
-                    meUid = user.uid; // meUid initialized here for anon login
-                    console.log("inside loadBlog after state change, meUid: " + meUid);
-                    
-                    // reloading the page now will let child_added work without
-                    // writing over meUid, except that meUid hasn't been initialized at all
+                    var otherUid = user.uid; // other Uid initialized here for anon login
+                    console.log("inside loadBlog after state change, otherUid: " + otherUid);
+                    // otherUid is a throwaway uid since it's not really used in the db
+
                     //window.location.reload();
                     
                 } else {
@@ -191,9 +189,10 @@ $(document).ready(function() {
         });
     });
 
-    // so meUid must be defined from the beginning
-    // both when I log in, and where an anon user logs in
-    // Create Firebase "watcher". Responds when a new input has been made (child)
+    // so meUid must be defined from the beginning becuase the db uses it.
+    // 
+    // Create Firebase "watcher". Responds the first time,
+    // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         console.log("I'm inside the child_added.");
         var newEntry = $("<div>");
