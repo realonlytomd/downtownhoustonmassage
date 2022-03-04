@@ -172,7 +172,7 @@ $(document).ready(function() {
                     console.log("inside loadBlog after state change, otherUid: " + otherUid);
                     // otherUid is a throwaway uid since it's not really used in the db
 
-                    //window.location.reload();
+                    window.location.reload();
                     
                 } else {
                   // User is signed out
