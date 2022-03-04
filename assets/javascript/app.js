@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     // instead of writing over the uid each time I log in, just initialize it here.
     // since this string is how the db is written
-    var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2"; // the userCredential.uid from firebase
+    var meUid = ""; // the userCredential.uid from firebase
     console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
     // Initialize Firebase
