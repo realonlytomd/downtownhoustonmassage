@@ -195,6 +195,7 @@ $(document).ready(function() {
     // both when I log in, and where an anon user logs in
     // Create Firebase "watcher". Responds when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
+        console.log("I'm inside the child_added.");
         var newEntry = $("<div>");
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
