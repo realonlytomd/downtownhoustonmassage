@@ -32,6 +32,7 @@ $(document).ready(function() {
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
+                    console.log("this is after onAuthStateChanged");
                     var otherUid = user.uid; // other Uid initialized here for anon login
                     // Store and retrieve the most recent client inputs.
   
