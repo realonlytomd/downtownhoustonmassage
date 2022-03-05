@@ -33,6 +33,26 @@ $(document).ready(function() {
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     var otherUid = user.uid; // other Uid initialized here for anon login
+                    // Store and retrieve the most recent client inputs.
+  
+                    clientemail = $("#emailInput").val().trim();
+                    clientcomment = $("#clientCommentInput").val().trim();
+                    blogDate = "";
+                    blogToday = "";
+            
+                    //console.log(clientemail);
+                    //console.log(clientcomment);
+
+                    //  the "initial load" into Firebase
+                    database.ref("users/" + meUid).push({
+                        clientcomment: clientcomment,
+                        clientemail: clientemail,
+                        blogDate: blogDate,
+                        blogToday: blogToday
+                    });
+                    //empty out the input fields after submission
+                    $("#emailInput").val("");
+                    $("#clientCommentInput").val("");
                 } else {
                   // User is signed out
                 }
@@ -43,26 +63,7 @@ $(document).ready(function() {
             var errorMessage = error.message;
             console.log("errorMessage: ", errorMessage);
         });
-        // Store and retrieve the most recent client inputs.
-  
-        clientemail = $("#emailInput").val().trim();
-        clientcomment = $("#clientCommentInput").val().trim();
-        blogDate = "";
-        blogToday = "";
-  
-        //console.log(clientemail);
-        //console.log(clientcomment);
-
-        //  the "initial load" into Firebase
-		database.ref("users/" + meUid).push({
-            clientcomment: clientcomment,
-            clientemail: clientemail,
-            blogDate: blogDate,
-            blogToday: blogToday
-        });
-        //empty out the input fields after submission
-        $("#emailInput").val("");
-        $("#clientCommentInput").val("");
+        
     });
 
     // this brings up a modal to test if only I am entering into the blog
