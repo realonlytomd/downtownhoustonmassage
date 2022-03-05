@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     // instead of writing over the uid each time I log in, just initialize it here.
-    // since this string is how the db is written
+    // since this string is how the db path is written
     var meUid = "g6ezIKLGQFh0A2v9CFu5fEo8Kxi2"; // the userCredential.uid from firebase
     //console.log("top of app, get meUid: " + meUid);
     var stresspicture = [];
@@ -23,11 +23,26 @@ $(document).ready(function() {
     var blogDate = "";
     var blogToday = "";
 
-    // capture the submit button click
+    // capture the submit button click from a user making a comment
 
     $(document).on("click", "#addComment", function(event) {
         event.preventDefault();
-  
+        firebase.auth().signInAnonymously()
+        .then(() => {
+            // Signed in.. And assign anonymous user an uid
+            firebase.auth().onAuthStateChanged((user) => {
+                if (user) {
+                    var otherUid = user.uid; // other Uid initialized here for anon login
+                } else {
+                  // User is signed out
+                }
+            });
+        })
+        .catch((error) => {
+            var errorCode = error.code;
+            var errorMessage = error.message;
+            console.log("errorMessage: ", errorMessage);
+        });
         // Store and retrieve the most recent client inputs.
   
         clientemail = $("#emailInput").val().trim();
@@ -39,15 +54,13 @@ $(document).ready(function() {
         //console.log(clientcomment);
 
         //  the "initial load" into Firebase
-		database.ref().push({
+		database.ref("users/" + meUid).push({
             clientcomment: clientcomment,
             clientemail: clientemail,
             blogDate: blogDate,
             blogToday: blogToday
         });
-    
         //empty out the input fields after submission
-    
         $("#emailInput").val("");
         $("#clientCommentInput").val("");
     });
