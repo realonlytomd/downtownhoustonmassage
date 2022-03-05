@@ -63,7 +63,6 @@ $(document).ready(function() {
         //empty out the input fields after submission
         $("#emailInput").val("");
         $("#clientCommentInput").val("");
-        $("#home").css("color", "green");
     });
 
     // this brings up a modal to test if only I am entering into the blog
@@ -215,6 +214,8 @@ $(document).ready(function() {
         // test if there is no entry for date, so it doesn't print
         if (snapshot.val().blogDate === "") {
             //console.log("must be just a comment input");
+            // change color of title so I know there's a comment
+            $("#home").css("color", "green");
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
