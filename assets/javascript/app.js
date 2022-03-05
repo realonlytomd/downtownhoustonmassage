@@ -63,6 +63,7 @@ $(document).ready(function() {
         //empty out the input fields after submission
         $("#emailInput").val("");
         $("#clientCommentInput").val("");
+        $("#home").css("color", "green");
     });
 
     // this brings up a modal to test if only I am entering into the blog
