@@ -524,12 +524,17 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +
-                "<h3><span class='topic'>Please leave reviews, comments or questions.</span></h3>" +
+                "<h3><span class='topic'>April 10-16, 2022: Receive $10 off your next massage!<br>" +
+                "Please leave a review, comment or question. Let me know why you might have stopped coming to me, " +
+                "what I can do better or different, or absolutely anything else that comes to mind.<br>" +
+                "Anonymous comments are welcome, but if you want the discount, please leave some way " +
+                "to let me know who you are.</span></h3>" +
                 "<div class='form-group'>" +
-                    "<label for='email' id='lableText'>Email or Phone:</label>" +
-                    "<input type='email' class='form-control' id='emailInput' placeholder='Enter Email/Phone For Reply' name='email'>" +
+                    "<label for='email' id='lableText'>Email, Phone, or Name:</label>" +
+                    "<input type='email' class='form-control' id='emailInput' placeholder='Who are you?' name='email'>" +
                     "<label for='comment' id='lableText'>Comments:</label>" +
-                    "<textarea class='form-control' rows='5' id='clientCommentInput'></textarea>" +
+                    "<textarea class='form-control' rows='5' id='clientCommentInput' " +
+                    "placeholder='This is completely private. No one will ever see this except Tom.'></textarea>" +
                     "<button type='submit' id='addComment'>Submit</button>" +
             "</div></div></div>");
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");

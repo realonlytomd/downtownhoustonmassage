@@ -92,6 +92,10 @@ span a {
     font-size: 16px;
 }
 
+.redBlink {
+    color: #d65587;
+}
+
 #stressview, #logo, #myCarousel, #massageInfo, #googleMap, #viewSpace, #newBackground {
     margin-top: 56px;
     /*margin-bottom: 0px;
