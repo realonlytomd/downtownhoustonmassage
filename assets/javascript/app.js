@@ -524,7 +524,7 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +
-                "<h3><span class='topic'>April 10-16, 2022: Receive $10 off your next massage!<br>" +
+                "<h3><span class='topic'>April, 2022: Receive $10 off your next massage!<br>" +
                 "Please leave a review, comment or question. Let me know why you might have stopped coming to me, " +
                 "what I can do better or different, or absolutely anything else that comes to mind.<br>" +
                 "Anonymous comments are welcome, but if you want the discount, please leave some way " +
