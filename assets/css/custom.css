@@ -26,6 +26,25 @@ body {
     blinkCursor 500ms steps(character count) infinite normal;
 } */
 
+.padded-multiline {
+    line-height: 1.4; 
+    padding: 2px 0;
+  }
+
+.padded-multiline span { 
+    background-color: #f3f2f3;
+    color: black; 
+    display: inline;
+    padding: 3px;
+    /* Needs prefixing */
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+}
+
+.myNumber {
+    margin-top: -50vh;
+}
+
 .blog {
     margin-top: -28vh;
 }
