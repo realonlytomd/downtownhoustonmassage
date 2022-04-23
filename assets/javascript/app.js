@@ -248,6 +248,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
+        $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
             //console.log("less than 768");
@@ -325,6 +326,7 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $(".padNumber").hide();
         
         // using .splice(), simply remove the chosen stressIndex from the array stresspicture.
         // then when a new index is chosen, the used index is simply not available.
@@ -349,6 +351,7 @@ $(document).ready(function() {
         $("#massageInfo").show();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
     });
 
     $(document).on("click", "#myMassage", function() {
@@ -361,6 +364,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><br><div class='row'>" +
         "<div class='col-xs-4'><h4><span class='return' id='flow'>Flow</span></h4></div>" +
@@ -382,6 +386,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").show();
         $("#blog").hide();
+        $(".padNumber").hide();
     });
 
     $(document).on("click", "#flow", function() {
@@ -393,6 +398,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
             "<p class='topicp'>The client usually starts face down." +
@@ -420,6 +426,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
             "<br>" +
@@ -455,6 +462,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
             "<br>" + 
@@ -506,6 +514,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
         "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>");
@@ -521,6 +530,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
             "<div class='col-xs-12'>" +
