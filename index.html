@@ -78,10 +78,27 @@
 							<button id="appt">Gift Certificates</button>
 							</a>
 						</li>
-						<li><a target="_blank" 
+						<!-- Google Calendar Appointment Scheduling begin -->
+						<link href="https://calendar.google.com/calendar/scheduling-button-script.css" rel="stylesheet">
+						<script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>
+						<script>
+						(function() {
+						var target = document.currentScript;
+						window.addEventListener('load', function() {
+							calendar.schedulingButton.load({
+							url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ2f3QiX_EGpEt_dCVyzQdgU6hYF8MIPMN4ixZbz6EN358yfQs6eP-WRkAHVRSih1f8F6uuIhuqn?gv=true',
+							color: '#8c9fbc',
+							label: 'Book an appointment',
+							target,
+							});
+						});
+						})();
+						</script>
+						<!-- end Google Calendar Appointment Scheduling -->
+						<!--<li><a target="_blank" 
 							href="https://squareup.com/appointments/book/A49BNKW731YKP/downtownhoustonmassage-houston-tx">
 							<button id="appt">Book Online</button>
-						</a></li>
+						</a></li> -->
 					</ul>
 				</div>
 			</div>
