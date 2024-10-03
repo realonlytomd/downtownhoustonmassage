@@ -147,9 +147,9 @@ span a {
 }
 
 .myImage {
-    /*max-width: 100%;
+    max-width: unset;
     object-position: center;
-    object-fit: cover;*/
+    object-fit: cover;
 }
 
 .myImageStress {
