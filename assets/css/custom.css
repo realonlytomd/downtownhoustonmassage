@@ -146,10 +146,18 @@ span a {
     margin-right: 45px;
 }
 
-.myImage {
-    max-width: unset;
-    object-position: center;
+.carousel-item {
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.myImage {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    object-position: 50% 50%;
 }
 
 .myImageStress {
