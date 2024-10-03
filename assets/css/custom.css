@@ -147,9 +147,9 @@ span a {
 }
 
 .myImage {
-    object-fit: cover;
     max-width: 100%;
     object-position: center;
+    object-fit: cover;
     /*min-height: 100%;
     min-width: 100%;
     width: 100%;
