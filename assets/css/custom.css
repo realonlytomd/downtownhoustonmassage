@@ -146,15 +146,10 @@ span a {
     margin-right: 45px;
 }
 
-.contbox {
-    height: 100%;
-    width: 100%;
-}
-
 .myImage {
     object-fit: cover;
-    width: inherit;
-    height: inherit;
+    max-width: 100%;
+    object-position: center;
     /*min-height: 100%;
     min-width: 100%;
     width: 100%;
