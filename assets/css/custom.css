@@ -146,6 +146,11 @@ span a {
     margin-right: 45px;
 }
 
+.contbox {
+    height: 100%;
+    width: 100%;
+}
+
 .myImage {
     object-fit: cover;
     /*min-height: 100%;
