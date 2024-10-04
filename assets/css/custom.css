@@ -146,14 +146,7 @@ span a {
     margin-right: 45px;
 }
 
-img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    object-position: 50% 50%;
-}
-
-.carousel-item {
+.carousel-inner>.item>img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
