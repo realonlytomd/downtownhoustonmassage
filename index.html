@@ -264,7 +264,11 @@
 
 				<div class="container-fluid" id="viewSpace"></div>
 
-				<div id="googleMap"></div>
+				<div id="googleMap">
+					<gmp-map center="29.76338005065918,-95.36055755615234" zoom="14" map-id="DEMO_MAP_ID">
+						<gmp-advanced-marker position="29.76338005065918,-95.36055755615234" title="My location"></gmp-advanced-marker>
+					  </gmp-map>
+				</div>
 
 			</div>
 		<!-- Insert another div here to include #blog, but still inside the .push
@@ -315,7 +319,7 @@ var marker = new google.maps.Marker({
 			position: myLatLng,
 			map: map
 		});-->
-<script>
+<!--<script>
 	function initMap() {
 		var myLatLng = {
 			lat: 29.7373, lng: -95.3985
@@ -338,8 +342,8 @@ var marker = new google.maps.Marker({
             strokeWeight: 4
         });
 	}
-</script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdOVUKqKWQh6jVW4yV6OEnCHhB4hbM3m8&callback=initMap"></script>
+</script> -->
+<script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDe5ORQ0MOWPQ3Fx9xPT7AqYWSdSoFSK1Q&callback=console.debug&libraries=maps,marker&v=beta"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
