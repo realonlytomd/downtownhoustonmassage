@@ -94,6 +94,7 @@ $(document).ready(function() {
         // The following is for creating myself as a user in the firebase data
         var myemail = "onlytommassage@gmail.com"
         var mypassword = $("input#passwordEntry").val().trim();
+        console.log("mypassword: ", mypassword);
         // This section is only for creating myself as an authorized user the first time.
         // firebase.auth().createUserWithEmailAndPassword(myemai$l, mypassword)
         //     .then((userCredential) => {
