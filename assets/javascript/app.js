@@ -224,7 +224,7 @@ $(document).ready(function() {
             $("#home").css("color", "green");
             if (snapshot.val().clientemail === "review") {
             console.log("this must be a review");
-            $("#home").css("color", "blue");
+            $("#home").css("color", "white");
             newReviewEntry.append(newReview);
             $("#review").prepend(newReviewEntry);
             }
