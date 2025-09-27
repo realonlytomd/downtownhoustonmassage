@@ -222,11 +222,12 @@ $(document).ready(function() {
             console.log("must be just a comment input");
             // change color of title so I know there's a comment
             $("#home").css("color", "green");
-        } else if (snapshot.val().clientemail === "review") {
+            if (snapshot.val().clientemail === "review") {
             console.log("this must be a review");
             $("#home").css("color", "blue");
             newReviewEntry.append(newReview);
             $("#review").prepend(newReviewEntry);
+            }
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
