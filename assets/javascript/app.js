@@ -258,6 +258,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
+        $("#review").show();
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
@@ -296,6 +297,7 @@ $(document).ready(function() {
 
     $(document).on("click", "#stressed", function() {
         $("#blog").hide();
+        $("#review").hide();
         pickStress();
     });
 
@@ -361,6 +363,7 @@ $(document).ready(function() {
         $("#massageInfo").show();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
     });
 
@@ -374,6 +377,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<br><br><br><br><br><div class='row'>" +
@@ -396,6 +400,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").show();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
     });
 
@@ -408,6 +413,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
             "<br>" +
@@ -436,6 +442,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>Benefits of Massage Therapy</span></h3>" +
@@ -472,6 +479,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<h3><span class='topic'>The Importance of Frequent Stretching</span></h3>" +
@@ -524,6 +532,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
@@ -540,6 +549,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
+        $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<div class='row'>" +
