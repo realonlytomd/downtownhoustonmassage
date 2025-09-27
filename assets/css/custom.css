@@ -49,6 +49,16 @@ html {
     margin-top: -35vh;
 }
 
+div#review {
+    height: 25vh;
+    overflow: auto;
+    background-color: #e6e2eb;
+    padding: 6px;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #8c9fbc;
+}
+
 div#blog {
     height: 25vh;
     overflow: auto;

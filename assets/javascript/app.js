@@ -41,8 +41,8 @@ $(document).ready(function() {
                     blogDate = "";
                     blogToday = "";
             
-                    //console.log(clientemail);
-                    //console.log(clientcomment);
+                    console.log(clientemail);
+                    console.log(clientcomment);
 
                     //  the "initial load" into Firebase
                     database.ref("users/" + meUid).push({
@@ -205,20 +205,27 @@ $(document).ready(function() {
         });
     });
 
-    // so meUid must be defined from the beginning becuase the db uses it.
+    // so meUid must be defined from the beginning because the db uses it.
     // 
     // Create Firebase "watcher". Responds the first time,
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         //console.log("I'm inside the child_added.");
         var newEntry = $("<div>");
+        var newReviewEntry = $("<div>");
+        console.log("clientEmail: " + snapshot.val().clientemail);
+        var newReview = $("<h5>").text(snapshot.val().clientcomment);
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
         // test if there is no entry for date, so it doesn't print
         if (snapshot.val().blogDate === "") {
-            //console.log("must be just a comment input");
+            console.log("must be just a comment input");
             // change color of title so I know there's a comment
             $("#home").css("color", "green");
+        } else if (snapshot.val().clientemail === "review") {
+            console.log("this must be a review");
+            $("#home").css("color", "blue");
+            newReviewEntry.append(newReview);
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
