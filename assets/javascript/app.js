@@ -226,6 +226,7 @@ $(document).ready(function() {
             console.log("this must be a review");
             $("#home").css("color", "blue");
             newReviewEntry.append(newReview);
+            $("#review").prepend(newReviewEntry);
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
