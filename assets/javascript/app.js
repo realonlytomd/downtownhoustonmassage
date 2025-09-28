@@ -177,6 +177,7 @@ $(document).ready(function() {
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
         event.preventDefault();
+        $("#review").show();
         console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
@@ -187,13 +188,10 @@ $(document).ready(function() {
                     var otherUid = user.uid; // other Uid initialized here for anon login
                     console.log("inside loadBlog after state change, otherUid: " + otherUid);
                     // otherUid is a throwaway uid since it's not really used in the db
-
                     window.location.reload();
-                    $("#review").show();
                     
                 } else {
                   // User is signed out
-                  // ...
                 }
             });
 
@@ -259,7 +257,6 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
-        $("#review").hide();
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
