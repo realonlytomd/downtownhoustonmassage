@@ -180,7 +180,7 @@ $(document).ready(function() {
         //console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
-            //console.log("inside loadBlog .then");
+            console.log("inside loadBlog .then");
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
@@ -189,6 +189,7 @@ $(document).ready(function() {
                     // otherUid is a throwaway uid since it's not really used in the db
 
                     window.location.reload();
+                    $("#review").show();
                     
                 } else {
                   // User is signed out
