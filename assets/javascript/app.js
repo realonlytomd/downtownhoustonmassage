@@ -177,7 +177,7 @@ $(document).ready(function() {
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
         event.preventDefault();
-        //console.log("inside loadBlog");
+        console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
             console.log("inside loadBlog .then");
@@ -185,7 +185,7 @@ $(document).ready(function() {
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     var otherUid = user.uid; // other Uid initialized here for anon login
-                    //console.log("inside loadBlog after state change, otherUid: " + otherUid);
+                    console.log("inside loadBlog after state change, otherUid: " + otherUid);
                     // otherUid is a throwaway uid since it's not really used in the db
 
                     window.location.reload();
