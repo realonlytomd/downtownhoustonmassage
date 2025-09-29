@@ -210,6 +210,8 @@ $(document).ready(function() {
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         console.log("I'm inside the child_added.");
         $("#review").show();
+        // temp change to .blog so complete pic shows
+        $(".blog").css("margin-top", "-60vh");
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
         console.log("clientEmail: " + snapshot.val().clientemail);
