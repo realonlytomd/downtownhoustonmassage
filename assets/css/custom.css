@@ -50,13 +50,14 @@ html {
 }
 
 div#review {
-    height: 25vh;
+    height: 15vh;
     overflow: auto;
     background-color: #e6e2eb;
     padding: 6px;
     border-style: ridge;
     border-width: 8px;
     border-color: #8c9fbc;
+    margin-bottom: 10px;
 }
 
 div#blog {
@@ -67,6 +68,7 @@ div#blog {
     border-style: ridge;
     border-width: 8px;
     border-color: #8c9fbc;
+    margin-bottom: 10px;
 }
 
 #addTextBorder {
