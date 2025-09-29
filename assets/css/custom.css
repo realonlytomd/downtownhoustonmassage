@@ -50,7 +50,7 @@ html {
 }
 
 div#review {
-    height: 25vh;
+    height: 15vh;
     overflow: auto;
     background-color: #e6e2eb;
     padding: 6px;
