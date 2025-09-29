@@ -177,7 +177,6 @@ $(document).ready(function() {
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
         event.preventDefault();
-        $("#review").show();
         console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
@@ -209,7 +208,8 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds the first time,
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
-        //console.log("I'm inside the child_added.");
+        console.log("I'm inside the child_added.");
+        $("#review").show();
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
         console.log("clientEmail: " + snapshot.val().clientemail);
@@ -257,6 +257,7 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
+        $("#review").hide();
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
