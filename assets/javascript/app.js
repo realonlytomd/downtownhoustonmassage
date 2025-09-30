@@ -266,11 +266,11 @@ $(document).ready(function() {
             //console.log("less than 768");
             //console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
-            $("#newBackground").show();
+            $("#newBackground").hide(); // change back to show
         } else {
             //console.log("widescreen");
             //console.log("background color: " + $("footer").css("background-color"));
-            $("#myCarousel").show();
+            $("#myCarousel").hide(); // change back to show
             $("#newBackground").hide();
         }
     }
