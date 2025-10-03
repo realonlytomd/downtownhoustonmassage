@@ -209,7 +209,6 @@ $(document).ready(function() {
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         console.log("I'm inside the child_added.");
-        $("#review").show();
         // temp change to .blog so complete pic shows
         $(".blog").css("margin-top", "-60vh");
         var newEntry = $("<div>");
@@ -228,6 +227,7 @@ $(document).ready(function() {
             $("#home").css("color", "white");
             newReviewEntry.append(newReview);
             $("#review").prepend(newReviewEntry);
+            $("#review").show();
             }
         } else {
             newEntry.append(newDate);
@@ -248,6 +248,7 @@ $(document).ready(function() {
         }
     }, function(errorObject) {
         console.log("The read failed: " + errorObject.code);
+        $("#review").hide();
     });
     
  
@@ -262,7 +263,6 @@ $(document).ready(function() {
         if (user) {
             $("#review").show();
         }
-        
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
