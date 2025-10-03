@@ -260,7 +260,7 @@ $(document).ready(function() {
         $("#googleMap").hide();
         $("#blog").show();
         if (user) {
-            $("#review").hide();
+            $("#review").show();
         }
         
         $(".padNumber").show();
