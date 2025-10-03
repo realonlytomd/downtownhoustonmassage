@@ -212,7 +212,7 @@ $(document).ready(function() {
         // temp change to .blog so complete pic shows
         $(".blog").css("margin-top", "-60vh");
         var newEntry = $("<div>");
-        var newReviewEntry = $("<div><h3 style='color:black;'>Reviews</h3>");
+        var newReviewEntry = $("<div>");
         console.log("clientEmail: " + snapshot.val().clientemail);
         var newReview = $("<h5>").text(snapshot.val().clientcomment);
         var newDate = $("<h5>").text(snapshot.val().blogDate);
