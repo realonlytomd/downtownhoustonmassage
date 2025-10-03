@@ -45,10 +45,6 @@ html {
     border-width: 8px;
 }
 
-.blog {
-    margin-top: -43vh;
-}
-
 div#review {
     height: 15vh;
     overflow: auto;
