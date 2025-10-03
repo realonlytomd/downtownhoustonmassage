@@ -247,8 +247,8 @@ $(document).ready(function() {
             $("#blog").prepend(newEntry);
         }
     }, function(errorObject) {
-        console.log("The read failed: " + errorObject.code);
         $("#review").hide();
+        console.log("The read failed: " + errorObject.code);
     });
     
  
