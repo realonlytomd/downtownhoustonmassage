@@ -259,7 +259,10 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
-        $("#review").hide();
+        if (user) {
+            $("#review").hide();
+        }
+        
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
