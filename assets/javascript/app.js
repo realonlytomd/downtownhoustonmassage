@@ -210,7 +210,7 @@ $(document).ready(function() {
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         console.log("I'm inside the child_added.");
         // temp change to .blog so complete pic shows
-        $(".blog").css("margin-top", "-60vh");
+        //$(".blog").css("margin-top", "-60vh");
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
         console.log("clientEmail: " + snapshot.val().clientemail);
@@ -226,6 +226,7 @@ $(document).ready(function() {
             console.log("this must be a review");
             $("#home").css("color", "white");
             newReviewEntry.append(newReview);
+            newReviewEntry.attr("id", "addTextBorder");
             $("#review").prepend(newReviewEntry);
             $("#review").show();
             }
