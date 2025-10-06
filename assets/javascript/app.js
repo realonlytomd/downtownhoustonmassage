@@ -270,12 +270,12 @@ $(document).ready(function() {
             //console.log("less than 768");
             //console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").hide();
-            $("#newBackground").show(); // change back to show
+            //$("#newBackground").show(); // change back to show
         } else {
             //console.log("widescreen");
             //console.log("background color: " + $("footer").css("background-color"));
             $("#myCarousel").show(); // change back to show
-            $("#newBackground").hide();
+            //$("#newBackground").hide();
         }
     }
 
@@ -339,7 +339,7 @@ $(document).ready(function() {
         $("#stressview").show();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -363,7 +363,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
@@ -377,7 +377,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -400,7 +400,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").show();
@@ -414,7 +414,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").hide();
@@ -442,7 +442,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -479,7 +479,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -515,7 +515,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -532,7 +532,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -549,7 +549,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#myCarousel").hide();
-        $("#newBackground").hide();
+        //$("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
