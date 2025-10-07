@@ -56,6 +56,10 @@ div#review {
     margin-bottom: 10px;
 }
 
+.blog {
+    margin-top: -36vh;
+}
+
 div#blog {
     height: 25vh;
     overflow: auto;

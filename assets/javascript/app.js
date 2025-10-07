@@ -228,6 +228,7 @@ $(document).ready(function() {
             newReviewEntry.append(newReview);
             newReviewEntry.attr("id", "addTextBorder");
             $("#review").prepend(newReviewEntry);
+            $("#titleReview").show();
             $("#review").show();
             }
         } else {
@@ -248,6 +249,7 @@ $(document).ready(function() {
             $("#blog").prepend(newEntry);
         }
     }, function(errorObject) {
+        $("#titleReview").hide();
         $("#review").hide();
         console.log("The read failed: " + errorObject.code);
     });
@@ -261,9 +263,13 @@ $(document).ready(function() {
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#blog").show();
-       // if (user) {
+        if (user) {
+            $("#titleReview").show();
             $("#review").show();
-        //}
+        } else {
+            $("#titleReview").hide();
+            $("#review").hide();
+        }
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
         if($("footer").css("background-color") === "rgb(30, 54, 99)") {
@@ -301,7 +307,9 @@ $(document).ready(function() {
     var stressIndex;
 
     $(document).on("click", "#stressed", function() {
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         pickStress();
     });
@@ -367,7 +375,9 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
     });
@@ -381,7 +391,9 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
@@ -404,7 +416,9 @@ $(document).ready(function() {
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").show();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
     });
@@ -417,7 +431,9 @@ $(document).ready(function() {
         $("#newBackground").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").append("<h3><span class='topic'>The Flow of My Massage</span></h3>" +
@@ -446,7 +462,9 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
@@ -483,7 +501,9 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
@@ -536,7 +556,9 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
@@ -553,7 +575,9 @@ $(document).ready(function() {
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
+        $("#titleBlog").hide();
         $("#blog").hide();
+        $("#titleReview").hide();
         $("#review").hide();
         $(".padNumber").hide();
         $("#viewSpace").empty();
