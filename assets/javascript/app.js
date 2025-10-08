@@ -209,10 +209,12 @@ $(document).ready(function() {
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
         console.log("I'm inside the child_added.");
-        // temp change to .blog so complete pic shows
+        //  change to .blog so complete pic shows
         if (!window.matchMedia("(orientation: portrait)").matches) {
         // Apply JavaScript-based style changes only if not in portrait
         $(".blog").css("margin-top", "-95vh");
+        } else {
+            $(".blog").css("margin-top", "-65vh");
         }
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
