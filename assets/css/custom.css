@@ -321,6 +321,8 @@ footer {
     .info {
         font-size: 14px;
     }
+    .blog {
+        margin-top: -95vh;
 }
 
 /* to decrease distance between pulsing links */
