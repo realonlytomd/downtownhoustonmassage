@@ -230,7 +230,6 @@ $(document).ready(function() {
             $("#titleReview").show();
             $("#review").show();
             }
-            console.log("must be a comment input");
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
