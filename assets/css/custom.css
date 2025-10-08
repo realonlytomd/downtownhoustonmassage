@@ -308,6 +308,10 @@ footer {
     .phnumber {
         color: #9d9d9d;
     }
+
+    .blog {
+        margin-top: -95vh;
+    }
 }
 
 /* reduce font of email address for screens under 360px  */
@@ -315,14 +319,14 @@ footer {
     #email {
         font-size: 20px;
     }
+
     #longlink {
         font-size: 20px;
     }
+    
     .info {
         font-size: 14px;
     }
-    .blog {
-        margin-top: -95vh;
 }
 
 /* to decrease distance between pulsing links */
