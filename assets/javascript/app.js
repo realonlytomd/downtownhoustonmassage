@@ -219,7 +219,6 @@ $(document).ready(function() {
         var newText = $("<h5>").text(snapshot.val().blogToday);
         // test if there is no entry for date, so it doesn't print
         if (snapshot.val().blogDate === "") {
-            console.log("must be just a comment input");
             // change color of title so I know there's a comment
             $("#home").css("color", "green");
             if (snapshot.val().clientemail === "review") {
@@ -231,6 +230,7 @@ $(document).ready(function() {
             $("#titleReview").show();
             $("#review").show();
             }
+            console.log("must be a comment input");
         } else {
             newEntry.append(newDate);
             newEntry.append(newText);
