@@ -214,7 +214,7 @@ $(document).ready(function() {
         // Apply JavaScript-based style changes only if not in portrait
         $(".blog").css("margin-top", "-95vh");
         } else {
-            $(".blog").css("margin-top", "-65vh");
+            $(".blog").css("margin-top", "-68vh");
         }
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
