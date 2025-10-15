@@ -338,8 +338,8 @@ $(document).ready(function() {
         image.attr("id", "stressed");
         $("#stressview").append(image);
         $("#stressview").append("<div id='stressed' class='carousel-caption'><span " +
-        "class='glyphicon glyphicon-chevron-right' aria-hidden='true' " +
-        "style='font-size:30px; text-shadow:2px 2px 4px #000000;'>Click for Next" +
+        //"class='glyphicon glyphicon-chevron-right' aria-hidden='true' " +
+        "style='font-size:20px; text-shadow:2px 2px 4px #000000;'>Click for Next" +
         "</span></div>");
 
         $("#stressview").show();
