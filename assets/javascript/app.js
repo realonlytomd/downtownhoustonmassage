@@ -320,7 +320,7 @@ $(document).ready(function() {
 
     }
 
-    // function to build the image to display in the stress relief pic div.
+    // function to build the image to display in the stress relief pic div.It's completely normal to feel nervous about a new experience. Specifically, our society certainly doesn't encourage touch. I'm no substitute for friends and family, but honestly, your body doesn't know the difference. Supportive and healing touch given during massage therapy has many positive effects. And obviously, your comfort and privacy are always respected.
     function buildStresspic() {
         // console.log("inside buildStresspic, stressIndex: ", stressIndex);
         // console.log("inside buildStresspic, stresspicture: ", stresspicture);
