@@ -94,7 +94,7 @@ $(document).ready(function() {
         // The following is for creating myself as a user in the firebase data
         var myemail = "onlytommassage@gmail.com"
         var mypassword = $("input#passwordEntry").val().trim();
-        console.log("mypassword: ", mypassword);
+        //    console.log("mypassword: ", mypassword);
         // This section is only for creating myself as an authorized user the first time.
         // firebase.auth().createUserWithEmailAndPassword(myemai$l, mypassword)
         //     .then((userCredential) => {
@@ -177,15 +177,15 @@ $(document).ready(function() {
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
         event.preventDefault();
-        console.log("inside loadBlog");
+        //console.log("inside loadBlog");
         firebase.auth().signInAnonymously()
         .then(() => {
-            console.log("inside loadBlog .then");
+            //console.log("inside loadBlog .then");
             // Signed in.. And assign anonymous user an uid
             firebase.auth().onAuthStateChanged((user) => {
                 if (user) {
                     var otherUid = user.uid; // other Uid initialized here for anon login
-                    console.log("inside loadBlog after state change, otherUid: " + otherUid);
+                    //console.log("inside loadBlog after state change, otherUid: " + otherUid);
                     // otherUid is a throwaway uid since it's not really used in the db
                     window.location.reload();
                     
@@ -208,7 +208,7 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds the first time,
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
-        console.log("I'm inside the child_added.");
+        //console.log("I'm inside the child_added.");
         //  change to .blog so complete pic shows
         if (!window.matchMedia("(orientation: portrait)").matches) {
         // Apply JavaScript-based style changes only if not in portrait
@@ -218,7 +218,7 @@ $(document).ready(function() {
         }
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
-        console.log("clientEmail: " + snapshot.val().clientemail);
+        //console.log("clientEmail: " + snapshot.val().clientemail);
         var newReview = $("<h5>").text(snapshot.val().clientcomment);
         var newDate = $("<h5>").text(snapshot.val().blogDate);
         var newText = $("<h5>").text(snapshot.val().blogToday);
@@ -227,7 +227,7 @@ $(document).ready(function() {
             // change color of title so I know there's a comment
             $("#home").css("color", "green");
             if (snapshot.val().clientemail === "review") {
-            console.log("this must be a review");
+            //console.log("this must be a review");
             $("#home").css("color", "white");
             newReviewEntry.append(newReview);
             newReviewEntry.attr("id", "addTextBorder");
