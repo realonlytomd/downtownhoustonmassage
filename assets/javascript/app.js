@@ -208,7 +208,7 @@ $(document).ready(function() {
     // Create Firebase "watcher". Responds the first time,
     // and when a new input has been made (child)
     database.ref("users/" + meUid).on("child_added", function(snapshot) {
-        //console.log("I'm inside the child_added.");
+        // console.log("I'm inside the child_added.");
         //  change to .blog so complete pic shows
         if (!window.matchMedia("(orientation: portrait)").matches) {
         // Apply JavaScript-based style changes only if not in portrait
