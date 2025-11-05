@@ -13,6 +13,7 @@ html {
 
 #colColor {
     background-image: url("../img/blackleather.jpg");
+    background-size: auto;
     background-color: #e6e2eb;
 }
 
