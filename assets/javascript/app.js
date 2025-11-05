@@ -270,17 +270,17 @@ $(document).ready(function() {
         $("#review").show();
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
-        if($("footer").css("background-color") === "rgb(30, 54, 99)") {
-            //console.log("less than 768");
-            //console.log("background color: " + $("footer").css("background-color"));
-            $("#myCarousel").hide();
-            $("#newBackground").show(); // change back to show
-        } else {
-            //console.log("widescreen");
-            //console.log("background color: " + $("footer").css("background-color"));
-            $("#myCarousel").show(); // change back to show
-            $("#newBackground").hide();
-        }
+        // if($("footer").css("background-color") === "rgb(30, 54, 99)") {
+        //     //console.log("less than 768");
+        //     //console.log("background color: " + $("footer").css("background-color"));
+        //     $("#myCarousel").hide();
+        //     $("#newBackground").show(); // change back to show
+        // } else {
+        //     //console.log("widescreen");
+        //     //console.log("background color: " + $("footer").css("background-color"));
+        //     $("#myCarousel").show(); // change back to show
+        //     $("#newBackground").hide();
+        // }
     }
 
     showStudio();
@@ -344,8 +344,8 @@ $(document).ready(function() {
 
         $("#stressview").show();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -368,8 +368,8 @@ $(document).ready(function() {
     $(document).on("click", "#myServices", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
@@ -384,8 +384,8 @@ $(document).ready(function() {
 
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -409,8 +409,8 @@ $(document).ready(function() {
 
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").hide();
         $("#massageInfo").hide();
         $("#googleMap").show();
@@ -425,8 +425,8 @@ $(document).ready(function() {
         $("#viewSpace").empty();
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#massageInfo").hide();
         $("#googleMap").hide();
         $("#titleBlog").hide();
@@ -455,8 +455,8 @@ $(document).ready(function() {
     $(document).on("click", "#benefits", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -494,8 +494,8 @@ $(document).ready(function() {
     $(document).on("click", "#stretching", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -532,8 +532,8 @@ $(document).ready(function() {
     $(document).on("click", "#thoughts", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -549,8 +549,8 @@ $(document).ready(function() {
     $(document).on("click", "#parking", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
@@ -568,8 +568,8 @@ $(document).ready(function() {
     $(document).on("click", "#comments", function() {
         $("#stressview").hide();
         $("#logo").hide();
-        $("#myCarousel").hide();
-        $("#newBackground").hide();
+        // $("#myCarousel").hide();
+        // $("#newBackground").hide();
         $("#viewSpace").show();
         $("#massageInfo").hide();
         $("#googleMap").hide();
