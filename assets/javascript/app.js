@@ -212,9 +212,9 @@ $(document).ready(function() {
         //  change to .blog so complete pic shows
         if (!window.matchMedia("(orientation: portrait)").matches) {
         // Apply JavaScript-based style changes only if not in portrait
-        $(".blog").css("margin-top", "-95vh");
+        $(".blog").css("margin-top", "30vh");
         } else {
-            $(".blog").css("margin-top", "-68vh");
+            $(".blog").css("margin-top", "30vh");
         }
         var newEntry = $("<div>");
         var newReviewEntry = $("<div>");
