@@ -264,7 +264,7 @@ $(document).ready(function() {
         $("#stressview").hide();
         $("#logo").hide();
         $("#viewSpace").hide();
-        $("#massageInfo").hide();
+        $("#massageInfo").show();
         $("#googleMap").hide();
         $("#blog").show();
         $("#review").show();
