@@ -161,9 +161,9 @@ span a {
 }
 
 .carousel-inner>.item>img {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
+    width: 75%;
+    height: auto;
+    
     object-position: 50% 0%;
 }
 
