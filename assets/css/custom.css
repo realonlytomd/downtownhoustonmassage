@@ -59,7 +59,7 @@ div#review {
 }
 
 .blog {
-    margin-top: 30vh;
+    margin-top: 0vh;
 }
 
 div#blog {
@@ -188,7 +188,7 @@ span a {
 }
 
 #viewSpace, #massageInfo {
-    min-height: 100vh;
+    min-height: cover;
     overflow: auto;
     border-style: ridge;
     border-color: #8c9fbc;
@@ -312,7 +312,7 @@ footer {
     }
 
     .blog {
-        margin-top: 30vh;
+        margin-top: 0vh;
     }
 
 }
