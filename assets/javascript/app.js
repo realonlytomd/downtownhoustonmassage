@@ -485,9 +485,7 @@ $(document).ready(function() {
             "<br><br>Numbers 2 and 3 are often downplayed. Everyone knows that a massage helps relieve muscle soreness" +
             " from workouts, but much more than that, your muscles can't grow without the increased" +
             " oxygen and bloodflow that a massage encourages. Isn't increased size one of the main reasons to work out?" +
-            "<br><br>This is my favorite study showing the importance of massage in muscle recovery: " +
-            "<a id='longlink' href='https://www.runnersworld.com/health-injuries/a20850050/does-massage-work-the-rabbits-know/' target='blank'>" +
-            "Rabbit Study</a></p><br>");
+            "</p><br>");
             //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
