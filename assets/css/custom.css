@@ -37,6 +37,12 @@ html {
     padding: 2px 0;
 } */
 
+#newBackground, #myCarousel {
+    border-style: ridge;
+    border-color: #8c9fbc;
+    border-width: 8px;
+}
+
 .padNumber span { 
     background-color: #f3f2f3;
     color: black; 
