@@ -270,17 +270,17 @@ $(document).ready(function() {
         $("#review").show();
         $(".padNumber").show();
         //console.log("background color: " + $("footer").css("background-color"));
-        // if($("footer").css("background-color") === "rgb(30, 54, 99)") {
-        //     //console.log("less than 768");
-        //     //console.log("background color: " + $("footer").css("background-color"));
-        //     $("#myCarousel").hide();
-        //     $("#newBackground").show(); // change back to show
-        // } else {
-        //     //console.log("widescreen");
-        //     //console.log("background color: " + $("footer").css("background-color"));
-        //     $("#myCarousel").show(); // change back to show
-        //     $("#newBackground").hide();
-        // }
+        if($("footer").css("background-color") === "rgb(30, 54, 99)") {
+            //console.log("less than 768");
+            //console.log("background color: " + $("footer").css("background-color"));
+            $("#myCarousel").hide();
+            $("#newBackground").show(); // change back to show
+        } else {
+            //console.log("widescreen");
+            //console.log("background color: " + $("footer").css("background-color"));
+            $("#myCarousel").show(); // change back to show
+            $("#newBackground").hide();
+        }
     }
 
     showStudio();
