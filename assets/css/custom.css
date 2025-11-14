@@ -193,7 +193,7 @@ span a {
     /*background-color: #e6e2eb;*/
     background-image: url("../img/brownleatherrepeat.png");
     background-size: 100%;
-    background-position: center;
+    background-position: center top;
 }
 
 #googleMap {
