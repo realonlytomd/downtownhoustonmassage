@@ -192,7 +192,7 @@ span a {
     border-width: 8px;
     /*background-color: #e6e2eb;*/
     background-image: url("../img/brownleather.jpg");
-    background-size: cover;
+    background-size: 100%;
     background-position: center;
 }
 
