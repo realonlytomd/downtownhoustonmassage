@@ -186,7 +186,7 @@ span a {
 }
 
 #viewSpace, #massageInfo {
-    min-height: cover;
+    /*min-height: cover;*/
     overflow: auto;
     border-style: ridge;
     border-color: #8c9fbc;
