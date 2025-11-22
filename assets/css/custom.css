@@ -15,6 +15,7 @@ html {
     background-image: url("../img/seamlessbrick.png");
     background-size: 100%;
     background-color: #e6e2eb;
+    background-position: center top;
 }
 
 .wrapper {
