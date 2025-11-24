@@ -12,7 +12,7 @@ html {
  }
 
 #colColor {
-    background-image: url("../img/seamlessbrick.png");
+    background-image: url("../img/tile.jpg");
     background-size: 100%;
     background-color: #e6e2eb;
     background-position: center top;
@@ -190,7 +190,7 @@ span a {
     border-style: ridge;
     border-color: #8c9fbc;
     border-width: 8px;
-    background-image: url("../img/tile.jpg");
+    background-image: url("../img/seamlessbrick.png");
     background-size: 100%;
     background-position: center top;
 }
@@ -218,9 +218,9 @@ h3, h4 {
 
 .topicp {
     /*background-color: #1e3663;*/
-    padding-left: 109px;
+    padding-left: 8px;
     padding-right: 8px;
-    text-align: right;
+    text-align: center;
     font-size: 22px;
 }
 
