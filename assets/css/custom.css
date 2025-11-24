@@ -214,6 +214,7 @@ h3, h4 {
     padding: 0px 4px 6px 4px;
     /*text-align: right;*/
     display: inline-block;
+    color: black;
 }
 
 .topicp {
@@ -222,6 +223,7 @@ h3, h4 {
     padding-right: 8px;
     text-align: center;
     font-size: 22px;
+    color: black;
 }
 
 #lableText {
