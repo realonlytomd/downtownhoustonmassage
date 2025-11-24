@@ -85,7 +85,7 @@ h1 {
     padding: 6px;
     margin-top: 8px;
     font-size: 24px;
-    color: gainsboro;
+    color: black;
 }
 
 #massageHeading {
@@ -205,7 +205,7 @@ span a {
 
 h3, h4 {
     font-family: 'Oswald', sans-serif;
-    color: gainsboro;
+    color: black;
     text-align: center;
 }
 
@@ -229,7 +229,7 @@ h3, h4 {
 #lableText {
     /*background-color: #1e3663;*/
     font-family: 'Oswald', sans-serif;
-    color: gainsboro;
+    color: black;
     margin-top: 10px;
     font-size: 18px;
     padding: 4px;
@@ -250,7 +250,7 @@ h3, h4 {
 p {
     font-family: 'Roboto', sans-serif;
     text-align: center;
-    color: gainsboro;
+    color: black;
     font-size: 24px;
     margin-top: 10px;    
 }
