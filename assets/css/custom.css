@@ -314,6 +314,13 @@ footer {
         margin-top: 0vh;
     }
 
+    .myImageStress {
+    width: 100%;
+    border-style: ridge;
+    border-width: 8px;
+    border-color: #8c9fbc;
+    }
+
 }
 
 /* reduce font of email address for screens under 360px  */
