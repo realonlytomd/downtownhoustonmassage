@@ -136,7 +136,7 @@ span a {
     height: 420px;*/
 }
 
-#myServices, #myMassage, #myLocation, #stressed, h2, .return {
+#myServices, #myMassage, #myLocation, h2, .return {
     cursor: pointer;
     /* to ensure animate.css works */
     display: inline-block;
