@@ -316,6 +316,7 @@ footer {
 
     .myImageStress {
     width: 100%;
+    height: auto;
     border-style: ridge;
     border-width: 20px;
     border-color: #8c9fbc;
