@@ -217,6 +217,7 @@ h3, h4 {
     /*text-align: right;*/
     display: inline-block;
     color: black;
+    text-align: center;
 }
 
 .topicp {
