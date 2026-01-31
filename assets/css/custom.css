@@ -211,9 +211,7 @@ h3, h4 {
 }
 
 .topic, .return {
-    /*background-color: #1e3663;*/
     padding: 0px 4px 6px 4px;
-    /*text-align: right;*/
     display: inline-block;
     color: black;
     text-align: center;
@@ -322,7 +320,6 @@ footer {
     border-width: 8px;
     border-color: #8c9fbc;
     }
-
 }
 
 /* reduce font of email address for screens under 360px  */
