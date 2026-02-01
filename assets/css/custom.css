@@ -103,7 +103,6 @@ h2 {
     margin-top: 6px;
     font-family: 'Oswald', sans-serif;
     color: #455772;
-    text-align: center;
 }
 
 #searchSpace {
@@ -136,7 +135,7 @@ span a {
     height: 420px;*/
 }
 
-#myServices, #myMassage, #myLocation, h2, .return {
+#myServices, #myMassage, #myLocation, .return {
     cursor: pointer;
     /* to ensure animate.css works */
     display: inline-block;
