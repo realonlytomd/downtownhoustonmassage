@@ -296,7 +296,7 @@ $(document).ready(function() {
         for (i=0; i<3; i++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
-        //console.log("stresspicture: ", stresspicture);
+        console.log("stresspicture: ", stresspicture);
     }
     
     buildStresspicture();
@@ -357,7 +357,7 @@ $(document).ready(function() {
 
         // console.log("after splice, stresspicture.length: ", stresspicture.length);
         if (stresspicture.length === 0) {
-            // console.log("rebuilding stresspicture");
+            console.log("rebuilding stresspicture");
             buildStresspicture();
         }
 
