@@ -262,7 +262,6 @@ $(document).ready(function() {
     function showStudio() {
         //console.log("in showstudio");
         $("#stressview").hide();
-        $("#logo").hide();
         $("#viewSpace").hide();
         $("#massageInfo").show();
         $("#googleMap").hide();
@@ -343,7 +342,6 @@ $(document).ready(function() {
         "</span></div>");
 
         $("#stressview").show();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").hide();
@@ -367,7 +365,6 @@ $(document).ready(function() {
 
     $(document).on("click", "#myServices", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").hide();
@@ -383,7 +380,6 @@ $(document).ready(function() {
     $(document).on("click", "#myMassage", function() {
 
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
@@ -408,7 +404,6 @@ $(document).ready(function() {
     $(document).on("click", "#myLocation", function() {
 
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").hide();
@@ -424,7 +419,6 @@ $(document).ready(function() {
     $(document).on("click", "#flow", function() {
         $("#viewSpace").empty();
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#massageInfo").hide();
@@ -454,7 +448,6 @@ $(document).ready(function() {
 
     $(document).on("click", "#benefits", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
@@ -491,7 +484,6 @@ $(document).ready(function() {
 
     $(document).on("click", "#stretching", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
@@ -529,7 +521,6 @@ $(document).ready(function() {
     // this function is currently not needed as the "blog" is on the home screen
     $(document).on("click", "#thoughts", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
@@ -546,7 +537,6 @@ $(document).ready(function() {
 
     $(document).on("click", "#parking", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
@@ -565,7 +555,6 @@ $(document).ready(function() {
 
     $(document).on("click", "#comments", function() {
         $("#stressview").hide();
-        $("#logo").hide();
         $("#myCarousel").hide();
         $("#newBackground").hide();
         $("#viewSpace").show();
