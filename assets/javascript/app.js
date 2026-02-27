@@ -289,14 +289,14 @@ $(document).ready(function() {
     });
 
     function buildStresspicture() {
-        
-        for (i=3; i<84; i++) {
-            stresspicture.push("stressbackground(" + i + ").jpg");
-        }
+
         for (i=0; i<3; i++) {
             stresspicture.push("stressbackground(" + i + ").gif");
         }
-        console.log("stresspicture: ", stresspicture);
+
+        for (i=3; i<84; i++) {
+            stresspicture.push("stressbackground(" + i + ").jpg");
+        }
     }
     
     buildStresspicture();
