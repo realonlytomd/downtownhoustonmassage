@@ -332,7 +332,7 @@ $(document).ready(function() {
         image.addClass("animated");
         image.addClass("fadeIn");
         image.attr("src", "assets/img/" + stresspicture[stressIndex]);
-        image.attr("alt", "relax relaxation massage stress beautiful view calm");
+        image.attr("alt", "relaxation-massage-beautiful-view-calm");
         image.attr("title", "Click for Next");
         image.attr("id", "stressed");
         $("#stressview").append(image);
@@ -549,7 +549,7 @@ $(document).ready(function() {
         $(".padNumber").hide();
         $("#viewSpace").empty();
         $("#viewSpace").append("<img class='img-responsive center-block animated fadeIn'" +
-        "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown parking'>");
+        "id='parkingMap' src='assets/img/parkingPlain2.png' alt='downtown-parking'>");
         //"<h3><span class='return' id='myMassage'>Return</span></h3>");
     });
 
