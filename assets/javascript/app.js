@@ -173,6 +173,9 @@ $(document).ready(function() {
         
     });
 
+    // the loadBlog id has been removed from the html, and the user authorization has been removed 
+    // from the rules section of the firebase database. We'll see if I get an error from firebase
+    // for having and open database. To add it back change the read of the rules to: "auth != null",
     // when a regular user goes to the site and clicks the text in the blog window,
     // this function starts and the user is logged in anonymously.
     $(document).on("click", "#loadBlog", function(event) {
